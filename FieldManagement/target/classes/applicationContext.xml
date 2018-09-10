@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.1.xsd">
+    <!--<context:component-scan base-package="com.ks.riskcontrol" />-->
+    <!-- 配置作业bean -->
+    <bean id="xmlTask" class="com.ks.riskcontrol.app"></bean>
+    <!-- 配置执行规则  method为作业方法-->
+    <task:scheduled-tasks>
+        <task:scheduled ref="xmlTask" method="taskExcution" cron="0 0/1 * * * ?"/>
+        <!--"0 0/30 9-18 * * ?" 朝九晚六 每半个小时-->
+    </task:scheduled-tasks>
+
+    <!-- 配置定时器注解开关 里面可以配置很多参数，这里只是简单的打开task,并支持@Scheduled -->
+    <!--<task:scheduler id="Scheduler" pool-size="1"/>-->
+    <!--<task:annotation-driven scheduler="Scheduler" proxy-target-class="true"/>-->
+</beans>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+<Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+        <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %l - %msg%n"/>
+    </Console>
+    <RollingFile name="RollingFile" fileName="/usr/logs/app.log"
+                 filePattern="/usr/logs/$${date:yyyy-MM}/info-%d{yyyy-MM-dd}-%i.log">
+        <Filters>
+            <ThresholdFilter level="INFO"/>
+            <ThresholdFilter level="WARN" onMatch="DENY" onMismatch="NEUTRAL"/>
+        </Filters>
+        <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %l - %msg%n">
+        </PatternLayout>
+        <Policies>
+            <TimeBasedTriggeringPolicy />
+            <SizeBasedTriggeringPolicy size="10 MB"/>
+        </Policies>
+    </RollingFile>
+</Appenders>
+
+<Loggers>
+    <Root level="info">
+        <AppenderRef ref="Console" />
+        <AppenderRef ref="RollingFile"/>
+    </Root>
+</Loggers>
+</Configuration>

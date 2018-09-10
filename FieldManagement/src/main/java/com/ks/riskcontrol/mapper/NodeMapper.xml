@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ks.riskcontrol.mapper.NodeMapper">
+    <!-- 自定义返回结果集 -->
+    <resultMap id="nextVal" type="com.ks.riskcontrol.pojos.NextVal">
+        <id property="nextVal" column="NEXTVAL" javaType="java.lang.Integer"></id>
+    </resultMap>
+
+    <insert id="insertFieldType" >
+        insert into fieldtype (F_ID,TYPENAME,LABEL,TYPE,LENGTH,Prefix,Precision) VALUES(#{f_id,jdbcType=NUMERIC},#{typeName,jdbcType=VARCHAR},#{label,jdbcType=VARCHAR},#{type,jdbcType=VARCHAR},#{length,jdbcType=NUMERIC},#{prefix,jdbcType=VARCHAR},#{precision,jdbcType=NUMERIC})
+    </insert>
+    <insert id="insertEnum" >
+        insert into enum (E_ID,NAME,VALUE,LABEL,F_ID) VALUES(SEQ_ENUM.NEXTVAL,#{name,jdbcType=VARCHAR},#{value,jdbcType=VARCHAR},#{label,jdbcType=VARCHAR},#{f_id,jdbcType=NUMERIC})
+    </insert>
+    <insert id="insertEntity" >
+        insert into entity (en_id,en_entityType,en_name,en_title,en_description,en_sourcescheme,en_source,en_level) values (#{en_id,jdbcType=NUMERIC},#{en_entityType,jdbcType=VARCHAR},#{en_name,jdbcType=VARCHAR},#{en_title,jdbcType=VARCHAR},#{en_description,jdbcType=VARCHAR},#{en_sourcescheme,jdbcType=VARCHAR},#{en_source,jdbcType=VARCHAR},#{en_level,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertEntityRef" >
+        insert into entity_ref (ref_id,en_id,ref_entity_id) values (SEQ_ENTITY_REF.NEXTVAL,#{en_id,jdbcType=NUMERIC},#{ref_entity_id,jdbcType=NUMERIC})
+    </insert>
+    <insert id="insertFieldList" >
+        insert into fieldlist (fl_id,en_id,f_id,fl_name,fl_notnull,fl_label,fl_description,fl_iskey) values (SEQ_FIELDLIST.NEXTVAL,#{en_id,jdbcType=NUMERIC},#{f_id,jdbcType=NUMERIC},#{fl_name,jdbcType=VARCHAR},#{fl_notnull,jdbcType=VARCHAR},#{fl_label,jdbcType=VARCHAR},#{fl_description,jdbcType=VARCHAR},#{fl_iskey,jdbcType=VARCHAR})
+    </insert>
+    <select id="getRefEntityId" resultMap="nextVal">
+        select en_id as NEXTVAL from entity where en_name =#{en_name,jdbcType=VARCHAR} and rownum=1
+    </select>
+    <select id="getFId" resultMap="nextVal">
+        select f_id as  NEXTVAL from fieldtype where typename =#{type,jdbcType=VARCHAR} and rownum=1
+    </select>
+    <select id="queryFId" resultMap="nextVal">
+        SELECT SEQ_FIELD.NEXTVAL FROM DUAL
+    </select>
+    <select id="queryEId" resultMap="nextVal">
+        SELECT SEQ_ENTITY.NEXTVAL FROM DUAL
+    </select>
+    <update id="deleteFieldtype">
+            delete from fieldtype
+    </update>
+    <update id="deleteEnum">
+        delete from enum
+    </update>
+    <update id="deleteEntity">
+        delete from entity
+    </update>
+    <update id="deleteFieldlist">
+        delete from fieldlist
+    </update>
+    <update id="deleteEntityref">
+        delete from entity_ref
+    </update>
+</mapper>

@@ -1,0 +1,14 @@
+com\ks\riskcontrol\pojos\FieldType.class
+com\ks\riskcontrol\app.class
+com\ks\riskcontrol\services\InsertField.class
+com\ks\riskcontrol\git\JGitUtil.class
+com\ks\riskcontrol\task\TimedTask.class
+com\ks\riskcontrol\pojos\Entity.class
+com\ks\riskcontrol\pojos\Enum.class
+com\ks\riskcontrol\services\FieldService.class
+com\ks\riskcontrol\pojos\NextVal.class
+com\ks\riskcontrol\pojos\tempObject.class
+com\ks\riskcontrol\dao\DBTools.class
+com\ks\riskcontrol\pojos\EntityRef.class
+com\ks\riskcontrol\pojos\FieldList.class
+com\ks\riskcontrol\mapper\NodeMapper.class
