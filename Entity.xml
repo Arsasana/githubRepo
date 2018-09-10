@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="gb2312"?>
 <UFEntityModel isvisible="yes">
-	<!---------------------------------风控内部数据 -------------------------------------------------->
-	<!---------------------------------基础-框架 -------------------------------------------------->
+	<!--  风控内部数据   -->
+	<!--  基础-框架  -->
 	<Entity name="InstitutionUser" title="机构用户" description="机构用户">
 		<Field name="InstitutionID" type="InstitutionID" notnull="yes" label="机构代码" description="机构代码" iskey="yes" />
 		<Field name="UserID" type="UserID" notnull="yes" label="用户代码" description="用户代码" iskey="yes"/>
@@ -17,9 +17,7 @@
 		<Field name="InstitutionFunctionCode" type="InstitutionFunctionCode" notnull="yes" label="机构功能代码" description="机构功能代码" iskey="yes"/>
 	</Entity>
 
-
-	
-	<!---------------------------------基础-业务-------------------------------------------------->
+	<!--  基础-业务  -->
 	<Entity name="Investor" title="投资者" description="投资者">
 		<Field name="InstitutionID" type="InstitutionID" notnull="yes" label="机构代码" description="机构代码" iskey="yes" />
 		<Field name="InvestorID" type="InvestorID" notnull="yes" label="投资者代码" description="投资者代码" iskey="yes" />
@@ -32,8 +30,6 @@
 		<Field name="EMail" label="电子邮件" type="EMail" description="电子邮件" notnull="no" />
 		<Field name="OpenDate" type="Date" label="开户日期" description="开户日期" notnull="no"/>
 	</Entity>
-	
-	
 	
 	<!--todo 交易所ID是否可以改为枚举值，不要客户自定义 -->
 	<Entity name="Exchange" title="交易所" description="交易所的基本信息">
@@ -75,9 +71,7 @@
 		<Field name="IsActive" type="Bool" notnull="yes" label="是否活跃" description="表示该客户是否活跃" />
 	</Entity>
 	
-
-
-	<!---------------------------------交易-资金-------------------------------------------------->
+	<!--  交易-资金 -->
 	<Entity name="TradingAccount" title="交易资金账户信息" description="说明在交易时使用的资金帐号信息">
 		<Field name="InstitutionID" type="InstitutionID" notnull="yes" label="机构代码" description="机构代码" iskey="yes"/>
 		<Field name="AccountID" type="AccountID" notnull="yes" label="投资者帐号" description="投资者帐号" iskey="yes" />
@@ -104,7 +98,7 @@
 		<Field name="ExchangeDeliveryMargin" type="Money" notnull="yes" label="交易所交割保证金" description="交易所交割保证金"/>
 	</Entity>
 	
-	<!---------------------------------交易-持仓-------------------------------------------------->
+	<!--  交易-持仓 -->
 	<Entity name="InvestorPosition" title="投资者合约持仓" description="说明投资者当前持仓信息">
 		<Field name="InstitutionID" type="InstitutionID" notnull="yes" label="机构代码" description="机构代码" iskey="yes"/>
 		<Field name="InvestorID" type="InvestorID" notnull="yes" label="投资者代码" description="投资者代码" iskey="yes"/>
@@ -112,22 +106,16 @@
 		<Field name="InstrumentID" type="InstrumentID" notnull="yes" label="合约代码" description="合约在系统中的编号" iskey="yes"/>
 		<Field name="PosiDirection" type="PosiDirection" notnull="yes" label="持仓多空方向" description="1．净2．多3．空" iskey="yes"/>
 		<Field name="HedgeFlag" type="HedgeFlag" notnull="yes" label="投机套保标志" description="1．投机2．套保" iskey="yes"/>
-		<Field name="PrePosition" type="Volume" notnull="yes" label="上日持仓" description="上日持仓的当前数量"/>
-		<Field name="OpenVolume" type="Volume" notnull="yes" label="开仓量" description="累计的开仓量"/>
-		<Field name="CloseVolume" type="Volume" notnull="yes" label="平仓量" description="累计的平仓量"/>
-		<Field name="Position" type="Volume" notnull="yes" label="今日持仓" description="今日持仓的当前数量"/>
+		<Field name="PrePosition" type="Volume" notnull="yes" label="上日持仓" description="上日持仓量"/>
+		<Field name="OpenVolume" type="Volume" notnull="yes" label="开仓量" description="今开仓量"/>
+		<Field name="ClosePreVolume" type="Volume" notnull="yes" label="平仓量" description="平昨仓量"/>
+		<Field name="CloseTodayVolume" type="Volume" notnull="yes" label="平仓量" description="平今仓量"/>
+		<Field name="TatallCloseVolume" type="Volume" notnull="yes" label="平仓量" description="总平仓量"/>
+		<Field name="Position" type="Volume" notnull="yes" label="今日持仓" description="当前持仓量"/>
 		<Field name="LongFrozen" type="Volume" notnull="yes" label="多头冻结" description="多头冻结的持仓数量"/>
 		<Field name="ShortFrozen" type="Volume" notnull="yes" label="空头冻结" description="空头冻结的持仓数量"/>
-		<Field name="LongFrozenAmount" type="Money" notnull="yes" label="开仓冻结金额" description="多头报单冻结的金额"/>
-		<Field name="ShortFrozenAmount" type="Money" notnull="yes" label="开仓冻结金额" description="空头报单冻结的金额"/>
-		<Field name="OpenAmount" type="Money" notnull="yes" label="开仓金额" description="累计的开仓金额"/>
-		<Field name="CloseAmount" type="Money" notnull="yes" label="平仓金额" description="累计的平仓金额"/>
 		<Field name="PositionCost" type="Money" notnull="yes" label="持仓成本" description="当前所有持仓的持有成本"/>
-		<Field name="PreMargin" type="Money" notnull="yes" label="上次占用的保证金" description="上次所有持仓占用的保证金"/>
 		<Field name="UseMargin" type="Money" notnull="yes" label="占用的保证金" description="所有持仓占用的保证金"/>
-		<Field name="FrozenMargin" type="Money" notnull="yes" label="冻结的保证金" description="所有冻结持仓占用的保证金"/>
-		<Field name="FrozenCash" type="Money" notnull="yes" label="冻结的资金" description="因为下单而冻结的资金，包括买入现货的资金和买入期权的权利金" />
-		<Field name="FrozenCommission" type="Money" notnull="yes" label="冻结的手续费" description="因为下单而冻结的手续费" />
 		<Field name="Commission" type="Money" notnull="yes" label="手续费" description="成交单产生的手续费" />
 		<Field name="CloseProfit" type="Money" notnull="yes" label="平仓盈亏" description="平仓造成的盈亏金额" />
 		<Field name="PositionProfit" type="Money" notnull="yes" label="持仓盈亏" description="当前所有持仓造成的盈亏金额"/>
@@ -138,9 +126,7 @@
 		<Field name="CombPosition" type="Volume" notnull="yes" label="组合成交形成的持仓" description="组合成交形成的持仓数量"/>
 		<Field name="CombLongFrozen" type="Volume" notnull="yes" label="组合多头冻结" description="组合多头冻结的持仓数量"/>
 		<Field name="CombShortFrozen" type="Volume" notnull="yes" label="组合空头冻结" description="组合空头冻结的持仓数量"/>
-		<Field name="CloseProfitByDate" label="逐日盯市平仓盈亏" type="Money" description="逐日盯市平仓盈亏" notnull="yes"/>
-		<Field name="CloseProfitByTrade" label="逐笔对冲平仓盈亏" type="Money" description="逐笔对冲平仓盈亏" notnull="yes"/>
-		<Field name="TodayPosition" type="Volume" notnull="yes" label="今日持仓" description="今日持仓"/>
+		<Field name="CloseProfit" label="逐日盯市平仓盈亏" type="Money" description="逐日盯市平仓盈亏" notnull="yes"/>
 		<Field name="MarginRateByMoney" type="Ratio" notnull="no" label="保证金率" description="保证金率(按金额)"/>
 		<Field name="MarginRateByVolume" type="Ratio" notnull="no" label="保证金率(按手数)" description="保证金率(按手数)"/>
 	</Entity>
@@ -168,6 +154,7 @@
 	<Entity name="InvestorPositionDetail" title="投资者持仓明细表" description="投资者持仓明细表">
 		<Field name="InstitutionID" type="InstitutionID" label="机构代码" description="机构代码" notnull="yes" iskey="yes"/>
 		<Field name="InvestorID" type="InvestorID" label="投资者代码" description="投资者代码" notnull="yes" iskey="yes"/>
+		<Field name="ExchangeID" type="ExchangeID" label="交易所代码" description="交易所代码" notnull="yes" iskey="yes"/>		
 		<Field name="InstrumentID" type="InstrumentID" label="合约代码" description="合约代码" notnull="yes" iskey="yes"/>
 		<Field name="HedgeFlag" type="HedgeFlag" label="投机套保标志" description="投机套保标志" notnull="yes" iskey="yes"/>
 		<Field name="Direction" type="Direction" label="买卖" description="买卖" notnull="yes" iskey="yes"/>
@@ -177,7 +164,6 @@
 		<Field name="OpenPrice" type="Price" label="开仓价" description="开仓价" notnull="yes"/>
 		<Field name="TradeType" label="成交类型" type="TradeType" description="成交类型" notnull="yes" iskey="yes"/>
 		<Field name="CombInstrumentID" type="InstrumentID" label="组合合约代码" description="组合成交的组合合约代码"/>
-		<Field name="ExchangeID" type="ExchangeID" label="交易所代码" description="交易所代码" notnull="yes" iskey="yes"/>
 		<Field name="CloseProfitByDate" label="逐日盯市平仓盈亏" type="Money" description="逐日盯市平仓盈亏" notnull="yes"/>
 		<Field name="CloseProfitByTrade" label="逐笔对冲平仓盈亏" type="Money" description="逐笔对冲平仓盈亏" notnull="yes"/>
 		<Field name="PositionProfitByDate" label="逐日盯市持仓盈亏" type="Money" description="逐日盯市持仓盈亏" notnull="yes"/>
@@ -200,7 +186,7 @@
 		<Field name="OrderSysID" type="OrderSysID" label="报单编号" description="报单编号"/>
 	</Entity>
 	
-	<!---------------------------------费率-------------------------------------------------->
+	<!-- 费率 -->
 	<!--todo 是否要保留InvestorRangeRef，是不是可以用group代替 -->
 	<Entity name="MarginRateBase" title="保证金率的详细内容" description="说明保证金率的字段">
 		<Field name="HedgeFlag" type="HedgeFlag" notnull="yes" iskey="yes" label="投机套保标志" description="投机套保标志" />
@@ -211,8 +197,8 @@
 	</Entity>
 	
 	<Entity name="InstrumentMarginRate" title="当前合约保证金率的详细内容" description="说明针对某个合约或者产品某个投资者或投资者类或所有投资者的保证金率的具体内容">
-		<Field name="InstrumentID" type="InstrumentID" notnull="yes" label="合约代码" description="实际上是合约代码或者产品代码" iskey="yes" />
 		<Ref entity="InvestorRangeRef"/>
+		<Field name="InstrumentID" type="InstrumentID" notnull="yes" label="合约代码" description="实际上是合约代码或者产品代码" iskey="yes" />
 		<Ref entity="MarginRateBase"/>
 		<Field name="IsRelative" type="Bool" notnull="yes" label="是否相对交易所收取" description="是否相对交易所收取" />
 	</Entity>
@@ -256,12 +242,11 @@
 		<Ref entity="CommissionRateBase"/>
 	</Entity>
 	
-	<!---------------------------------行情-------------------------------------------------->
+	<!-- 行情 -->
 	<Entity name="MarketData" title="市场行情" description="说明合约基本的行情信息">
 		<Field name="TradingDay" type="Date" label="交易日" description="交易日" iskey="yes"/>
 		<Field name="ExchangeID" type="ExchangeID" notnull="yes" label="交易所代码" description="一个交易所的编号" iskey="yes" />
 		<Field name="InstrumentID" type="InstrumentID" notnull="yes" label="合约代码" description="合约在系统中的编号" iskey="yes"/>
-		<Field name="ExchangeInstID" type="ExchangeInstID" notnull="yes" label="合约在交易所的代码" description="合约在交易所的代码" />
 		<Field name="LastPrice" type="Price" label="最新价" description="当日该合约交易期间的最新成交价格"/>
 		<Field name="PreSettlementPrice" type="Price" label="上次结算价" description="上一日的结算价"/>
 		<Field name="PreClosePrice" type="Price" label="昨收盘" description="上一日收盘价"/>
@@ -316,7 +301,7 @@
 		<Field name="AskVolume1" type="Volume" label="申卖量一" description="申卖量一"/>
 	</Entity>
 	
-	<!---------------------------------交易-报单-------------------------------------------------->
+	<!--   交易-报单 -->
 	<Entity name="UserOrderHandle" title="用户报单基本信息" description="用户报单基本信息">
 		<Field name="BrokerID" type="BrokerID" description="经纪公司编号" notnull="no" label="经纪公司编号"/>
 		<Field name="InvestorID" type="InvestorID" description="投资者编号" notnull="no" label="投资者编号"/>
@@ -388,7 +373,7 @@
 		<Ref entity="Order"/>
 	</Entity>
 	
-	<!---------------------------------交易-撤单-------------------------------------------------->	
+	<!-- 交易-撤单 -->	
 	<Entity name="UserOrderAction" title="内部报单操作" description="内部报单操作">
 		<Ref entity="UserOrderHandle"/>
 	</Entity>
@@ -409,7 +394,7 @@
 		<Ref entity="OrderAction"/>
 	</Entity>
 	
-	<!---------------------------------交易-成交-------------------------------------------------->	
+	<!-- 交易-成交   -->	
 	<Entity name="ExchangeTrade" title="内部成交回报" description="内部成交回报">
 		<Field name="ExchangeID" type="ExchangeID" description="交易所代码" notnull="no" label="交易所代码"/>
 		<Field name="TradeID" type="TradeID" description="成交编号" notnull="no" label="成交编号" />
@@ -442,18 +427,18 @@
 		<Ref entity="ExtendTrade"/>
 	</Entity>
 	
-	<!---------------------------------出入金-------------------------------------------------->
+	<!--  出入金 -->
 	<Entity name="InvestorAccountDeposit" title="出入金回报" description="">
 		<Field name="BrokerID" type="BrokerID" description="经纪公司编号" notnull="no" label="经纪公司编号" />		
 		<Field name="InvestorID" type="InvestorID" description="投资者编号" notnull="no" label="投资者编号"/>
 		<Field name="AccountID" type="AccountID" description="资金帐号" notnull="no" label="资金帐号" />
 		<Field name="AccountSeqNo" type="AccountSeqNo" description="资金流水号" notnull="no" label="资金流水号"/>
 		<Field name="Amount" type="Money" description="金额" notnull="no" label="金额"/>
-		<Field name="AmountDirection" type="AccountDirection" description="出入金方向" notnull="no" label="出入金方向"/>
+		<Field name="DepositDirection" type="DepositDirection" description="出入金方向" notnull="no" label="出入金方向"/>
 		<Field name="Currency" type="Currency" description="币种" notnull="no" label="币种"/>
 	</Entity>
 
-	<!---------------------------------各种查询-------------------------------------------------->
+	<!-- 各种查询 -->
 	<Entity name="QueryRefInvestorInstrument" title="报单查询" description="报单查询的条件">
 		<Field name="InstitutionID" type="InstitutionID" label="机构代码"/>
 		<Field name="InvestorID" type="InvestorID" label="投资者代码" description="投资者代码"/>
@@ -506,14 +491,12 @@
 		<Field name="ExchangeID" type="ExchangeID" label="交易所代码" description="一个交易所的编号"/>
 		<Field name="ProductID" type="ProductID" label="产品代码" description="产品的编号"/>
 		<Field name="InstrumentID" type="InstrumentID" label="合约代码" description="合约在系统中的编号"/>
-		<Field name="ExchangeInstID" type="ExchangeInstID" label="合约在交易所的代码" description="合约在交易所的代码"/>
 	</Entity>
 
 	<Entity name="QryDepthMarketData" title="行情查询" description="行情查询的条件">
 		<Field name="ExchangeID" type="ExchangeID" label="交易所代码" description="一个交易所的编号"/>
 		<Field name="ProductID" type="ProductID" label="产品代码" description="产品的编号"/>
 		<Field name="InstrumentID" type="InstrumentID" label="合约代码" description="合约在系统中的编号"/>
-		<Field name="ExchangeInstID" type="ExchangeInstID" label="合约在交易所的代码" description="合约在交易所的代码"/>
 	</Entity>
 	
 	<Entity name="QryInstitutionUser" title="机构用户查询" description="机构用户查询的条件">
@@ -597,7 +580,7 @@
 		<Field name="ExchangeID" type="ExchangeID" notnull="yes" label="交易所代码" description="一个交易所的编号"/>
 	</Entity>
 	
-	<!-- -------------------------------基础-系统--------------------------------------------- -->
+	<!--  基础-系统  -->
 	<Entity name="DateTime" title="日期时间" description="日期时间">
 		<Field name="Date" type="Date" label="日期" description="日期"/>
 		<Field name="Time" type="Time" label="时间" description="精确到秒的时间"/>

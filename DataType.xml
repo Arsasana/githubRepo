@@ -563,7 +563,7 @@
 		<enum name="ItemFund" value="2" label="分项资金"/>
 		<enum name="Company" value="3" label="公司调整"/>
 	</EnumChar>
-	<EnumChar typename="FundDirection" label="出入金方向" prefix="FD">
+	<EnumChar typename="DepositDirection" label="出入金方向" prefix="FD">
 		<enum name="In" value="1" label="入金"/>
 		<enum name="Out" value="2" label="出金"/>
 	</EnumChar>
