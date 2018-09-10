@@ -1,1540 +1,1539 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!DOCTYPE UFDataTypes SYSTEM "UFDataType.dtd">
 <UFDataTypes>
-	<String typename="TraderID" label="½»Ò×Ëù½»Ò×Ô±´úÂë" length="20"/>
-	<String typename="InvestorID" label="Í¶×ÊÕß´úÂë" length="12"/>
-	<String typename="InstitutionID" label="¾­¼Í¹«Ë¾´úÂë" length="10"/>
-	<String typename="InstitutionAbbr" label="¾­¼Í¹«Ë¾¼ò³Æ" length="8"/>
-	<String typename="InstitutionName" label="¾­¼Í¹«Ë¾Ãû³Æ" length="80"/>
-	<String typename="ExchangeInstID" label="ºÏÔ¼ÔÚ½»Ò×ËùµÄ´úÂë" length="30"/>
-	<String typename="OrderRef" label="±¨µ¥ÒýÓÃ" length="12"/>
-	<String typename="ParticipantID" label="»áÔ±´úÂë" length="10"/>
-	<String typename="UserID" label="ÓÃ»§´úÂë" length="15"/>
-	<String typename="Password" label="ÃÜÂë" length="40"/>
-	<String typename="ClientID" label="½»Ò×±àÂë" length="10"/>
-	<String typename="InstrumentID" label="ºÏÔ¼´úÂë" length="30"/>
-	<String typename="MarketID" label="ÊÐ³¡´úÂë" length="30"/>
-	<String typename="ProductID" label="²úÆ·´úÂë" length="10"/>
-	<String typename="ProductName" label="²úÆ·Ãû³Æ" length="20"/>
-	<String typename="ExchangeID" label="½»Ò×Ëù´úÂë" length="8"/>
-	<String typename="ExchangeName" label="½»Ò×ËùÃû³Æ" length="30"/>
-	<String typename="ExchangeAbbr" label="½»Ò×Ëù¼ò³Æ" length="8"/>
-	<String typename="ExchangeFlag" label="½»Ò×Ëù±êÖ¾" length="1"/>
-	<String typename="MacAddress" label="MacµØÖ·" length="20"/>
-	<EnumChar typename="ExchangeProperty" label="½»Ò×ËùÊôÐÔ" prefix="EXP">
-		<enum name="Normal" value="0" label="Õý³£"/>
-		<enum name="GenOrderByTrade" value="1" label="¸ù¾Ý³É½»Éú³É±¨µ¥"/>
+	<String typename="TraderID" label="äº¤æ˜“æ‰€äº¤æ˜“å‘˜ä»£ç " length="20"/>
+	<String typename="InvestorID" label="æŠ•èµ„è€…ä»£ç " length="12"/>
+	<String typename="InstitutionID" label="ç»çºªå…¬å¸ä»£ç " length="10"/>
+	<String typename="InstitutionAbbr" label="ç»çºªå…¬å¸ç®€ç§°" length="8"/>
+	<String typename="InstitutionName" label="ç»çºªå…¬å¸åç§°" length="80"/>
+	<String typename="ExchangeInstID" label="åˆçº¦åœ¨äº¤æ˜“æ‰€çš„ä»£ç " length="30"/>
+	<String typename="OrderRef" label="æŠ¥å•å¼•ç”¨" length="12"/>
+	<String typename="ParticipantID" label="ä¼šå‘˜ä»£ç " length="10"/>
+	<String typename="UserID" label="ç”¨æˆ·ä»£ç " length="15"/>
+	<String typename="Password" label="å¯†ç " length="40"/>
+	<String typename="ClientID" label="äº¤æ˜“ç¼–ç " length="10"/>
+	<String typename="InstrumentID" label="åˆçº¦ä»£ç " length="30"/>
+	<String typename="MarketID" label="å¸‚åœºä»£ç " length="30"/>
+	<String typename="ProductID" label="äº§å“ä»£ç " length="10"/>
+	<String typename="ProductName" label="äº§å“åç§°" length="20"/>
+	<String typename="ExchangeID" label="äº¤æ˜“æ‰€ä»£ç " length="8"/>
+	<String typename="ExchangeName" label="äº¤æ˜“æ‰€åç§°" length="30"/>
+	<String typename="ExchangeAbbr" label="äº¤æ˜“æ‰€ç®€ç§°" length="8"/>
+	<String typename="ExchangeFlag" label="äº¤æ˜“æ‰€æ ‡å¿—" length="1"/>
+	<String typename="MacAddress" label="Macåœ°å€" length="20"/>
+	<EnumChar typename="ExchangeProperty" label="äº¤æ˜“æ‰€å±žæ€§" prefix="EXP">
+		<enum name="Normal" value="0" label="æ­£å¸¸"/>
+		<enum name="GenOrderByTrade" value="1" label="æ ¹æ®æˆäº¤ç”ŸæˆæŠ¥å•"/>
 	</EnumChar>
-	<String typename="Date" label="ÈÕÆÚ" length="8"/>
-	<String typename="Time" label="Ê±¼ä" length="8"/>
-	<String typename="LongTime" label="³¤Ê±¼ä" length="12"/>
-	<String typename="InstrumentName" label="ºÏÔ¼Ãû³Æ" length="20"/>
-	<String typename="SettlementGroupID" label="½áËã×é´úÂë" length="8"/>
-	<String typename="OrderSysID" label="±¨µ¥±àºÅ" length="20"/>
-	<String typename="TradeID" label="³É½»±àºÅ" length="20"/>
-	<String typename="CommandType" label="DBÃüÁîÀàÐÍ" length="64"/>
-	<String typename="IPAddress" label="IPµØÖ·" length="15"/>
-	<String typename="ProductInfo" label="²úÆ·ÐÅÏ¢" length="10"/>
-	<String typename="ProtocolInfo" label="Ð­ÒéÐÅÏ¢" length="10"/>
-	<String typename="BusinessUnit" label="ÒµÎñµ¥Ôª" length="20"/>
-	<String typename="DepositSeqNo" label="³öÈë½ðÁ÷Ë®ºÅ" length="14"/>
-	<String typename="IdentifiedCardNo" label="Ö¤¼þºÅÂë" length="50"/>
-	<EnumChar typename="IdCardType" label="Ö¤¼þÀàÐÍ" prefix="ICT">
-		<enum name="EID" value="0" label="×éÖ¯»ú¹¹´úÂë"/>
-		<enum name="IDCard" value="1" label="Éí·ÝÖ¤"/>
-		<enum name="OfficerIDCard" value="2" label="¾ü¹ÙÖ¤"/>
-		<enum name="PoliceIDCard" value="3" label="¾¯¹ÙÖ¤"/>
-		<enum name="SoldierIDCard" value="4" label="Ê¿±øÖ¤"/>
-		<enum name="HouseholdRegister " value="5" label="»§¿Ú²¾"/>
-		<enum name="Passport" value="6" label="»¤ÕÕ"/>
-		<enum name="TaiwanCompatriotIDCard " value="7" label="Ì¨°ûÖ¤"/>
-		<enum name="HomeComingCard" value="8" label="»ØÏçÖ¤"/>
-		<enum name="LicenseNo" value="9" label="ÓªÒµÖ´ÕÕºÅ"/>
-		<enum name="OtherCard" value="x" label="ÆäËûÖ¤¼þ"/>
+	<String typename="Date" label="æ—¥æœŸ" length="8"/>
+	<String typename="Time" label="æ—¶é—´" length="8"/>
+	<String typename="LongTime" label="é•¿æ—¶é—´" length="12"/>
+	<String typename="InstrumentName" label="åˆçº¦åç§°" length="20"/>
+	<String typename="SettlementGroupID" label="ç»“ç®—ç»„ä»£ç " length="8"/>
+	<String typename="OrderSysID" label="æŠ¥å•ç¼–å·" length="20"/>
+	<String typename="TradeID" label="æˆäº¤ç¼–å·" length="20"/>
+	<String typename="CommandType" label="DBå‘½ä»¤ç±»åž‹" length="64"/>
+	<String typename="IPAddress" label="IPåœ°å€" length="15"/>
+	<String typename="ProductInfo" label="äº§å“ä¿¡æ¯" length="10"/>
+	<String typename="ProtocolInfo" label="åè®®ä¿¡æ¯" length="10"/>
+	<String typename="BusinessUnit" label="ä¸šåŠ¡å•å…ƒ" length="20"/>
+	<String typename="DepositSeqNo" label="å‡ºå…¥é‡‘æµæ°´å·" length="14"/>
+	<String typename="IdentifiedCardNo" label="è¯ä»¶å·ç " length="50"/>
+	<EnumChar typename="IdCardType" label="è¯ä»¶ç±»åž‹" prefix="ICT">
+		<enum name="EID" value="0" label="ç»„ç»‡æœºæž„ä»£ç "/>
+		<enum name="IDCard" value="1" label="èº«ä»½è¯"/>
+		<enum name="OfficerIDCard" value="2" label="å†›å®˜è¯"/>
+		<enum name="PoliceIDCard" value="3" label="è­¦å®˜è¯"/>
+		<enum name="SoldierIDCard" value="4" label="å£«å…µè¯"/>
+		<enum name="HouseholdRegister " value="5" label="æˆ·å£ç°¿"/>
+		<enum name="Passport" value="6" label="æŠ¤ç…§"/>
+		<enum name="TaiwanCompatriotIDCard " value="7" label="å°èƒžè¯"/>
+		<enum name="HomeComingCard" value="8" label="å›žä¹¡è¯"/>
+		<enum name="LicenseNo" value="9" label="è¥ä¸šæ‰§ç…§å·"/>
+		<enum name="OtherCard" value="x" label="å…¶ä»–è¯ä»¶"/>
 	</EnumChar>
-	<String typename="OrderLocalID" label="±¾µØ±¨µ¥±àºÅ" length="12"/>
-	<VString typename="UserName" label="ÓÃ»§Ãû³Æ" length="80"/>
-	<VString typename="PartyName" label="²ÎÓëÈËÃû³Æ" length="80"/>
-	<VString typename="ErrorMsg" label="´íÎóÐÅÏ¢" length="80"/>
-	<VString typename="FieldName" label="×Ö¶ÎÃû" length="2048"/>
-	<VString typename="FieldContent" label="×Ö¶ÎÄÚÈÝ" length="2048"/>
-	<VString typename="SystemName" label="ÏµÍ³Ãû³Æ" length="40"/>
-	<VString typename="Content" label="ÏûÏ¢ÕýÎÄ" length="500"/>
-	<EnumChar typename="InvestorRange" label="Í¶×ÊÕß·¶Î§" prefix="IR">
-		<enum name="All" value="1" label="ËùÓÐ"/>
-		<enum name="Group" value="2" label="Í¶×ÊÕß×é"/>
-		<enum name="Single" value="3" label="µ¥Ò»Í¶×ÊÕß"/>
+	<String typename="OrderLocalID" label="æœ¬åœ°æŠ¥å•ç¼–å·" length="12"/>
+	<VString typename="UserName" label="ç”¨æˆ·åç§°" length="80"/>
+	<VString typename="PartyName" label="å‚ä¸Žäººåç§°" length="80"/>
+	<VString typename="ErrorMsg" label="é”™è¯¯ä¿¡æ¯" length="80"/>
+	<VString typename="FieldName" label="å­—æ®µå" length="2048"/>
+	<VString typename="FieldContent" label="å­—æ®µå†…å®¹" length="2048"/>
+	<VString typename="SystemName" label="ç³»ç»Ÿåç§°" length="40"/>
+	<VString typename="Content" label="æ¶ˆæ¯æ­£æ–‡" length="500"/>
+	<EnumChar typename="InvestorRange" label="æŠ•èµ„è€…èŒƒå›´" prefix="IR">
+		<enum name="All" value="1" label="æ‰€æœ‰"/>
+		<enum name="Group" value="2" label="æŠ•èµ„è€…ç»„"/>
+		<enum name="Single" value="3" label="å•ä¸€æŠ•èµ„è€…"/>
 	</EnumChar>
-	<EnumChar typename="DepartmentRange" label="Í¶×ÊÕß·¶Î§" prefix="DR">
-		<enum name="All" value="1" label="ËùÓÐ"/>
-		<enum name="Group" value="2" label="×éÖ¯¼Ü¹¹"/>
-		<enum name="Single" value="3" label="µ¥Ò»Í¶×ÊÕß"/>
+	<EnumChar typename="DepartmentRange" label="æŠ•èµ„è€…èŒƒå›´" prefix="DR">
+		<enum name="All" value="1" label="æ‰€æœ‰"/>
+		<enum name="Group" value="2" label="ç»„ç»‡æž¶æž„"/>
+		<enum name="Single" value="3" label="å•ä¸€æŠ•èµ„è€…"/>
 	</EnumChar>
-	<EnumChar typename="DataSyncStatus" label="Êý¾ÝÍ¬²½×´Ì¬" prefix="DS">
-		<enum name="Asynchronous" value="1" label="Î´Í¬²½"/>
-		<enum name="Synchronizing" value="2" label="Í¬²½ÖÐ"/>
-		<enum name="Synchronized" value="3" label="ÒÑÍ¬²½"/>
+	<EnumChar typename="DataSyncStatus" label="æ•°æ®åŒæ­¥çŠ¶æ€" prefix="DS">
+		<enum name="Asynchronous" value="1" label="æœªåŒæ­¥"/>
+		<enum name="Synchronizing" value="2" label="åŒæ­¥ä¸­"/>
+		<enum name="Synchronized" value="3" label="å·²åŒæ­¥"/>
 	</EnumChar>
-	<EnumChar typename="InstitutionDataSyncStatus" label="¾­¼Í¹«Ë¾Êý¾ÝÍ¬²½×´Ì¬" prefix="BDS">
-		<enum name="Synchronized" value="1" label="ÒÑÍ¬²½"/>
-		<enum name="Synchronizing" value="2" label="Í¬²½ÖÐ"/>
+	<EnumChar typename="InstitutionDataSyncStatus" label="ç»çºªå…¬å¸æ•°æ®åŒæ­¥çŠ¶æ€" prefix="BDS">
+		<enum name="Synchronized" value="1" label="å·²åŒæ­¥"/>
+		<enum name="Synchronizing" value="2" label="åŒæ­¥ä¸­"/>
 	</EnumChar>
-	<EnumChar typename="ExchangeConnectStatus" label="½»Ò×ËùÁ¬½Ó×´Ì¬" prefix="ECS">
-		<enum name="NoConnection" value="1" label="Ã»ÓÐÈÎºÎÁ¬½Ó"/>
-		<enum name="QryInstrumentSent" value="2" label="ÒÑ¾­·¢³öºÏÔ¼²éÑ¯ÇëÇó"/>
-		<enum name="GotInformation" value="9" label="ÒÑ¾­»ñÈ¡ÐÅÏ¢"/>
+	<EnumChar typename="ExchangeConnectStatus" label="äº¤æ˜“æ‰€è¿žæŽ¥çŠ¶æ€" prefix="ECS">
+		<enum name="NoConnection" value="1" label="æ²¡æœ‰ä»»ä½•è¿žæŽ¥"/>
+		<enum name="QryInstrumentSent" value="2" label="å·²ç»å‘å‡ºåˆçº¦æŸ¥è¯¢è¯·æ±‚"/>
+		<enum name="GotInformation" value="9" label="å·²ç»èŽ·å–ä¿¡æ¯"/>
 	</EnumChar>
-	<EnumChar typename="TraderConnectStatus" label="½»Ò×Ëù½»Ò×Ô±Á¬½Ó×´Ì¬" prefix="TCS">
-		<enum name="NotConnected" value="1" label="Ã»ÓÐÈÎºÎÁ¬½Ó"/>
-		<enum name="Connected" value="2" label="ÒÑ¾­Á¬½Ó"/>
-		<enum name="QryInstrumentSent" value="3" label="ÒÑ¾­·¢³öºÏÔ¼²éÑ¯ÇëÇó"/>
-		<enum name="SubPrivateFlow" value="4" label="¶©ÔÄË½ÓÐÁ÷"/>
+	<EnumChar typename="TraderConnectStatus" label="äº¤æ˜“æ‰€äº¤æ˜“å‘˜è¿žæŽ¥çŠ¶æ€" prefix="TCS">
+		<enum name="NotConnected" value="1" label="æ²¡æœ‰ä»»ä½•è¿žæŽ¥"/>
+		<enum name="Connected" value="2" label="å·²ç»è¿žæŽ¥"/>
+		<enum name="QryInstrumentSent" value="3" label="å·²ç»å‘å‡ºåˆçº¦æŸ¥è¯¢è¯·æ±‚"/>
+		<enum name="SubPrivateFlow" value="4" label="è®¢é˜…ç§æœ‰æµ"/>
 	</EnumChar>
-	<EnumChar typename="FunctionCode" label="¹¦ÄÜ´úÂë" prefix="FC">
-		<enum name="DataAsync" value="1" label="Êý¾ÝÒì²½»¯"/>
-		<enum name="ForceUserLogout" value="2" label="Ç¿ÖÆÓÃ»§µÇ³ö"/>
-		<enum name="UserPasswordUpdate" value="3" label="±ä¸ü¹ÜÀíÓÃ»§¿ÚÁî"/>
-		<enum name="InstitutionPasswordUpdate" value="4" label="±ä¸ü¾­¼Í¹«Ë¾¿ÚÁî"/>
-		<enum name="InvestorPasswordUpdate" value="5" label="±ä¸üÍ¶×ÊÕß¿ÚÁî"/>
-		<enum name="OrderInsert" value="6" label="±¨µ¥²åÈë"/>
-		<enum name="OrderAction" value="7" label="±¨µ¥²Ù×÷"/>
-		<enum name="SyncSystemData" value="8" label="Í¬²½ÏµÍ³Êý¾Ý"/>
-		<enum name="SyncInstitutionData" value="9" label="Í¬²½¾­¼Í¹«Ë¾Êý¾Ý"/>
-		<enum name="BachSyncInstitutionData" value="A" label="ÅúÁ¿Í¬²½¾­¼Í¹«Ë¾Êý¾Ý"/>
-		<enum name="SuperQuery" value="B" label="³¬¼¶²éÑ¯"/>
-		<enum name="ParkedOrderInsert" value="C" label="±¨µ¥²åÈë"/>
-		<enum name="ParkedOrderAction" value="D" label="±¨µ¥²Ù×÷"/>
-		<enum name="SyncOTP" value="E" label="Í¬²½¶¯Ì¬ÁîÅÆ"/>
+	<EnumChar typename="FunctionCode" label="åŠŸèƒ½ä»£ç " prefix="FC">
+		<enum name="DataAsync" value="1" label="æ•°æ®å¼‚æ­¥åŒ–"/>
+		<enum name="ForceUserLogout" value="2" label="å¼ºåˆ¶ç”¨æˆ·ç™»å‡º"/>
+		<enum name="UserPasswordUpdate" value="3" label="å˜æ›´ç®¡ç†ç”¨æˆ·å£ä»¤"/>
+		<enum name="InstitutionPasswordUpdate" value="4" label="å˜æ›´ç»çºªå…¬å¸å£ä»¤"/>
+		<enum name="InvestorPasswordUpdate" value="5" label="å˜æ›´æŠ•èµ„è€…å£ä»¤"/>
+		<enum name="OrderInsert" value="6" label="æŠ¥å•æ’å…¥"/>
+		<enum name="OrderAction" value="7" label="æŠ¥å•æ“ä½œ"/>
+		<enum name="SyncSystemData" value="8" label="åŒæ­¥ç³»ç»Ÿæ•°æ®"/>
+		<enum name="SyncInstitutionData" value="9" label="åŒæ­¥ç»çºªå…¬å¸æ•°æ®"/>
+		<enum name="BachSyncInstitutionData" value="A" label="æ‰¹é‡åŒæ­¥ç»çºªå…¬å¸æ•°æ®"/>
+		<enum name="SuperQuery" value="B" label="è¶…çº§æŸ¥è¯¢"/>
+		<enum name="ParkedOrderInsert" value="C" label="æŠ¥å•æ’å…¥"/>
+		<enum name="ParkedOrderAction" value="D" label="æŠ¥å•æ“ä½œ"/>
+		<enum name="SyncOTP" value="E" label="åŒæ­¥åŠ¨æ€ä»¤ç‰Œ"/>
 	</EnumChar>
-	<EnumChar typename="InstitutionFunctionCode" label="¾­¼Í¹«Ë¾¹¦ÄÜ´úÂë" prefix="BFC">
-		<enum name="ForceUserLogout" value="1" label="Ç¿ÖÆÓÃ»§µÇ³ö"/>
-		<enum name="UserPasswordUpdate" value="2" label="±ä¸üÓÃ»§¿ÚÁî"/>
-		<enum name="SyncInstitutionData" value="3" label="Í¬²½¾­¼Í¹«Ë¾Êý¾Ý"/>
-		<enum name="BachSyncInstitutionData" value="4" label="ÅúÁ¿Í¬²½¾­¼Í¹«Ë¾Êý¾Ý"/>
-		<enum name="OrderInsert" value="5" label="±¨µ¥²åÈë"/>
-		<enum name="OrderAction" value="6" label="±¨µ¥²Ù×÷"/>
-		<enum name="AllQuery" value="7" label="È«²¿²éÑ¯"/>
-		<enum name="log" value="a" label="ÏµÍ³¹¦ÄÜ£ºµÇÈë/µÇ³ö/ÐÞ¸ÄÃÜÂëµÈ"/>
-		<enum name="BaseQry" value="b" label="»ù±¾²éÑ¯£º²éÑ¯»ù´¡Êý¾Ý£¬ÈçºÏÔ¼£¬½»Ò×ËùµÈ³£Á¿"/>
-		<enum name="TradeQry" value="c" label="½»Ò×²éÑ¯£ºÈç²é³É½»£¬Î¯ÍÐ"/>
-		<enum name="Trade" value="d" label="½»Ò×¹¦ÄÜ£º±¨µ¥£¬³·µ¥"/>
-		<enum name="Virement" value="e" label="ÒøÆÚ×ªÕË"/>
-		<enum name="Risk" value="f" label="·çÏÕ¼à¿Ø"/>
-		<enum name="Session" value="g" label="²éÑ¯/¹ÜÀí£º²éÑ¯»á»°£¬ÌßÈËµÈ"/>
-		<enum name="RiskNoticeCtl" value="h" label="·ç¿ØÍ¨Öª¿ØÖÆ"/>
-		<enum name="RiskNotice" value="i" label="·ç¿ØÍ¨Öª·¢ËÍ"/>
-		<enum name="InstitutionDeposit" value="j" label="²ì¿´¾­¼Í¹«Ë¾×Ê½ðÈ¨ÏÞ"/>
-		<enum name="QueryFund" value="k" label="×Ê½ð²éÑ¯"/>
-		<enum name="QueryOrder" value="l" label="±¨µ¥²éÑ¯"/>
-		<enum name="QueryTrade" value="m" label="³É½»²éÑ¯"/>
-		<enum name="QueryPosition" value="n" label="³Ö²Ö²éÑ¯"/>
-		<enum name="QueryMarketData" value="o" label="ÐÐÇé²éÑ¯"/>
-		<enum name="QueryUserEvent" value="p" label="ÓÃ»§ÊÂ¼þ²éÑ¯"/>
-		<enum name="QueryRiskNotify" value="q" label="·çÏÕÍ¨Öª²éÑ¯"/>
-		<enum name="QueryFundChange" value="r" label="³öÈë½ð²éÑ¯"/>
-		<enum name="QueryInvestor" value="s" label="Í¶×ÊÕßÐÅÏ¢²éÑ¯"/>
-		<enum name="QueryTradingCode" value="t" label="½»Ò×±àÂë²éÑ¯"/>
-		<enum name="ForceClose" value="u" label="Ç¿Æ½"/>
-		<enum name="PressTest" value="v" label="Ñ¹Á¦²âÊÔ"/>
-		<enum name="RemainCalc" value="w" label="È¨Òæ·´Ëã"/>
-		<enum name="NetPositionInd" value="x" label="¾»³Ö²Ö±£Ö¤½ðÖ¸±ê"/>
-		<enum name="RiskPredict" value="y" label="·çÏÕÔ¤Ëã"/>
-		<enum name="DataExport" value="z" label="Êý¾Ýµ¼³ö"/>
-		<enum name="RiskTargetSetup" value="A" label="·ç¿ØÖ¸±êÉèÖÃ"/>
-		<enum name="MarketDataWarn" value="B" label="ÐÐÇéÔ¤¾¯"/>
-		<enum name="QryBizNotice" value="C" label="ÒµÎñÍ¨Öª²éÑ¯"/>
-		<enum name="CfgBizNotice" value="D" label="ÒµÎñÍ¨ÖªÄ£°åÉèÖÃ"/>
-		<enum name="SyncOTP" value="E" label="Í¬²½¶¯Ì¬ÁîÅÆ"/>
-		<enum name="SendBizNotice" value="F" label="·¢ËÍÒµÎñÍ¨Öª"/>
-		<enum name="CfgRiskLevelStd" value="G" label="·çÏÕ¼¶±ð±ê×¼ÉèÖÃ"/>
+	<EnumChar typename="InstitutionFunctionCode" label="ç»çºªå…¬å¸åŠŸèƒ½ä»£ç " prefix="BFC">
+		<enum name="ForceUserLogout" value="1" label="å¼ºåˆ¶ç”¨æˆ·ç™»å‡º"/>
+		<enum name="UserPasswordUpdate" value="2" label="å˜æ›´ç”¨æˆ·å£ä»¤"/>
+		<enum name="SyncInstitutionData" value="3" label="åŒæ­¥ç»çºªå…¬å¸æ•°æ®"/>
+		<enum name="BachSyncInstitutionData" value="4" label="æ‰¹é‡åŒæ­¥ç»çºªå…¬å¸æ•°æ®"/>
+		<enum name="OrderInsert" value="5" label="æŠ¥å•æ’å…¥"/>
+		<enum name="OrderAction" value="6" label="æŠ¥å•æ“ä½œ"/>
+		<enum name="AllQuery" value="7" label="å…¨éƒ¨æŸ¥è¯¢"/>
+		<enum name="log" value="a" label="ç³»ç»ŸåŠŸèƒ½ï¼šç™»å…¥/ç™»å‡º/ä¿®æ”¹å¯†ç ç­‰"/>
+		<enum name="BaseQry" value="b" label="åŸºæœ¬æŸ¥è¯¢ï¼šæŸ¥è¯¢åŸºç¡€æ•°æ®ï¼Œå¦‚åˆçº¦ï¼Œäº¤æ˜“æ‰€ç­‰å¸¸é‡"/>
+		<enum name="TradeQry" value="c" label="äº¤æ˜“æŸ¥è¯¢ï¼šå¦‚æŸ¥æˆäº¤ï¼Œå§”æ‰˜"/>
+		<enum name="Trade" value="d" label="äº¤æ˜“åŠŸèƒ½ï¼šæŠ¥å•ï¼Œæ’¤å•"/>
+		<enum name="Virement" value="e" label="é“¶æœŸè½¬è´¦"/>
+		<enum name="Risk" value="f" label="é£Žé™©ç›‘æŽ§"/>
+		<enum name="Session" value="g" label="æŸ¥è¯¢/ç®¡ç†ï¼šæŸ¥è¯¢ä¼šè¯ï¼Œè¸¢äººç­‰"/>
+		<enum name="RiskNoticeCtl" value="h" label="é£ŽæŽ§é€šçŸ¥æŽ§åˆ¶"/>
+		<enum name="RiskNotice" value="i" label="é£ŽæŽ§é€šçŸ¥å‘é€"/>
+		<enum name="InstitutionDeposit" value="j" label="å¯Ÿçœ‹ç»çºªå…¬å¸èµ„é‡‘æƒé™"/>
+		<enum name="QueryFund" value="k" label="èµ„é‡‘æŸ¥è¯¢"/>
+		<enum name="QueryOrder" value="l" label="æŠ¥å•æŸ¥è¯¢"/>
+		<enum name="QueryTrade" value="m" label="æˆäº¤æŸ¥è¯¢"/>
+		<enum name="QueryPosition" value="n" label="æŒä»“æŸ¥è¯¢"/>
+		<enum name="QueryMarketData" value="o" label="è¡Œæƒ…æŸ¥è¯¢"/>
+		<enum name="QueryUserEvent" value="p" label="ç”¨æˆ·äº‹ä»¶æŸ¥è¯¢"/>
+		<enum name="QueryRiskNotify" value="q" label="é£Žé™©é€šçŸ¥æŸ¥è¯¢"/>
+		<enum name="QueryFundChange" value="r" label="å‡ºå…¥é‡‘æŸ¥è¯¢"/>
+		<enum name="QueryInvestor" value="s" label="æŠ•èµ„è€…ä¿¡æ¯æŸ¥è¯¢"/>
+		<enum name="QueryTradingCode" value="t" label="äº¤æ˜“ç¼–ç æŸ¥è¯¢"/>
+		<enum name="ForceClose" value="u" label="å¼ºå¹³"/>
+		<enum name="PressTest" value="v" label="åŽ‹åŠ›æµ‹è¯•"/>
+		<enum name="RemainCalc" value="w" label="æƒç›Šåç®—"/>
+		<enum name="NetPositionInd" value="x" label="å‡€æŒä»“ä¿è¯é‡‘æŒ‡æ ‡"/>
+		<enum name="RiskPredict" value="y" label="é£Žé™©é¢„ç®—"/>
+		<enum name="DataExport" value="z" label="æ•°æ®å¯¼å‡º"/>
+		<enum name="RiskTargetSetup" value="A" label="é£ŽæŽ§æŒ‡æ ‡è®¾ç½®"/>
+		<enum name="MarketDataWarn" value="B" label="è¡Œæƒ…é¢„è­¦"/>
+		<enum name="QryBizNotice" value="C" label="ä¸šåŠ¡é€šçŸ¥æŸ¥è¯¢"/>
+		<enum name="CfgBizNotice" value="D" label="ä¸šåŠ¡é€šçŸ¥æ¨¡æ¿è®¾ç½®"/>
+		<enum name="SyncOTP" value="E" label="åŒæ­¥åŠ¨æ€ä»¤ç‰Œ"/>
+		<enum name="SendBizNotice" value="F" label="å‘é€ä¸šåŠ¡é€šçŸ¥"/>
+		<enum name="CfgRiskLevelStd" value="G" label="é£Žé™©çº§åˆ«æ ‡å‡†è®¾ç½®"/>
 	</EnumChar>
-	<EnumChar typename="OrderActionStatus" label="±¨µ¥²Ù×÷×´Ì¬" prefix="OAS">
-		<enum name="Submitted" value="a" label="ÒÑ¾­Ìá½»"/>
-		<enum name="Accepted" value="b" label="ÒÑ¾­½ÓÊÜ"/>
-		<enum name="Rejected" value="c" label="ÒÑ¾­±»¾Ü¾ø"/>
+	<EnumChar typename="OrderActionStatus" label="æŠ¥å•æ“ä½œçŠ¶æ€" prefix="OAS">
+		<enum name="Submitted" value="a" label="å·²ç»æäº¤"/>
+		<enum name="Accepted" value="b" label="å·²ç»æŽ¥å—"/>
+		<enum name="Rejected" value="c" label="å·²ç»è¢«æ‹’ç»"/>
 	</EnumChar>
-	<EnumChar typename="OrderStatus" label="±¨µ¥×´Ì¬" prefix="OST">
-		<enum name="AllTraded" value="0" label="È«²¿³É½»"/>
-		<enum name="PartTradedQueueing" value="1" label="²¿·Ö³É½»»¹ÔÚ¶ÓÁÐÖÐ"/>
-		<enum name="PartTradedNotQueueing" value="2" label="²¿·Ö³É½»²»ÔÚ¶ÓÁÐÖÐ"/>
-		<enum name="NoTradeQueueing" value="3" label="Î´³É½»»¹ÔÚ¶ÓÁÐÖÐ"/>
-		<enum name="NoTradeNotQueueing" value="4" label="Î´³É½»²»ÔÚ¶ÓÁÐÖÐ"/>
-		<enum name="Canceled" value="5" label="³·µ¥"/>
-		<enum name="Unknown" value="a" label="Î´Öª"/>
-		<enum name="NotTouched" value="b" label="ÉÐÎ´´¥·¢"/>
-	    <enum name="Touched" value="c" label="ÒÑ´¥·¢"/>
+	<EnumChar typename="OrderStatus" label="æŠ¥å•çŠ¶æ€" prefix="OST">
+		<enum name="AllTraded" value="0" label="å…¨éƒ¨æˆäº¤"/>
+		<enum name="PartTradedQueueing" value="1" label="éƒ¨åˆ†æˆäº¤è¿˜åœ¨é˜Ÿåˆ—ä¸­"/>
+		<enum name="PartTradedNotQueueing" value="2" label="éƒ¨åˆ†æˆäº¤ä¸åœ¨é˜Ÿåˆ—ä¸­"/>
+		<enum name="NoTradeQueueing" value="3" label="æœªæˆäº¤è¿˜åœ¨é˜Ÿåˆ—ä¸­"/>
+		<enum name="NoTradeNotQueueing" value="4" label="æœªæˆäº¤ä¸åœ¨é˜Ÿåˆ—ä¸­"/>
+		<enum name="Canceled" value="5" label="æ’¤å•"/>
+		<enum name="Unknown" value="a" label="æœªçŸ¥"/>
+		<enum name="NotTouched" value="b" label="å°šæœªè§¦å‘"/>
+	    <enum name="Touched" value="c" label="å·²è§¦å‘"/>
 	</EnumChar>
-	<EnumChar typename="OrderSubmitStatus" label="±¨µ¥Ìá½»×´Ì¬" prefix="OSS">
-		<enum name="InsertSubmitted" value="0" label="ÒÑ¾­Ìá½»"/>
-		<enum name="CancelSubmitted" value="1" label="³·µ¥ÒÑ¾­Ìá½»"/>
-		<enum name="ModifySubmitted" value="2" label="ÐÞ¸ÄÒÑ¾­Ìá½»"/>
-		<enum name="Accepted" value="3" label="ÒÑ¾­½ÓÊÜ"/>
-		<enum name="InsertRejected" value="4" label="±¨µ¥ÒÑ¾­±»¾Ü¾ø"/>
-		<enum name="CancelRejected" value="5" label="³·µ¥ÒÑ¾­±»¾Ü¾ø"/>
-		<enum name="ModifyRejected" value="6" label="¸Äµ¥ÒÑ¾­±»¾Ü¾ø"/>
+	<EnumChar typename="OrderSubmitStatus" label="æŠ¥å•æäº¤çŠ¶æ€" prefix="OSS">
+		<enum name="InsertSubmitted" value="0" label="å·²ç»æäº¤"/>
+		<enum name="CancelSubmitted" value="1" label="æ’¤å•å·²ç»æäº¤"/>
+		<enum name="ModifySubmitted" value="2" label="ä¿®æ”¹å·²ç»æäº¤"/>
+		<enum name="Accepted" value="3" label="å·²ç»æŽ¥å—"/>
+		<enum name="InsertRejected" value="4" label="æŠ¥å•å·²ç»è¢«æ‹’ç»"/>
+		<enum name="CancelRejected" value="5" label="æ’¤å•å·²ç»è¢«æ‹’ç»"/>
+		<enum name="ModifyRejected" value="6" label="æ”¹å•å·²ç»è¢«æ‹’ç»"/>
 	</EnumChar>
-	<EnumChar typename="PositionDate" label="³Ö²ÖÈÕÆÚ" prefix="PSD">
-		<enum name="Today" value="1" label="½ñÈÕ³Ö²Ö"/>
-		<enum name="History" value="2" label="ÀúÊ·³Ö²Ö"/>
+	<EnumChar typename="PositionDate" label="æŒä»“æ—¥æœŸ" prefix="PSD">
+		<enum name="Today" value="1" label="ä»Šæ—¥æŒä»“"/>
+		<enum name="History" value="2" label="åŽ†å²æŒä»“"/>
 	</EnumChar>
-	<EnumChar typename="PositionDateType" label="³Ö²ÖÈÕÆÚÀàÐÍ" prefix="PDT">
-		<enum name="UseHistory" value="1" label="Ê¹ÓÃÀúÊ·³Ö²Ö"/>
-		<enum name="NoUseHistory" value="2" label="²»Ê¹ÓÃÀúÊ·³Ö²Ö"/>
+	<EnumChar typename="PositionDateType" label="æŒä»“æ—¥æœŸç±»åž‹" prefix="PDT">
+		<enum name="UseHistory" value="1" label="ä½¿ç”¨åŽ†å²æŒä»“"/>
+		<enum name="NoUseHistory" value="2" label="ä¸ä½¿ç”¨åŽ†å²æŒä»“"/>
 	</EnumChar>
-	<EnumChar typename="TradingRole" label="½»Ò×½ÇÉ«" prefix="ER">
-		<enum name="Institution" value="1" label="´úÀí"/>
-		<enum name="Host" value="2" label="×ÔÓª"/>
-		<enum name="Maker" value="3" label="×öÊÐÉÌ"/>
+	<EnumChar typename="TradingRole" label="äº¤æ˜“è§’è‰²" prefix="ER">
+		<enum name="Institution" value="1" label="ä»£ç†"/>
+		<enum name="Host" value="2" label="è‡ªè¥"/>
+		<enum name="Maker" value="3" label="åšå¸‚å•†"/>
 	</EnumChar>
-	<EnumChar typename="ProductClass" label="²úÆ·ÀàÐÍ" prefix="PC">
-		<enum name="Futures" value="1" label="ÆÚ»õ"/>
-		<enum name="Options" value="2" label="ÆÚÈ¨"/>
-		<enum name="Combination" value="3" label="×éºÏ"/>
-		<enum name="Spot" value="4" label="¼´ÆÚ"/>
-		<enum name="EFP" value="5" label="ÆÚ×ªÏÖ"/>
+	<EnumChar typename="ProductClass" label="äº§å“ç±»åž‹" prefix="PC">
+		<enum name="Futures" value="1" label="æœŸè´§"/>
+		<enum name="Options" value="2" label="æœŸæƒ"/>
+		<enum name="Combination" value="3" label="ç»„åˆ"/>
+		<enum name="Spot" value="4" label="å³æœŸ"/>
+		<enum name="EFP" value="5" label="æœŸè½¬çŽ°"/>
 	</EnumChar>
-	<EnumChar typename="InstLifePhase" label="ºÏÔ¼ÉúÃüÖÜÆÚ×´Ì¬" prefix="IP">
-		<enum name="NotStart" value="0" label="Î´ÉÏÊÐ"/>
-		<enum name="Started" value="1" label="ÉÏÊÐ"/>
-		<enum name="Pause" value="2" label="Í£ÅÆ"/>
-		<enum name="Expired" value="3" label="µ½ÆÚ"/>
+	<EnumChar typename="InstLifePhase" label="åˆçº¦ç”Ÿå‘½å‘¨æœŸçŠ¶æ€" prefix="IP">
+		<enum name="NotStart" value="0" label="æœªä¸Šå¸‚"/>
+		<enum name="Started" value="1" label="ä¸Šå¸‚"/>
+		<enum name="Pause" value="2" label="åœç‰Œ"/>
+		<enum name="Expired" value="3" label="åˆ°æœŸ"/>
 	</EnumChar>
-	<EnumChar typename="Direction" label="ÂòÂô·½Ïò" prefix="D">
-		<enum name="Buy" value="0" label="Âò"/>
-		<enum name="Sell" value="1" label="Âô"/>
+	<EnumChar typename="Direction" label="ä¹°å–æ–¹å‘" prefix="D">
+		<enum name="Buy" value="0" label="ä¹°"/>
+		<enum name="Sell" value="1" label="å–"/>
 	</EnumChar>
-	<EnumChar typename="PositionType" label="³Ö²ÖÀàÐÍ" prefix="PT">
-		<enum name="Net" value="1" label="¾»³Ö²Ö"/>
-		<enum name="Gross" value="2" label="×ÛºÏ³Ö²Ö"/>
+	<EnumChar typename="PositionType" label="æŒä»“ç±»åž‹" prefix="PT">
+		<enum name="Net" value="1" label="å‡€æŒä»“"/>
+		<enum name="Gross" value="2" label="ç»¼åˆæŒä»“"/>
 	</EnumChar>
-	<EnumChar typename="PosiDirection" label="³Ö²Ö¶à¿Õ·½Ïò" prefix="PD">
-		<enum name="Net" value="1" label="¾»"/>
-		<enum name="Long" value="2" label="¶àÍ·"/>
-		<enum name="Short" value="3" label="¿ÕÍ·"/>
+	<EnumChar typename="PosiDirection" label="æŒä»“å¤šç©ºæ–¹å‘" prefix="PD">
+		<enum name="Net" value="1" label="å‡€"/>
+		<enum name="Long" value="2" label="å¤šå¤´"/>
+		<enum name="Short" value="3" label="ç©ºå¤´"/>
 	</EnumChar>
-	<EnumChar typename="SysSettlementStatus" label="ÏµÍ³½áËã×´Ì¬" prefix="SS">
-		<enum name="NonActive" value="1" label="²»»îÔ¾"/>
-		<enum name="Startup" value="2" label="Æô¶¯"/>
-		<enum name="Operating" value="3" label="²Ù×÷"/>
-		<enum name="Settlement" value="4" label="½áËã"/>
-		<enum name="SettlementFinished" value="5" label="½áËãÍê³É"/>
+	<EnumChar typename="SysSettlementStatus" label="ç³»ç»Ÿç»“ç®—çŠ¶æ€" prefix="SS">
+		<enum name="NonActive" value="1" label="ä¸æ´»è·ƒ"/>
+		<enum name="Startup" value="2" label="å¯åŠ¨"/>
+		<enum name="Operating" value="3" label="æ“ä½œ"/>
+		<enum name="Settlement" value="4" label="ç»“ç®—"/>
+		<enum name="SettlementFinished" value="5" label="ç»“ç®—å®Œæˆ"/>
 	</EnumChar>
-	<EnumChar typename="RatioAttr" label="·ÑÂÊÊôÐÔ" prefix="RA">
-		<enum name="Trade" value="0" label="½»Ò×·ÑÂÊ"/>
-		<enum name="Settlement" value="1" label="½áËã·ÑÂÊ"/>
+	<EnumChar typename="RatioAttr" label="è´¹çŽ‡å±žæ€§" prefix="RA">
+		<enum name="Trade" value="0" label="äº¤æ˜“è´¹çŽ‡"/>
+		<enum name="Settlement" value="1" label="ç»“ç®—è´¹çŽ‡"/>
 	</EnumChar>
-	<EnumChar typename="HedgeFlag" label="Í¶»úÌ×±£±êÖ¾" prefix="HF">
-		<enum name="Speculation" value="1" label="Í¶»ú"/>
-		<enum name="Arbitrage" value="2" label="Ì×Àû"/>
-		<enum name="Hedge" value="3" label="Ì×±£"/>
+	<EnumChar typename="HedgeFlag" label="æŠ•æœºå¥—ä¿æ ‡å¿—" prefix="HF">
+		<enum name="Speculation" value="1" label="æŠ•æœº"/>
+		<enum name="Arbitrage" value="2" label="å¥—åˆ©"/>
+		<enum name="Hedge" value="3" label="å¥—ä¿"/>
 	</EnumChar>
-	<EnumChar typename="BillHedgeFlag" label="Í¶»úÌ×±£±êÖ¾" prefix="BHF">
-		<enum name="Speculation" value="1" label="Í¶»ú"/>
-		<enum name="Arbitrage" value="2" label="Ì×Àû"/>
-		<enum name="Hedge" value="3" label="Ì×±£"/>
+	<EnumChar typename="BillHedgeFlag" label="æŠ•æœºå¥—ä¿æ ‡å¿—" prefix="BHF">
+		<enum name="Speculation" value="1" label="æŠ•æœº"/>
+		<enum name="Arbitrage" value="2" label="å¥—åˆ©"/>
+		<enum name="Hedge" value="3" label="å¥—ä¿"/>
 	</EnumChar>
-	<EnumChar typename="ClientIDType" label="½»Ò×±àÂëÀàÐÍ" prefix="CIDT">
-		<enum name="Speculation" value="1" label="Í¶»ú"/>
-		<enum name="Arbitrage" value="2" label="Ì×Àû"/>
-		<enum name="Hedge" value="3" label="Ì×±£"/>
+	<EnumChar typename="ClientIDType" label="äº¤æ˜“ç¼–ç ç±»åž‹" prefix="CIDT">
+		<enum name="Speculation" value="1" label="æŠ•æœº"/>
+		<enum name="Arbitrage" value="2" label="å¥—åˆ©"/>
+		<enum name="Hedge" value="3" label="å¥—ä¿"/>
   </EnumChar>
-	<EnumChar typename="OrderPriceType" label="±¨µ¥¼Û¸ñÌõ¼þ" prefix="OPT">
-		<enum name="AnyPrice" value="1" label="ÈÎÒâ¼Û"/>
-		<enum name="LimitPrice" value="2" label="ÏÞ¼Û"/>
-		<enum name="BestPrice" value="3" label="×îÓÅ¼Û"/>
-		<enum name="LastPrice" value="4" label="×îÐÂ¼Û"/>
-		<enum name="LastPricePlusOneTicks" value="5" label="×îÐÂ¼Û¸¡¶¯ÉÏ¸¡1¸öticks"/>
-		<enum name="LastPricePlusTwoTicks" value="6" label="×îÐÂ¼Û¸¡¶¯ÉÏ¸¡2¸öticks"/>
-		<enum name="LastPricePlusThreeTicks" value="7" label="×îÐÂ¼Û¸¡¶¯ÉÏ¸¡3¸öticks"/>
-		<enum name="AskPrice1" value="8" label="ÂôÒ»¼Û"/>
-		<enum name="AskPrice1PlusOneTicks" value="9" label="ÂôÒ»¼Û¸¡¶¯ÉÏ¸¡1¸öticks"/>
-		<enum name="AskPrice1PlusTwoTicks" value="A" label="ÂôÒ»¼Û¸¡¶¯ÉÏ¸¡2¸öticks"/>
-		<enum name="AskPrice1PlusThreeTicks" value="B" label="ÂôÒ»¼Û¸¡¶¯ÉÏ¸¡3¸öticks"/>
-		<enum name="BidPrice1" value="C" label="ÂòÒ»¼Û"/>
-		<enum name="BidPrice1PlusOneTicks" value="D" label="ÂòÒ»¼Û¸¡¶¯ÉÏ¸¡1¸öticks"/>
-		<enum name="BidPrice1PlusTwoTicks" value="E" label="ÂòÒ»¼Û¸¡¶¯ÉÏ¸¡2¸öticks"/> 
-		<enum name="BidPrice1PlusThreeTicks" value="F" label="ÂòÒ»¼Û¸¡¶¯ÉÏ¸¡3¸öticks"/>
+	<EnumChar typename="OrderPriceType" label="æŠ¥å•ä»·æ ¼æ¡ä»¶" prefix="OPT">
+		<enum name="AnyPrice" value="1" label="ä»»æ„ä»·"/>
+		<enum name="LimitPrice" value="2" label="é™ä»·"/>
+		<enum name="BestPrice" value="3" label="æœ€ä¼˜ä»·"/>
+		<enum name="LastPrice" value="4" label="æœ€æ–°ä»·"/>
+		<enum name="LastPricePlusOneTicks" value="5" label="æœ€æ–°ä»·æµ®åŠ¨ä¸Šæµ®1ä¸ªticks"/>
+		<enum name="LastPricePlusTwoTicks" value="6" label="æœ€æ–°ä»·æµ®åŠ¨ä¸Šæµ®2ä¸ªticks"/>
+		<enum name="LastPricePlusThreeTicks" value="7" label="æœ€æ–°ä»·æµ®åŠ¨ä¸Šæµ®3ä¸ªticks"/>
+		<enum name="AskPrice1" value="8" label="å–ä¸€ä»·"/>
+		<enum name="AskPrice1PlusOneTicks" value="9" label="å–ä¸€ä»·æµ®åŠ¨ä¸Šæµ®1ä¸ªticks"/>
+		<enum name="AskPrice1PlusTwoTicks" value="A" label="å–ä¸€ä»·æµ®åŠ¨ä¸Šæµ®2ä¸ªticks"/>
+		<enum name="AskPrice1PlusThreeTicks" value="B" label="å–ä¸€ä»·æµ®åŠ¨ä¸Šæµ®3ä¸ªticks"/>
+		<enum name="BidPrice1" value="C" label="ä¹°ä¸€ä»·"/>
+		<enum name="BidPrice1PlusOneTicks" value="D" label="ä¹°ä¸€ä»·æµ®åŠ¨ä¸Šæµ®1ä¸ªticks"/>
+		<enum name="BidPrice1PlusTwoTicks" value="E" label="ä¹°ä¸€ä»·æµ®åŠ¨ä¸Šæµ®2ä¸ªticks"/> 
+		<enum name="BidPrice1PlusThreeTicks" value="F" label="ä¹°ä¸€ä»·æµ®åŠ¨ä¸Šæµ®3ä¸ªticks"/>
 	</EnumChar>
-	<EnumChar typename="OffsetFlag" label="¿ªÆ½±êÖ¾" prefix="OF">
-		<enum name="Open" value="0" label="¿ª²Ö"/>
-		<enum name="Close" value="1" label="Æ½²Ö"/>
-		<enum name="ForceClose" value="2" label="Ç¿Æ½"/>
-		<enum name="CloseToday" value="3" label="Æ½½ñ"/>
-		<enum name="CloseYesterday" value="4" label="Æ½×ò"/>
-		<enum name="ForceOff" value="5" label="Ç¿¼õ"/>
-		<enum name="LocalForceClose" value="6" label="±¾µØÇ¿Æ½"/>
+	<EnumChar typename="OffsetFlag" label="å¼€å¹³æ ‡å¿—" prefix="OF">
+		<enum name="Open" value="0" label="å¼€ä»“"/>
+		<enum name="Close" value="1" label="å¹³ä»“"/>
+		<enum name="ForceClose" value="2" label="å¼ºå¹³"/>
+		<enum name="CloseToday" value="3" label="å¹³ä»Š"/>
+		<enum name="CloseYesterday" value="4" label="å¹³æ˜¨"/>
+		<enum name="ForceOff" value="5" label="å¼ºå‡"/>
+		<enum name="LocalForceClose" value="6" label="æœ¬åœ°å¼ºå¹³"/>
 	</EnumChar>
-	<EnumChar typename="ForceCloseReason" label="Ç¿Æ½Ô­Òò" prefix="FCC">
-		<enum name="NotForceClose" value="0" label="·ÇÇ¿Æ½"/>
-		<enum name="LackDeposit" value="1" label="×Ê½ð²»×ã"/>
-		<enum name="ClientOverPositionLimit" value="2" label="¿Í»§³¬²Ö"/>
-		<enum name="MemberOverPositionLimit" value="3" label="»áÔ±³¬²Ö"/>
-		<enum name="NotMultiple" value="4" label="³Ö²Ö·ÇÕûÊý±¶"/>
-		<enum name="Violation" value="5" label="Î¥¹æ"/>
-		<enum name="Other" value="6" label="ÆäËü"/>
-		<enum name="PersonDeliv" value="7" label="×ÔÈ»ÈËÁÙ½ü½»¸î"/>
+	<EnumChar typename="ForceCloseReason" label="å¼ºå¹³åŽŸå› " prefix="FCC">
+		<enum name="NotForceClose" value="0" label="éžå¼ºå¹³"/>
+		<enum name="LackDeposit" value="1" label="èµ„é‡‘ä¸è¶³"/>
+		<enum name="ClientOverPositionLimit" value="2" label="å®¢æˆ·è¶…ä»“"/>
+		<enum name="MemberOverPositionLimit" value="3" label="ä¼šå‘˜è¶…ä»“"/>
+		<enum name="NotMultiple" value="4" label="æŒä»“éžæ•´æ•°å€"/>
+		<enum name="Violation" value="5" label="è¿è§„"/>
+		<enum name="Other" value="6" label="å…¶å®ƒ"/>
+		<enum name="PersonDeliv" value="7" label="è‡ªç„¶äººä¸´è¿‘äº¤å‰²"/>
 	</EnumChar>
-	<EnumChar typename="OrderType" label="±¨µ¥ÀàÐÍ" prefix="ORDT">
-		<enum name="Normal" value="0" label="Õý³£"/>
-		<enum name="DeriveFromQuote" value="1" label="±¨¼ÛÑÜÉú"/>
-		<enum name="DeriveFromCombination" value="2" label="×éºÏÑÜÉú"/>
-		<enum name="Combination" value="3" label="×éºÏ±¨µ¥"/>
-		<enum name="ConditionalOrder" value="4" label="Ìõ¼þµ¥"/>
-		<enum name="Swap" value="5" label="»¥»»µ¥"/>
+	<EnumChar typename="OrderType" label="æŠ¥å•ç±»åž‹" prefix="ORDT">
+		<enum name="Normal" value="0" label="æ­£å¸¸"/>
+		<enum name="DeriveFromQuote" value="1" label="æŠ¥ä»·è¡ç”Ÿ"/>
+		<enum name="DeriveFromCombination" value="2" label="ç»„åˆè¡ç”Ÿ"/>
+		<enum name="Combination" value="3" label="ç»„åˆæŠ¥å•"/>
+		<enum name="ConditionalOrder" value="4" label="æ¡ä»¶å•"/>
+		<enum name="Swap" value="5" label="äº’æ¢å•"/>
 	</EnumChar>
-	<EnumChar typename="TimeCondition" label="ÓÐÐ§ÆÚÀàÐÍ" prefix="TC">
-		<enum name="IOC" value="1" label="Á¢¼´Íê³É£¬·ñÔò³·Ïú"/>
-		<enum name="GFS" value="2" label="±¾½ÚÓÐÐ§"/>
-		<enum name="GFD" value="3" label="µ±ÈÕÓÐÐ§"/>
-		<enum name="GTD" value="4" label="Ö¸¶¨ÈÕÆÚÇ°ÓÐÐ§"/>
-		<enum name="GTC" value="5" label="³·ÏúÇ°ÓÐÐ§"/>
-		<enum name="GFA" value="6" label="¼¯ºÏ¾º¼ÛÓÐÐ§"/>
+	<EnumChar typename="TimeCondition" label="æœ‰æ•ˆæœŸç±»åž‹" prefix="TC">
+		<enum name="IOC" value="1" label="ç«‹å³å®Œæˆï¼Œå¦åˆ™æ’¤é”€"/>
+		<enum name="GFS" value="2" label="æœ¬èŠ‚æœ‰æ•ˆ"/>
+		<enum name="GFD" value="3" label="å½“æ—¥æœ‰æ•ˆ"/>
+		<enum name="GTD" value="4" label="æŒ‡å®šæ—¥æœŸå‰æœ‰æ•ˆ"/>
+		<enum name="GTC" value="5" label="æ’¤é”€å‰æœ‰æ•ˆ"/>
+		<enum name="GFA" value="6" label="é›†åˆç«žä»·æœ‰æ•ˆ"/>
 	</EnumChar>
-	<EnumChar typename="VolumeCondition" label="³É½»Á¿ÀàÐÍ" prefix="VC">
-		<enum name="AV" value="1" label="ÈÎºÎÊýÁ¿"/>
-		<enum name="MV" value="2" label="×îÐ¡ÊýÁ¿"/>
-		<enum name="CV" value="3" label="È«²¿ÊýÁ¿"/>
+	<EnumChar typename="VolumeCondition" label="æˆäº¤é‡ç±»åž‹" prefix="VC">
+		<enum name="AV" value="1" label="ä»»ä½•æ•°é‡"/>
+		<enum name="MV" value="2" label="æœ€å°æ•°é‡"/>
+		<enum name="CV" value="3" label="å…¨éƒ¨æ•°é‡"/>
 	</EnumChar>
-	<EnumChar typename="ContingentCondition" label="´¥·¢Ìõ¼þ" prefix="CC">
-		<enum name="Immediately" value="1" label="Á¢¼´"/>
-		<enum name="Touch" value="2" label="Ö¹Ëð"/>
-		<enum name="TouchProfit" value="3" label="Ö¹Ó®"/>
-		<enum name="ParkedOrder" value="4" label="Ô¤Âñµ¥"/>
-		<enum name="LastPriceGreaterThanStopPrice" value="5" label="×îÐÂ¼Û´óÓÚÌõ¼þ¼Û"/>
-		<enum name="LastPriceGreaterEqualStopPrice" value="6" label="×îÐÂ¼Û´óÓÚµÈÓÚÌõ¼þ¼Û"/>
-		<enum name="LastPriceLesserThanStopPrice" value="7" label="×îÐÂ¼ÛÐ¡ÓÚÌõ¼þ¼Û"/>
-		<enum name="LastPriceLesserEqualStopPrice" value="8" label="×îÐÂ¼ÛÐ¡ÓÚµÈÓÚÌõ¼þ¼Û"/>
-		<enum name="AskPriceGreaterThanStopPrice" value="9" label="ÂôÒ»¼Û´óÓÚÌõ¼þ¼Û"/>
-		<enum name="AskPriceGreaterEqualStopPrice" value="A" label="ÂôÒ»¼Û´óÓÚµÈÓÚÌõ¼þ¼Û"/>
-		<enum name="AskPriceLesserThanStopPrice" value="B" label="ÂôÒ»¼ÛÐ¡ÓÚÌõ¼þ¼Û"/>
-		<enum name="AskPriceLesserEqualStopPrice" value="C" label="ÂôÒ»¼ÛÐ¡ÓÚµÈÓÚÌõ¼þ¼Û"/>
-		<enum name="BidPriceGreaterThanStopPrice" value="D" label="ÂòÒ»¼Û´óÓÚÌõ¼þ¼Û"/>
-		<enum name="BidPriceGreaterEqualStopPrice" value="E" label="ÂòÒ»¼Û´óÓÚµÈÓÚÌõ¼þ¼Û"/>
-		<enum name="BidPriceLesserThanStopPrice" value="F" label="ÂòÒ»¼ÛÐ¡ÓÚÌõ¼þ¼Û"/>
-		<enum name="BidPriceLesserEqualStopPrice" value="H" label="ÂòÒ»¼ÛÐ¡ÓÚµÈÓÚÌõ¼þ¼Û"/>
+	<EnumChar typename="ContingentCondition" label="è§¦å‘æ¡ä»¶" prefix="CC">
+		<enum name="Immediately" value="1" label="ç«‹å³"/>
+		<enum name="Touch" value="2" label="æ­¢æŸ"/>
+		<enum name="TouchProfit" value="3" label="æ­¢èµ¢"/>
+		<enum name="ParkedOrder" value="4" label="é¢„åŸ‹å•"/>
+		<enum name="LastPriceGreaterThanStopPrice" value="5" label="æœ€æ–°ä»·å¤§äºŽæ¡ä»¶ä»·"/>
+		<enum name="LastPriceGreaterEqualStopPrice" value="6" label="æœ€æ–°ä»·å¤§äºŽç­‰äºŽæ¡ä»¶ä»·"/>
+		<enum name="LastPriceLesserThanStopPrice" value="7" label="æœ€æ–°ä»·å°äºŽæ¡ä»¶ä»·"/>
+		<enum name="LastPriceLesserEqualStopPrice" value="8" label="æœ€æ–°ä»·å°äºŽç­‰äºŽæ¡ä»¶ä»·"/>
+		<enum name="AskPriceGreaterThanStopPrice" value="9" label="å–ä¸€ä»·å¤§äºŽæ¡ä»¶ä»·"/>
+		<enum name="AskPriceGreaterEqualStopPrice" value="A" label="å–ä¸€ä»·å¤§äºŽç­‰äºŽæ¡ä»¶ä»·"/>
+		<enum name="AskPriceLesserThanStopPrice" value="B" label="å–ä¸€ä»·å°äºŽæ¡ä»¶ä»·"/>
+		<enum name="AskPriceLesserEqualStopPrice" value="C" label="å–ä¸€ä»·å°äºŽç­‰äºŽæ¡ä»¶ä»·"/>
+		<enum name="BidPriceGreaterThanStopPrice" value="D" label="ä¹°ä¸€ä»·å¤§äºŽæ¡ä»¶ä»·"/>
+		<enum name="BidPriceGreaterEqualStopPrice" value="E" label="ä¹°ä¸€ä»·å¤§äºŽç­‰äºŽæ¡ä»¶ä»·"/>
+		<enum name="BidPriceLesserThanStopPrice" value="F" label="ä¹°ä¸€ä»·å°äºŽæ¡ä»¶ä»·"/>
+		<enum name="BidPriceLesserEqualStopPrice" value="H" label="ä¹°ä¸€ä»·å°äºŽç­‰äºŽæ¡ä»¶ä»·"/>
 	</EnumChar>
-	<EnumChar typename="ActionFlag" label="²Ù×÷±êÖ¾" prefix="AF">
-		<enum name="Delete" value="0" label="É¾³ý"/>
-		<enum name="Modify" value="3" label="ÐÞ¸Ä"/>
+	<EnumChar typename="ActionFlag" label="æ“ä½œæ ‡å¿—" prefix="AF">
+		<enum name="Delete" value="0" label="åˆ é™¤"/>
+		<enum name="Modify" value="3" label="ä¿®æ”¹"/>
 	</EnumChar>
-	<EnumChar typename="TradingRight" label="½»Ò×È¨ÏÞ" prefix="TR">
-		<enum name="Allow" value="0" label="¿ÉÒÔ½»Ò×"/>
-		<enum name="CloseOnly" value="1" label="Ö»ÄÜÆ½²Ö"/>
-		<enum name="Forbidden" value="2" label="²»ÄÜ½»Ò×"/>
+	<EnumChar typename="TradingRight" label="äº¤æ˜“æƒé™" prefix="TR">
+		<enum name="Allow" value="0" label="å¯ä»¥äº¤æ˜“"/>
+		<enum name="CloseOnly" value="1" label="åªèƒ½å¹³ä»“"/>
+		<enum name="Forbidden" value="2" label="ä¸èƒ½äº¤æ˜“"/>
 	</EnumChar>
-	<EnumChar typename="OrderSource" label="±¨µ¥À´Ô´" prefix="OSRC">
-		<enum name="Participant" value="0" label="À´×Ô²ÎÓëÕß"/>
-		<enum name="Administrator" value="1" label="À´×Ô¹ÜÀíÔ±"/>
+	<EnumChar typename="OrderSource" label="æŠ¥å•æ¥æº" prefix="OSRC">
+		<enum name="Participant" value="0" label="æ¥è‡ªå‚ä¸Žè€…"/>
+		<enum name="Administrator" value="1" label="æ¥è‡ªç®¡ç†å‘˜"/>
 	</EnumChar>
-	<EnumChar typename="TradeType" label="³É½»ÀàÐÍ" prefix="TRDT">
-		<enum name="Common" value="0" label="ÆÕÍ¨³É½»"/>
-		<enum name="OptionsExecution" value="1" label="ÆÚÈ¨Ö´ÐÐ"/>
-		<enum name="OTC" value="2" label="OTC³É½»"/>
-		<enum name="EFPDerived" value="3" label="ÆÚ×ªÏÖÑÜÉú³É½»"/>
-		<enum name="CombinationDerived" value="4" label="×éºÏÑÜÉú³É½»"/>
+	<EnumChar typename="TradeType" label="æˆäº¤ç±»åž‹" prefix="TRDT">
+		<enum name="Common" value="0" label="æ™®é€šæˆäº¤"/>
+		<enum name="OptionsExecution" value="1" label="æœŸæƒæ‰§è¡Œ"/>
+		<enum name="OTC" value="2" label="OTCæˆäº¤"/>
+		<enum name="EFPDerived" value="3" label="æœŸè½¬çŽ°è¡ç”Ÿæˆäº¤"/>
+		<enum name="CombinationDerived" value="4" label="ç»„åˆè¡ç”Ÿæˆäº¤"/>
 	</EnumChar>
-	<EnumChar typename="PriceSource" label="³É½»¼ÛÀ´Ô´" prefix="PSRC">
-		<enum name="LastPrice" value="0" label="Ç°³É½»¼Û"/>
-		<enum name="Buy" value="1" label="ÂòÎ¯ÍÐ¼Û"/>
-		<enum name="Sell" value="2" label="ÂôÎ¯ÍÐ¼Û"/>
+	<EnumChar typename="PriceSource" label="æˆäº¤ä»·æ¥æº" prefix="PSRC">
+		<enum name="LastPrice" value="0" label="å‰æˆäº¤ä»·"/>
+		<enum name="Buy" value="1" label="ä¹°å§”æ‰˜ä»·"/>
+		<enum name="Sell" value="2" label="å–å§”æ‰˜ä»·"/>
 	</EnumChar>
-	<EnumChar typename="InstrumentStatus" label="ºÏÔ¼½»Ò××´Ì¬" prefix="IS">
-		<enum name="BeforeTrading" value="0" label="¿ªÅÌÇ°"/>
-		<enum name="NoTrading" value="1" label="·Ç½»Ò×"/>
-		<enum name="Continous" value="2" label="Á¬Ðø½»Ò×"/>
-		<enum name="AuctionOrdering" value="3" label="¼¯ºÏ¾º¼Û±¨µ¥"/>
-		<enum name="AuctionBalance" value="4" label="¼¯ºÏ¾º¼Û¼Û¸ñÆ½ºâ"/>
-		<enum name="AuctionMatch" value="5" label="¼¯ºÏ¾º¼Û´éºÏ"/>
-		<enum name="Closed" value="6" label="ÊÕÅÌ"/>
+	<EnumChar typename="InstrumentStatus" label="åˆçº¦äº¤æ˜“çŠ¶æ€" prefix="IS">
+		<enum name="BeforeTrading" value="0" label="å¼€ç›˜å‰"/>
+		<enum name="NoTrading" value="1" label="éžäº¤æ˜“"/>
+		<enum name="Continous" value="2" label="è¿žç»­äº¤æ˜“"/>
+		<enum name="AuctionOrdering" value="3" label="é›†åˆç«žä»·æŠ¥å•"/>
+		<enum name="AuctionBalance" value="4" label="é›†åˆç«žä»·ä»·æ ¼å¹³è¡¡"/>
+		<enum name="AuctionMatch" value="5" label="é›†åˆç«žä»·æ’®åˆ"/>
+		<enum name="Closed" value="6" label="æ”¶ç›˜"/>
 	</EnumChar>
-	<EnumChar typename="InstStatusEnterReason" label="Æ·ÖÖ½øÈë½»Ò××´Ì¬Ô­Òò" prefix="IER">
-		<enum name="Automatic" value="1" label="×Ô¶¯ÇÐ»»"/>
-		<enum name="Manual" value="2" label="ÊÖ¶¯ÇÐ»»"/>
-		<enum name="Fuse" value="3" label="ÈÛ¶Ï"/>
+	<EnumChar typename="InstStatusEnterReason" label="å“ç§è¿›å…¥äº¤æ˜“çŠ¶æ€åŽŸå› " prefix="IER">
+		<enum name="Automatic" value="1" label="è‡ªåŠ¨åˆ‡æ¢"/>
+		<enum name="Manual" value="2" label="æ‰‹åŠ¨åˆ‡æ¢"/>
+		<enum name="Fuse" value="3" label="ç†”æ–­"/>
 	</EnumChar>
-	<Int typename="OrderActionRef" label="±¨µ¥²Ù×÷ÒýÓÃ" length="8"/>
-	<Int typename="InstallCount" label="°²×°ÊýÁ¿" length="2"/>
-	<Int typename="InstallID" label="°²×°±àºÅ" length="2"/>
-	<Int typename="ErrorID" label="´íÎó´úÂë" length="8"/>
-	<Int typename="SettlementID" label="½áËã±àºÅ" length="3"/>
-	<Int typename="Volume" label="ÊýÁ¿" length="10"/>
-	<Int typename="FrontID" label="Ç°ÖÃ±àºÅ" length="6"/>
-	<Int typename="SessionID" label="»á»°±àºÅ" length="10"/>
-	<Int typename="SequenceNo" label="ÐòºÅ" length="8"/>
-	<Int typename="CommandNo" label="DBÃüÁîÐòºÅ" length="8"/>
-	<Int typename="Millisec" label="Ê±¼ä£¨ºÁÃë£©" length="3"/>
-	<Int typename="VolumeMultiple" label="ºÏÔ¼ÊýÁ¿³ËÊý" length="5"/>
-	<Int typename="TradingSegmentSN" label="½»Ò×½×¶Î±àºÅ" length="2"/>
-	<Int typename="RequestID" label="ÇëÇó±àºÅ" length="10"/>
-	<RangeInt typename="Year" length="4" from="1900" to="2100" label="Äê·Ý"/>
-	<RangeInt typename="Month" length="2" from="1" to="12" label="ÔÂ·Ý"/>
-	<RangeInt typename="Bool" length="1" from="0" to="1" label="²¼¶ûÐÍ"/>
-	<FixNumber typename="Price" length="12" precision="3" label="¼Û¸ñ"/>
-	<Array typename="CombOffsetFlag" length="4" element="OffsetFlag" label="×éºÏ¿ªÆ½±êÖ¾"/>
-	<Array typename="CombHedgeFlag" length="4" element="HedgeFlag" label="×éºÏÍ¶»úÌ×±£±êÖ¾"/>
-	<Float typename="Ratio" length="19" precision="8" label="±ÈÂÊ"/>
-	<Float typename="Money" length="19" precision="6" label="×Ê½ð"/>
-	<Float typename="LargeVolume" length="19" precision="3" label="´ó¶îÊýÁ¿"/>
-	<Word typename="SequenceSeries" label="ÐòÁÐÏµÁÐºÅ"/>
-	<Word typename="CommPhaseNo" label="Í¨Ñ¶Ê±¶Î±àºÅ"/>
-	<String typename="SequenceLabel" label="ÐòÁÐ±àºÅ" length="1"/>
+	<Int typename="OrderActionRef" label="æŠ¥å•æ“ä½œå¼•ç”¨" length="8"/>
+	<Int typename="InstallCount" label="å®‰è£…æ•°é‡" length="2"/>
+	<Int typename="InstallID" label="å®‰è£…ç¼–å·" length="2"/>
+	<Int typename="ErrorID" label="é”™è¯¯ä»£ç " length="8"/>
+	<Int typename="SettlementID" label="ç»“ç®—ç¼–å·" length="3"/>
+	<Int typename="Volume" label="æ•°é‡" length="10"/>
+	<Int typename="FrontID" label="å‰ç½®ç¼–å·" length="6"/>
+	<Int typename="SessionID" label="ä¼šè¯ç¼–å·" length="10"/>
+	<Int typename="SequenceNo" label="åºå·" length="8"/>
+	<Int typename="CommandNo" label="DBå‘½ä»¤åºå·" length="8"/>
+	<Int typename="Millisec" label="æ—¶é—´ï¼ˆæ¯«ç§’ï¼‰" length="3"/>
+	<Int typename="VolumeMultiple" label="åˆçº¦æ•°é‡ä¹˜æ•°" length="5"/>
+	<Int typename="TradingSegmentSN" label="äº¤æ˜“é˜¶æ®µç¼–å·" length="2"/>
+	<Int typename="RequestID" label="è¯·æ±‚ç¼–å·" length="10"/>
+	<RangeInt typename="Year" length="4" from="1900" to="2100" label="å¹´ä»½"/>
+	<RangeInt typename="Month" length="2" from="1" to="12" label="æœˆä»½"/>
+	<RangeInt typename="Bool" length="1" from="0" to="1" label="å¸ƒå°”åž‹"/>
+	<FixNumber typename="Price" length="12" precision="3" label="ä»·æ ¼"/>
+	<Array typename="CombOffsetFlag" length="4" element="OffsetFlag" label="ç»„åˆå¼€å¹³æ ‡å¿—"/>
+	<Array typename="CombHedgeFlag" length="4" element="HedgeFlag" label="ç»„åˆæŠ•æœºå¥—ä¿æ ‡å¿—"/>
+	<Float typename="Ratio" length="19" precision="8" label="æ¯”çŽ‡"/>
+	<Float typename="Money" length="19" precision="6" label="èµ„é‡‘"/>
+	<Float typename="LargeVolume" length="19" precision="3" label="å¤§é¢æ•°é‡"/>
+	<Word typename="SequenceSeries" label="åºåˆ—ç³»åˆ—å·"/>
+	<Word typename="CommPhaseNo" label="é€šè®¯æ—¶æ®µç¼–å·"/>
+	<String typename="SequenceLabel" label="åºåˆ—ç¼–å·" length="1"/>
 	<!-- add by zhangjh begin -->
-	<Int typename="Priority" label="ÓÅÏÈ¼¶" length="2"/>
+	<Int typename="Priority" label="ä¼˜å…ˆçº§" length="2"/>
 	<!-- end -->
 	<!-- add by zhangdl begin -->
-	<String typename="ContractCode" length="40" label="ºÏÍ¬±àºÅ"/>
-	<String typename="City" length="40" label="ÊÐ"/>
-	<String typename="IsStock" length="10" label="ÊÇ·ñ¹ÉÃñ"/>
-	<String typename="Channel" length="50" label="ÇþµÀ"/>
-	<String typename="Address" length="100" label="Í¨Ñ¶µØÖ·"/>
-	<String typename="ZipCode" length="6" label="ÓÊÕþ±àÂë"/>
-	<String typename="Telephone" length="40" label="ÁªÏµµç»°"/>
-	<String typename="Fax" length="40" label="´«Õæ"/>
-	<String typename="Mobile" length="40" label="ÊÖ»ú"/>
-	<String typename="EMail" length="40" label="µç×ÓÓÊ¼þ"/>
-	<String typename="Memo" length="160" label="±¸×¢"/>
-	<String typename="CompanyCode" label="ÆóÒµ´úÂë" length="50"/>
-	<VString typename="Website" label="ÍøÕ¾µØÖ·" length="50"/>
-	<VString typename="TaxNo" label="Ë°ÎñµÇ¼ÇºÅ" length="30"/>
-	<EnumChar typename="BatchStatus" label="´¦Àí×´Ì¬" prefix="BS">
-		<enum name="NoUpload" value="1" label="Î´ÉÏ´«"/>
-		<enum name="Uploaded" value="2" label="ÒÑÉÏ´«"/>
-		<enum name="Failed" value="3" label="ÉóºËÊ§°Ü"/>
+	<String typename="ContractCode" length="40" label="åˆåŒç¼–å·"/>
+	<String typename="City" length="40" label="å¸‚"/>
+	<String typename="IsStock" length="10" label="æ˜¯å¦è‚¡æ°‘"/>
+	<String typename="Channel" length="50" label="æ¸ é“"/>
+	<String typename="Address" length="100" label="é€šè®¯åœ°å€"/>
+	<String typename="ZipCode" length="6" label="é‚®æ”¿ç¼–ç "/>
+	<String typename="Telephone" length="40" label="è”ç³»ç”µè¯"/>
+	<String typename="Fax" length="40" label="ä¼ çœŸ"/>
+	<String typename="Mobile" length="40" label="æ‰‹æœº"/>
+	<String typename="EMail" length="40" label="ç”µå­é‚®ä»¶"/>
+	<String typename="Memo" length="160" label="å¤‡æ³¨"/>
+	<String typename="CompanyCode" label="ä¼ä¸šä»£ç " length="50"/>
+	<VString typename="Website" label="ç½‘ç«™åœ°å€" length="50"/>
+	<VString typename="TaxNo" label="ç¨ŽåŠ¡ç™»è®°å·" length="30"/>
+	<EnumChar typename="BatchStatus" label="å¤„ç†çŠ¶æ€" prefix="BS">
+		<enum name="NoUpload" value="1" label="æœªä¸Šä¼ "/>
+		<enum name="Uploaded" value="2" label="å·²ä¸Šä¼ "/>
+		<enum name="Failed" value="3" label="å®¡æ ¸å¤±è´¥"/>
 	</EnumChar>
-	<String typename="PropertyID" length="32" label="ÊôÐÔ´úÂë"/>
-	<String typename="PropertyName" length="64" label="ÊôÐÔÃû³Æ"/>
-	<String typename="LicenseNo" length="50" label="ÓªÒµÖ´ÕÕºÅ"/>
-	<String typename="AgentID" length="12" label="¾­¼ÍÈË´úÂë"/>
-	<String typename="AgentName" length="40" label="¾­¼ÍÈËÃû³Æ"/>
-	<String typename="AgentGroupID" length="12" label="¾­¼ÍÈË×é´úÂë"/>
-	<String typename="AgentGroupName" length="40" label="¾­¼ÍÈË×éÃû³Æ"/>
-	<EnumChar typename="ReturnStyle" label="°´Æ·ÖÖ·µ»¹·½Ê½" prefix="RS">
-		<enum name="All" value="1" label="°´ËùÓÐÆ·ÖÖ"/>
-		<enum name="ByProduct" value="2" label="°´Æ·ÖÖ"/>
+	<String typename="PropertyID" length="32" label="å±žæ€§ä»£ç "/>
+	<String typename="PropertyName" length="64" label="å±žæ€§åç§°"/>
+	<String typename="LicenseNo" length="50" label="è¥ä¸šæ‰§ç…§å·"/>
+	<String typename="AgentID" length="12" label="ç»çºªäººä»£ç "/>
+	<String typename="AgentName" length="40" label="ç»çºªäººåç§°"/>
+	<String typename="AgentGroupID" length="12" label="ç»çºªäººç»„ä»£ç "/>
+	<String typename="AgentGroupName" length="40" label="ç»çºªäººç»„åç§°"/>
+	<EnumChar typename="ReturnStyle" label="æŒ‰å“ç§è¿”è¿˜æ–¹å¼" prefix="RS">
+		<enum name="All" value="1" label="æŒ‰æ‰€æœ‰å“ç§"/>
+		<enum name="ByProduct" value="2" label="æŒ‰å“ç§"/>
 	</EnumChar>
-	<EnumChar typename="ReturnPattern" label="·µ»¹Ä£Ê½" prefix="RP">
-		<enum name="ByVolume" value="1" label="°´³É½»ÊÖÊý"/>
-		<enum name="ByFeeOnHand" value="2" label="°´Áô´æÊÖÐø·Ñ"/>
+	<EnumChar typename="ReturnPattern" label="è¿”è¿˜æ¨¡å¼" prefix="RP">
+		<enum name="ByVolume" value="1" label="æŒ‰æˆäº¤æ‰‹æ•°"/>
+		<enum name="ByFeeOnHand" value="2" label="æŒ‰ç•™å­˜æ‰‹ç»­è´¹"/>
 	</EnumChar>
-	<EnumChar typename="ReturnLevel" label="·µ»¹¼¶±ð" prefix="RL">
-		<enum name="Level1" value="1" label="¼¶±ð1"/>
-		<enum name="Level2" value="2" label="¼¶±ð2"/>
-		<enum name="Level3" value="3" label="¼¶±ð3"/>
-		<enum name="Level4" value="4" label="¼¶±ð4"/>
-		<enum name="Level5" value="5" label="¼¶±ð5"/>
-		<enum name="Level6" value="6" label="¼¶±ð6"/>
-		<enum name="Level7" value="7" label="¼¶±ð7"/>
-		<enum name="Level8" value="8" label="¼¶±ð8"/>
-		<enum name="Level9" value="9" label="¼¶±ð9"/>
+	<EnumChar typename="ReturnLevel" label="è¿”è¿˜çº§åˆ«" prefix="RL">
+		<enum name="Level1" value="1" label="çº§åˆ«1"/>
+		<enum name="Level2" value="2" label="çº§åˆ«2"/>
+		<enum name="Level3" value="3" label="çº§åˆ«3"/>
+		<enum name="Level4" value="4" label="çº§åˆ«4"/>
+		<enum name="Level5" value="5" label="çº§åˆ«5"/>
+		<enum name="Level6" value="6" label="çº§åˆ«6"/>
+		<enum name="Level7" value="7" label="çº§åˆ«7"/>
+		<enum name="Level8" value="8" label="çº§åˆ«8"/>
+		<enum name="Level9" value="9" label="çº§åˆ«9"/>
 	</EnumChar>
-	<EnumChar typename="ReturnStandard" label="·µ»¹±ê×¼" prefix="RSD">
-		<enum name="ByPeriod" value="1" label="·Ö½×¶Î·µ»¹"/>
-		<enum name="ByStandard" value="2" label="°´Ä³Ò»±ê×¼"/>
+	<EnumChar typename="ReturnStandard" label="è¿”è¿˜æ ‡å‡†" prefix="RSD">
+		<enum name="ByPeriod" value="1" label="åˆ†é˜¶æ®µè¿”è¿˜"/>
+		<enum name="ByStandard" value="2" label="æŒ‰æŸä¸€æ ‡å‡†"/>
 	</EnumChar>
-	<EnumChar typename="MortgageType" label="ÖÊÑºÀàÐÍ" prefix="MT">
-		<enum name="Out" value="0" label="ÖÊ³ö"/>
-		<enum name="In" value="1" label="ÖÊÈë"/>
+	<EnumChar typename="MortgageType" label="è´¨æŠ¼ç±»åž‹" prefix="MT">
+		<enum name="Out" value="0" label="è´¨å‡º"/>
+		<enum name="In" value="1" label="è´¨å…¥"/>
 	</EnumChar>
-	<EnumChar typename="InvestorSettlementParamID" label="Í¶×ÊÕß½áËã²ÎÊý´úÂë" prefix="ISPI">
-		<enum name="BaseMargin" value="1" label="»ù´¡±£Ö¤½ð"/>
-		<enum name="LowestInterest" value="2" label="×îµÍÈ¨Òæ±ê×¼"/>
-		<!--<enum name="RiskRateWay" value="3" label="·çÏÕËã·¨"/>-->
-		<enum name="MortgageRatio" value="4" label="ÖÊÑº±ÈÀý"/>
-		<enum name="MarginWay" value="5" label="±£Ö¤½ðËã·¨"/>
-		<enum name="BillDeposit" value="9" label="½áËãµ¥(¶¢ÊÐ)È¨ÒæµÈÓÚ½á´æ"/>
+	<EnumChar typename="InvestorSettlementParamID" label="æŠ•èµ„è€…ç»“ç®—å‚æ•°ä»£ç " prefix="ISPI">
+		<enum name="BaseMargin" value="1" label="åŸºç¡€ä¿è¯é‡‘"/>
+		<enum name="LowestInterest" value="2" label="æœ€ä½Žæƒç›Šæ ‡å‡†"/>
+		<!--<enum name="RiskRateWay" value="3" label="é£Žé™©ç®—æ³•"/>-->
+		<enum name="MortgageRatio" value="4" label="è´¨æŠ¼æ¯”ä¾‹"/>
+		<enum name="MarginWay" value="5" label="ä¿è¯é‡‘ç®—æ³•"/>
+		<enum name="BillDeposit" value="9" label="ç»“ç®—å•(ç›¯å¸‚)æƒç›Šç­‰äºŽç»“å­˜"/>
 	</EnumChar>
-	<EnumChar typename="ExchangeSettlementParamID" label="½»Ò×Ëù½áËã²ÎÊý´úÂë" prefix="ESPI">
-		<enum name="MortgageRatio" value="1" label="ÖÊÑº±ÈÀý"/>
-		<enum name="OtherFundItem" value="2" label="·ÖÏî×Ê½ðµ¼ÈëÏî"/>
-		<enum name="OtherFundImport" value="3" label="·ÖÏî×Ê½ðÈë½»Ò×Ëù³öÈë½ð"/>
-		<enum name="SHFEDelivFee" value="4" label="ÉÏÆÚËù½»¸îÊÖÐø·ÑÊÕÈ¡·½Ê½"/>
-		<enum name="DCEDelivFee" value="5" label="´óÉÌËù½»¸îÊÖÐø·ÑÊÕÈ¡·½Ê½"/>
-		<enum name="CFFEXMinPrepa" value="6" label="ÖÐ½ðËù¿ª»§×îµÍ¿ÉÓÃ½ð¶î"/>
+	<EnumChar typename="ExchangeSettlementParamID" label="äº¤æ˜“æ‰€ç»“ç®—å‚æ•°ä»£ç " prefix="ESPI">
+		<enum name="MortgageRatio" value="1" label="è´¨æŠ¼æ¯”ä¾‹"/>
+		<enum name="OtherFundItem" value="2" label="åˆ†é¡¹èµ„é‡‘å¯¼å…¥é¡¹"/>
+		<enum name="OtherFundImport" value="3" label="åˆ†é¡¹èµ„é‡‘å…¥äº¤æ˜“æ‰€å‡ºå…¥é‡‘"/>
+		<enum name="SHFEDelivFee" value="4" label="ä¸ŠæœŸæ‰€äº¤å‰²æ‰‹ç»­è´¹æ”¶å–æ–¹å¼"/>
+		<enum name="DCEDelivFee" value="5" label="å¤§å•†æ‰€äº¤å‰²æ‰‹ç»­è´¹æ”¶å–æ–¹å¼"/>
+		<enum name="CFFEXMinPrepa" value="6" label="ä¸­é‡‘æ‰€å¼€æˆ·æœ€ä½Žå¯ç”¨é‡‘é¢"/>
 	</EnumChar>
-	<EnumChar typename="SystemParamID" label="ÏµÍ³²ÎÊý´úÂë" prefix="SPI">
-		<enum name="InvestorIDMinLength" value="1" label="Í¶×ÊÕß´úÂë×îÐ¡³¤¶È"/>
-		<enum name="AccountIDMinLength" value="2" label="Í¶×ÊÕßÕÊºÅ´úÂë×îÐ¡³¤¶È"/>
-		<enum name="UserRightLogon" value="3" label="Í¶×ÊÕß¿ª»§Ä¬ÈÏµÇÂ¼È¨ÏÞ"/>
-		<enum name="SettlementBillTrade" value="4" label="Í¶×ÊÕß½»Ò×½áËãµ¥³É½»»ã×Ü·½Ê½"/>
-		<enum name="TradingCode" value="5" label="Í³Ò»¿ª»§¸üÐÂ½»Ò×±àÂë·½Ê½"/>
-		<enum name="CheckFund" value="6" label="½áËãÊÇ·ñÅÐ¶Ï´æÔÚÎ´¸´ºËµÄ³öÈë½ðºÍ·ÖÏî×Ê½ð"/>
-		<enum name="CommModelRight" value="7" label="ÊÇ·ñÆôÓÃÊÖÐø·ÑÄ£°åÊý¾ÝÈ¨ÏÞ"/>
-		<enum name="UploadSettlementFile" value="U" label="ÉÏ´«µÄ½áËãÎÄ¼þ±êÊ¶"/>
-		<enum name="DownloadCSRCFile" value="D" label="ÏÂÔØµÄ±£Ö¤½ð´æ¹ÜÎÄ¼þ"/>
-		<enum name="SettlementBillFile" value="S" label="½áËãµ¥ÎÄ¼þ±êÊ¶"/>
-		<enum name="CSRCOthersFile" value="C" label="Ö¤¼à»áÎÄ¼þ±êÊ¶"/>
-		<enum name="InvestorPhoto" value="P" label="Í¶×ÊÕßÕÕÆ¬Â·¾¶"/>
-		<enum name="CSRCData" value="R" label="ÉÏ±¨±£Ö¤½ð¼à¿ØÖÐÐÄÊý¾Ý"/>
-		<enum name="InvestorPwdModel" value="I" label="¿ª»§ÃÜÂëÂ¼Èë·½Ê½"/>
+	<EnumChar typename="SystemParamID" label="ç³»ç»Ÿå‚æ•°ä»£ç " prefix="SPI">
+		<enum name="InvestorIDMinLength" value="1" label="æŠ•èµ„è€…ä»£ç æœ€å°é•¿åº¦"/>
+		<enum name="AccountIDMinLength" value="2" label="æŠ•èµ„è€…å¸å·ä»£ç æœ€å°é•¿åº¦"/>
+		<enum name="UserRightLogon" value="3" label="æŠ•èµ„è€…å¼€æˆ·é»˜è®¤ç™»å½•æƒé™"/>
+		<enum name="SettlementBillTrade" value="4" label="æŠ•èµ„è€…äº¤æ˜“ç»“ç®—å•æˆäº¤æ±‡æ€»æ–¹å¼"/>
+		<enum name="TradingCode" value="5" label="ç»Ÿä¸€å¼€æˆ·æ›´æ–°äº¤æ˜“ç¼–ç æ–¹å¼"/>
+		<enum name="CheckFund" value="6" label="ç»“ç®—æ˜¯å¦åˆ¤æ–­å­˜åœ¨æœªå¤æ ¸çš„å‡ºå…¥é‡‘å’Œåˆ†é¡¹èµ„é‡‘"/>
+		<enum name="CommModelRight" value="7" label="æ˜¯å¦å¯ç”¨æ‰‹ç»­è´¹æ¨¡æ¿æ•°æ®æƒé™"/>
+		<enum name="UploadSettlementFile" value="U" label="ä¸Šä¼ çš„ç»“ç®—æ–‡ä»¶æ ‡è¯†"/>
+		<enum name="DownloadCSRCFile" value="D" label="ä¸‹è½½çš„ä¿è¯é‡‘å­˜ç®¡æ–‡ä»¶"/>
+		<enum name="SettlementBillFile" value="S" label="ç»“ç®—å•æ–‡ä»¶æ ‡è¯†"/>
+		<enum name="CSRCOthersFile" value="C" label="è¯ç›‘ä¼šæ–‡ä»¶æ ‡è¯†"/>
+		<enum name="InvestorPhoto" value="P" label="æŠ•èµ„è€…ç…§ç‰‡è·¯å¾„"/>
+		<enum name="CSRCData" value="R" label="ä¸ŠæŠ¥ä¿è¯é‡‘ç›‘æŽ§ä¸­å¿ƒæ•°æ®"/>
+		<enum name="InvestorPwdModel" value="I" label="å¼€æˆ·å¯†ç å½•å…¥æ–¹å¼"/>
 	</EnumChar>
-	<EnumChar typename="TradeParamID" label="½»Ò×ÏµÍ³²ÎÊý´úÂë" prefix="TPID">
-		<enum name="EncryptionStandard" value="E" label="ÏµÍ³¼ÓÃÜËã·¨"/>
-		<enum name="RiskMode" value="R" label="ÏµÍ³·çÏÕËã·¨"/>
-		<enum name="RiskModeGlobal" value="G" label="ÏµÍ³·çÏÕËã·¨ÊÇ·ñÈ«¾Ö 0-·ñ 1-ÊÇ"/>
+	<EnumChar typename="TradeParamID" label="äº¤æ˜“ç³»ç»Ÿå‚æ•°ä»£ç " prefix="TPID">
+		<enum name="EncryptionStandard" value="E" label="ç³»ç»ŸåŠ å¯†ç®—æ³•"/>
+		<enum name="RiskMode" value="R" label="ç³»ç»Ÿé£Žé™©ç®—æ³•"/>
+		<enum name="RiskModeGlobal" value="G" label="ç³»ç»Ÿé£Žé™©ç®—æ³•æ˜¯å¦å…¨å±€ 0-å¦ 1-æ˜¯"/>
 	</EnumChar>
-	<String typename="SettlementParamValue" length="255" label="²ÎÊý´úÂëÖµ"/>
-	<String typename="CounterID" length="32" label="¼ÆÊýÆ÷´úÂë"/>
-	<String typename="InvestorGroupName" length="40" label="Í¶×ÊÕß·Ö×éÃû³Æ"/>
-	<String typename="BrandCode" length="256" label="ÅÆºÅ"/>
-	<String typename="Warehouse" length="256" label="²Ö¿â"/>
-	<String typename="ProductDate" length="40" label="²úÆÚ"/>
-	<String typename="Grade" length="40" label="µÈ¼¶"/>
-	<String typename="Classify" length="40" label="Àà±ð"/>
-	<String typename="Position" length="40" label="»õÎ»"/>
-	<String typename="Yieldly" length="40" label="²úµØ"/>
-	<String typename="Weight" length="40" label="¹«¶¨ÖØÁ¿"/>
-	<Int typename="SubEntryFundNo" label="·ÖÏî×Ê½ðÁ÷Ë®ºÅ" length="8"/>
-	<EnumChar typename="FileID" label="ÎÄ¼þ±êÊ¶" prefix="FI">
-		<enum name="SettlementFund" value="F" label="×Ê½ðÊý¾Ý"/>
-		<enum name="Trade" value="T" label="³É½»Êý¾Ý"/>
-		<enum name="InvestorPosition" value="P" label="Í¶×ÊÕß³Ö²ÖÊý¾Ý"/>
-		<enum name="SubEntryFund" value="O" label="Í¶×ÊÕß·ÖÏî×Ê½ðÊý¾Ý"/>
-		<enum name="CZCECombinationPos" value="C" label="Ö£ÉÌËù×éºÏ³Ö²ÖÊý¾Ý"/>
-		<enum name="CSRCData" value="R" label="ÉÏ±¨±£Ö¤½ð¼à¿ØÖÐÐÄÊý¾Ý"/>
+	<String typename="SettlementParamValue" length="255" label="å‚æ•°ä»£ç å€¼"/>
+	<String typename="CounterID" length="32" label="è®¡æ•°å™¨ä»£ç "/>
+	<String typename="InvestorGroupName" length="40" label="æŠ•èµ„è€…åˆ†ç»„åç§°"/>
+	<String typename="BrandCode" length="256" label="ç‰Œå·"/>
+	<String typename="Warehouse" length="256" label="ä»“åº“"/>
+	<String typename="ProductDate" length="40" label="äº§æœŸ"/>
+	<String typename="Grade" length="40" label="ç­‰çº§"/>
+	<String typename="Classify" length="40" label="ç±»åˆ«"/>
+	<String typename="Position" length="40" label="è´§ä½"/>
+	<String typename="Yieldly" length="40" label="äº§åœ°"/>
+	<String typename="Weight" length="40" label="å…¬å®šé‡é‡"/>
+	<Int typename="SubEntryFundNo" label="åˆ†é¡¹èµ„é‡‘æµæ°´å·" length="8"/>
+	<EnumChar typename="FileID" label="æ–‡ä»¶æ ‡è¯†" prefix="FI">
+		<enum name="SettlementFund" value="F" label="èµ„é‡‘æ•°æ®"/>
+		<enum name="Trade" value="T" label="æˆäº¤æ•°æ®"/>
+		<enum name="InvestorPosition" value="P" label="æŠ•èµ„è€…æŒä»“æ•°æ®"/>
+		<enum name="SubEntryFund" value="O" label="æŠ•èµ„è€…åˆ†é¡¹èµ„é‡‘æ•°æ®"/>
+		<enum name="CZCECombinationPos" value="C" label="éƒ‘å•†æ‰€ç»„åˆæŒä»“æ•°æ®"/>
+		<enum name="CSRCData" value="R" label="ä¸ŠæŠ¥ä¿è¯é‡‘ç›‘æŽ§ä¸­å¿ƒæ•°æ®"/>
 	</EnumChar>
-	<VString typename="FileName" length="256" label="ÎÄ¼þÃû³Æ"/>
-	<EnumChar typename="FileType" label="ÎÄ¼þÉÏ´«ÀàÐÍ" prefix="FUT">
-		<enum name="Settlement" value="0" label="½áËã"/>
-		<enum name="Check" value="1" label="ºË¶Ô"/>
+	<VString typename="FileName" length="256" label="æ–‡ä»¶åç§°"/>
+	<EnumChar typename="FileType" label="æ–‡ä»¶ä¸Šä¼ ç±»åž‹" prefix="FUT">
+		<enum name="Settlement" value="0" label="ç»“ç®—"/>
+		<enum name="Check" value="1" label="æ ¸å¯¹"/>
 	</EnumChar>
-	<EnumChar typename="FileFormat" label="ÎÄ¼þ¸ñÊ½" prefix="FFT">
-		<enum name="Txt" value="0" label="ÎÄ±¾ÎÄ¼þ(.txt)"/>
-		<enum name="Zip" value="1" label="Ñ¹ËõÎÄ¼þ(.zip)"/>
-		<enum name="DBF" value="2" label="DBFÎÄ¼þ(.dbf)"/>
+	<EnumChar typename="FileFormat" label="æ–‡ä»¶æ ¼å¼" prefix="FFT">
+		<enum name="Txt" value="0" label="æ–‡æœ¬æ–‡ä»¶(.txt)"/>
+		<enum name="Zip" value="1" label="åŽ‹ç¼©æ–‡ä»¶(.zip)"/>
+		<enum name="DBF" value="2" label="DBFæ–‡ä»¶(.dbf)"/>
 	</EnumChar>
-	<EnumChar typename="FileUploadStatus" label="ÎÄ¼þ×´Ì¬" prefix="FUS">
-		<enum name="SucceedUpload" value="1" label="ÉÏ´«³É¹¦"/>
-		<enum name="FailedUpload" value="2" label="ÉÏ´«Ê§°Ü"/>
-		<enum name="SucceedLoad" value="3" label="µ¼Èë³É¹¦"/>
-		<enum name="PartSucceedLoad" value="4" label="µ¼Èë²¿·Ö³É¹¦"/>
-		<enum name="FailedLoad" value="5" label="µ¼ÈëÊ§°Ü"/>
+	<EnumChar typename="FileUploadStatus" label="æ–‡ä»¶çŠ¶æ€" prefix="FUS">
+		<enum name="SucceedUpload" value="1" label="ä¸Šä¼ æˆåŠŸ"/>
+		<enum name="FailedUpload" value="2" label="ä¸Šä¼ å¤±è´¥"/>
+		<enum name="SucceedLoad" value="3" label="å¯¼å…¥æˆåŠŸ"/>
+		<enum name="PartSucceedLoad" value="4" label="å¯¼å…¥éƒ¨åˆ†æˆåŠŸ"/>
+		<enum name="FailedLoad" value="5" label="å¯¼å…¥å¤±è´¥"/>
 	</EnumChar>
-	<EnumChar typename="TransferDirection" label="ÒÆ²Ö·½Ïò" prefix="TD">
-		<enum name="Out" value="0" label="ÒÆ³ö"/>
-		<enum name="In" value="1" label="ÒÆÈë"/>
+	<EnumChar typename="TransferDirection" label="ç§»ä»“æ–¹å‘" prefix="TD">
+		<enum name="Out" value="0" label="ç§»å‡º"/>
+		<enum name="In" value="1" label="ç§»å…¥"/>
 	</EnumChar>
-	<String typename="UploadMode" length="20" label="ÉÏ´«ÎÄ¼þÀàÐÍ"/>
-	<String typename="AccountID" length="12" label="Í¶×ÊÕßÕÊºÅ"/>
-	<EnumChar typename="BankFlag" label="ÒøÐÐÍ³Ò»±êÊ¶ÀàÐÍ" prefix="BF">
-		<enum name="ICBC" value="1" label="¹¤ÉÌÒøÐÐ"/>
-		<enum name="ABC" value="2" label="Å©ÒµÒøÐÐ"/>
-		<enum name="BC" value="3" label="ÖÐ¹úÒøÐÐ"/>
-		<enum name="CBC" value="4" label="½¨ÉèÒøÐÐ"/>
-		<enum name="BOC" value="5" label="½»Í¨ÒøÐÐ"/>
-		<enum name="Other" value="Z" label="ÆäËûÒøÐÐ"/>
+	<String typename="UploadMode" length="20" label="ä¸Šä¼ æ–‡ä»¶ç±»åž‹"/>
+	<String typename="AccountID" length="12" label="æŠ•èµ„è€…å¸å·"/>
+	<EnumChar typename="BankFlag" label="é“¶è¡Œç»Ÿä¸€æ ‡è¯†ç±»åž‹" prefix="BF">
+		<enum name="ICBC" value="1" label="å·¥å•†é“¶è¡Œ"/>
+		<enum name="ABC" value="2" label="å†œä¸šé“¶è¡Œ"/>
+		<enum name="BC" value="3" label="ä¸­å›½é“¶è¡Œ"/>
+		<enum name="CBC" value="4" label="å»ºè®¾é“¶è¡Œ"/>
+		<enum name="BOC" value="5" label="äº¤é€šé“¶è¡Œ"/>
+		<enum name="Other" value="Z" label="å…¶ä»–é“¶è¡Œ"/>
 	</EnumChar>
-	<String typename="BankAccount" length="40" label="ÒøÐÐÕË»§"/>
-	<String typename="OpenName" length="60" label="ÒøÐÐÕË»§µÄ¿ª»§ÈËÃû³Æ"/>
-	<String typename="OpenBank" length="100" label="ÒøÐÐÕË»§µÄ¿ª»§ÐÐ"/>
-	<String typename="BankName" length="100" label="ÒøÐÐÃû³Æ"/>
-	<VString typename="PublishPath" length="256" label="·¢²¼Â·¾¶"/>
-	<String typename="OperatorID" length="64" label="²Ù×÷Ô±´úÂë"/>
-	<Int typename="MonthCount" length="3" label="ÔÂ·ÝÊýÁ¿"/>
-	<Array typename="AdvanceMonthArray" length="12" element="MonthCount" label="ÔÂ·ÝÌáÇ°Êý×é"/>
-	<VString typename="DateExpr" length="1024" label="ÈÕÆÚ±í´ïÊ½"/>
-	<String typename="InstrumentIDExpr" length="40" label="ºÏÔ¼´úÂë±í´ïÊ½"/>
-	<String typename="InstrumentNameExpr" length="40" label="ºÏÔ¼Ãû³Æ±í´ïÊ½"/>
-	<EnumChar typename="SpecialCreateRule" label="ÌØÊâµÄ´´½¨¹æÔò" prefix="SC">
-		<enum name="NoSpecialRule" value="0" label="Ã»ÓÐÌØÊâ´´½¨¹æÔò"/>
-		<enum name="NoSpringFestival" value="1" label="²»°üº¬´º½Ú"/>
+	<String typename="BankAccount" length="40" label="é“¶è¡Œè´¦æˆ·"/>
+	<String typename="OpenName" length="60" label="é“¶è¡Œè´¦æˆ·çš„å¼€æˆ·äººåç§°"/>
+	<String typename="OpenBank" length="100" label="é“¶è¡Œè´¦æˆ·çš„å¼€æˆ·è¡Œ"/>
+	<String typename="BankName" length="100" label="é“¶è¡Œåç§°"/>
+	<VString typename="PublishPath" length="256" label="å‘å¸ƒè·¯å¾„"/>
+	<String typename="OperatorID" length="64" label="æ“ä½œå‘˜ä»£ç "/>
+	<Int typename="MonthCount" length="3" label="æœˆä»½æ•°é‡"/>
+	<Array typename="AdvanceMonthArray" length="12" element="MonthCount" label="æœˆä»½æå‰æ•°ç»„"/>
+	<VString typename="DateExpr" length="1024" label="æ—¥æœŸè¡¨è¾¾å¼"/>
+	<String typename="InstrumentIDExpr" length="40" label="åˆçº¦ä»£ç è¡¨è¾¾å¼"/>
+	<String typename="InstrumentNameExpr" length="40" label="åˆçº¦åç§°è¡¨è¾¾å¼"/>
+	<EnumChar typename="SpecialCreateRule" label="ç‰¹æ®Šçš„åˆ›å»ºè§„åˆ™" prefix="SC">
+		<enum name="NoSpecialRule" value="0" label="æ²¡æœ‰ç‰¹æ®Šåˆ›å»ºè§„åˆ™"/>
+		<enum name="NoSpringFestival" value="1" label="ä¸åŒ…å«æ˜¥èŠ‚"/>
 	</EnumChar>
-	<EnumChar typename="BasisPriceType" label="¹ÒÅÆ»ù×¼¼ÛÀàÐÍ" prefix="IPT">
-		<enum name="LastSettlement" value="1" label="ÉÏÒ»ºÏÔ¼½áËã¼Û"/>
-		<enum name="LaseClose" value="2" label="ÉÏÒ»ºÏÔ¼ÊÕÅÌ¼Û"/>
+	<EnumChar typename="BasisPriceType" label="æŒ‚ç‰ŒåŸºå‡†ä»·ç±»åž‹" prefix="IPT">
+		<enum name="LastSettlement" value="1" label="ä¸Šä¸€åˆçº¦ç»“ç®—ä»·"/>
+		<enum name="LaseClose" value="2" label="ä¸Šä¸€åˆçº¦æ”¶ç›˜ä»·"/>
 	</EnumChar>
-	<EnumChar typename="ProductLifePhase" label="²úÆ·ÉúÃüÖÜÆÚ×´Ì¬" prefix="PLP">
-		<enum name="Active" value="1" label="»îÔ¾"/>
-		<enum name="NonActive" value="2" label="²»»îÔ¾"/>
-		<enum name="Canceled" value="3" label="×¢Ïú"/>
+	<EnumChar typename="ProductLifePhase" label="äº§å“ç”Ÿå‘½å‘¨æœŸçŠ¶æ€" prefix="PLP">
+		<enum name="Active" value="1" label="æ´»è·ƒ"/>
+		<enum name="NonActive" value="2" label="ä¸æ´»è·ƒ"/>
+		<enum name="Canceled" value="3" label="æ³¨é”€"/>
 	</EnumChar>
-	<EnumChar typename="DeliveryMode" label="½»¸î·½Ê½" prefix="DM">
-		<enum name="CashDeliv" value="1" label="ÏÖ½ð½»¸î"/>
-		<enum name="CommodityDeliv" value="2" label="ÊµÎï½»¸î"/>
+	<EnumChar typename="DeliveryMode" label="äº¤å‰²æ–¹å¼" prefix="DM">
+		<enum name="CashDeliv" value="1" label="çŽ°é‡‘äº¤å‰²"/>
+		<enum name="CommodityDeliv" value="2" label="å®žç‰©äº¤å‰²"/>
 	</EnumChar>
-	<String typename="LogLevel" length="32" label="ÈÕÖ¾¼¶±ð"/>
-	<VString typename="ProcessName" length="256" label="´æ´¢¹ý³ÌÃû³Æ"/>
-	<VString typename="OperationMemo" length="1024" label="²Ù×÷ÕªÒª"/>
-	<EnumChar typename="FundIOType" label="³öÈë½ðÀàÐÍ" prefix="FIOT">
-		<enum name="FundIO" value="1" label="³öÈë½ð"/>
-		<enum name="Transfer" value="2" label="ÒøÆÚ×ªÕÊ"/>
+	<String typename="LogLevel" length="32" label="æ—¥å¿—çº§åˆ«"/>
+	<VString typename="ProcessName" length="256" label="å­˜å‚¨è¿‡ç¨‹åç§°"/>
+	<VString typename="OperationMemo" length="1024" label="æ“ä½œæ‘˜è¦"/>
+	<EnumChar typename="FundIOType" label="å‡ºå…¥é‡‘ç±»åž‹" prefix="FIOT">
+		<enum name="FundIO" value="1" label="å‡ºå…¥é‡‘"/>
+		<enum name="Transfer" value="2" label="é“¶æœŸè½¬å¸"/>
 	</EnumChar>
-	<EnumChar typename="FundType" label="×Ê½ðÀàÐÍ" prefix="FT">
-		<enum name="Deposite" value="1" label="ÒøÐÐ´æ¿î"/>
-		<enum name="ItemFund" value="2" label="·ÖÏî×Ê½ð"/>
-		<enum name="Company" value="3" label="¹«Ë¾µ÷Õû"/>
+	<EnumChar typename="FundType" label="èµ„é‡‘ç±»åž‹" prefix="FT">
+		<enum name="Deposite" value="1" label="é“¶è¡Œå­˜æ¬¾"/>
+		<enum name="ItemFund" value="2" label="åˆ†é¡¹èµ„é‡‘"/>
+		<enum name="Company" value="3" label="å…¬å¸è°ƒæ•´"/>
 	</EnumChar>
-	<EnumChar typename="DepositDirection" label="³öÈë½ð·½Ïò" prefix="FD">
-		<enum name="In" value="1" label="Èë½ð"/>
-		<enum name="Out" value="2" label="³ö½ð"/>
+	<EnumChar typename="DepositDirection" label="å‡ºå…¥é‡‘æ–¹å‘" prefix="FD">
+		<enum name="In" value="1" label="å…¥é‡‘"/>
+		<enum name="Out" value="2" label="å‡ºé‡‘"/>
 	</EnumChar>
-	<EnumChar typename="FundStatus" label="×Ê½ð×´Ì¬" prefix="FS">
-		<enum name="Record" value="1" label="ÒÑÂ¼Èë"/>
-		<enum name="Check" value="2" label="ÒÑ¸´ºË"/>
-		<enum name="Charge" value="3" label="ÒÑ³åÏú"/>
+	<EnumChar typename="FundStatus" label="èµ„é‡‘çŠ¶æ€" prefix="FS">
+		<enum name="Record" value="1" label="å·²å½•å…¥"/>
+		<enum name="Check" value="2" label="å·²å¤æ ¸"/>
+		<enum name="Charge" value="3" label="å·²å†²é”€"/>
 	</EnumChar>
-	<String typename="BillNo" length="14" label="Æ±¾ÝºÅ"/>
-	<String typename="BillName" length="32" label="Æ±¾ÝÃû³Æ"/>
-	<EnumChar typename="PublishStatus" label="·¢²¼×´Ì¬" prefix="PS">
-		<enum name="None" value="1" label="Î´·¢²¼"/>
-		<enum name="Publishing" value="2" label="ÕýÔÚ·¢²¼"/>
-		<enum name="Published" value="3" label="ÒÑ·¢²¼"/>
+	<String typename="BillNo" length="14" label="ç¥¨æ®å·"/>
+	<String typename="BillName" length="32" label="ç¥¨æ®åç§°"/>
+	<EnumChar typename="PublishStatus" label="å‘å¸ƒçŠ¶æ€" prefix="PS">
+		<enum name="None" value="1" label="æœªå‘å¸ƒ"/>
+		<enum name="Publishing" value="2" label="æ­£åœ¨å‘å¸ƒ"/>
+		<enum name="Published" value="3" label="å·²å‘å¸ƒ"/>
 	</EnumChar>
-	<!-- Ã¶¾ÙÔªÊý¾Ý -->
-	<String typename="EnumValueID" length="64" label="Ã¶¾ÙÖµ´úÂë"/>
-	<String typename="EnumValueType" length="32" label="Ã¶¾ÙÖµÀàÐÍ"/>
-	<String typename="EnumValueLabel" length="64" label="Ã¶¾ÙÖµÃû³Æ"/>
-	<String typename="EnumValueResult" length="32" label="Ã¶¾ÙÖµ½á¹û"/>
-	<EnumChar typename="SystemStatus" label="ÏµÍ³×´Ì¬" prefix="ES">
-		<enum name="NonActive" value="1" label="²»»îÔ¾"/>
-		<enum name="Startup" value="2" label="Æô¶¯"/>
-		<enum name="Initialize" value="3" label="½»Ò×¿ªÊ¼³õÊ¼»¯"/>
-		<enum name="Initialized" value="4" label="½»Ò×Íê³É³õÊ¼»¯"/>
-		<enum name="Close" value="5" label="ÊÕÊÐ¿ªÊ¼"/>
-		<enum name="Closed" value="6" label="ÊÕÊÐÍê³É"/>
-		<enum name="Settlement" value="7" label="½áËã"/>
+	<!-- æžšä¸¾å…ƒæ•°æ® -->
+	<String typename="EnumValueID" length="64" label="æžšä¸¾å€¼ä»£ç "/>
+	<String typename="EnumValueType" length="32" label="æžšä¸¾å€¼ç±»åž‹"/>
+	<String typename="EnumValueLabel" length="64" label="æžšä¸¾å€¼åç§°"/>
+	<String typename="EnumValueResult" length="32" label="æžšä¸¾å€¼ç»“æžœ"/>
+	<EnumChar typename="SystemStatus" label="ç³»ç»ŸçŠ¶æ€" prefix="ES">
+		<enum name="NonActive" value="1" label="ä¸æ´»è·ƒ"/>
+		<enum name="Startup" value="2" label="å¯åŠ¨"/>
+		<enum name="Initialize" value="3" label="äº¤æ˜“å¼€å§‹åˆå§‹åŒ–"/>
+		<enum name="Initialized" value="4" label="äº¤æ˜“å®Œæˆåˆå§‹åŒ–"/>
+		<enum name="Close" value="5" label="æ”¶å¸‚å¼€å§‹"/>
+		<enum name="Closed" value="6" label="æ”¶å¸‚å®Œæˆ"/>
+		<enum name="Settlement" value="7" label="ç»“ç®—"/>
 	</EnumChar>
-	<EnumChar typename="SettlementStatus" label="½áËã×´Ì¬" prefix="STS">
-		<enum name="Initialize" value="0" label="³õÊ¼"/>
-		<enum name="Settlementing" value="1" label="½áËãÖÐ"/>
-		<enum name="Settlemented" value="2" label="ÒÑ½áËã"/>
-		<enum name="Finished" value="3" label="½áËãÍê³É"/>
+	<EnumChar typename="SettlementStatus" label="ç»“ç®—çŠ¶æ€" prefix="STS">
+		<enum name="Initialize" value="0" label="åˆå§‹"/>
+		<enum name="Settlementing" value="1" label="ç»“ç®—ä¸­"/>
+		<enum name="Settlemented" value="2" label="å·²ç»“ç®—"/>
+		<enum name="Finished" value="3" label="ç»“ç®—å®Œæˆ"/>
 	</EnumChar>
-	<!-- ÏÞ¶¨ÖµÔªÊý¾Ý -->
-	<String typename="RangeIntType" length="32" label="ÏÞ¶¨ÖµÀàÐÍ"/>
-	<String typename="RangeIntFrom" length="32" label="ÏÞ¶¨ÖµÏÂÏÞ"/>
-	<String typename="RangeIntTo" length="32" label="ÏÞ¶¨ÖµÉÏÏÞ"/>
-	<!-- È¨ÏÞÊý¾ÝÀàÐÍ -->
-	<String typename="FunctionID" label="¹¦ÄÜ´úÂë" length="24"/>
-	<String typename="FunctionValueCode" label="¹¦ÄÜ±àÂë" length="256"/>
-	<String typename="FunctionName" label="¹¦ÄÜÃû³Æ" length="64"/>
-	<String typename="RoleID" label="½ÇÉ«±àºÅ" length="10"/>
-	<VString typename="RoleName" label="½ÇÉ«Ãû³Æ" length="40"/>
-	<VString typename="Description" label="ÃèÊö" length="400"/>
-	<String typename="CombineID" label="×éºÏ±àºÅ" length="24"/>
-	<String typename="CombineType" label="×éºÏÀàÐÍ" length="24"/>
-	<EnumChar typename="InvestorType" label="Í¶×ÊÕßÀàÐÍ" prefix="CT">
-		<enum name="Person" value="0" label="×ÔÈ»ÈË"/>
-		<enum name="Company" value="1" label="·¨ÈË"/>
-		<enum name="Fund" value="2" label="Í¶×Ê»ù½ð"/>
+	<!-- é™å®šå€¼å…ƒæ•°æ® -->
+	<String typename="RangeIntType" length="32" label="é™å®šå€¼ç±»åž‹"/>
+	<String typename="RangeIntFrom" length="32" label="é™å®šå€¼ä¸‹é™"/>
+	<String typename="RangeIntTo" length="32" label="é™å®šå€¼ä¸Šé™"/>
+	<!-- æƒé™æ•°æ®ç±»åž‹ -->
+	<String typename="FunctionID" label="åŠŸèƒ½ä»£ç " length="24"/>
+	<String typename="FunctionValueCode" label="åŠŸèƒ½ç¼–ç " length="256"/>
+	<String typename="FunctionName" label="åŠŸèƒ½åç§°" length="64"/>
+	<String typename="RoleID" label="è§’è‰²ç¼–å·" length="10"/>
+	<VString typename="RoleName" label="è§’è‰²åç§°" length="40"/>
+	<VString typename="Description" label="æè¿°" length="400"/>
+	<String typename="CombineID" label="ç»„åˆç¼–å·" length="24"/>
+	<String typename="CombineType" label="ç»„åˆç±»åž‹" length="24"/>
+	<EnumChar typename="InvestorType" label="æŠ•èµ„è€…ç±»åž‹" prefix="CT">
+		<enum name="Person" value="0" label="è‡ªç„¶äºº"/>
+		<enum name="Company" value="1" label="æ³•äºº"/>
+		<enum name="Fund" value="2" label="æŠ•èµ„åŸºé‡‘"/>
 	</EnumChar>
-	<EnumChar typename="InstitutionType" label="¾­¼Í¹«Ë¾ÀàÐÍ" prefix="BT">
-		<enum name="Trade" value="0" label="½»Ò×»áÔ±"/>
-		<enum name="TradeSettle" value="1" label="½»Ò×½áËã»áÔ±"/>
+	<EnumChar typename="InstitutionType" label="ç»çºªå…¬å¸ç±»åž‹" prefix="BT">
+		<enum name="Trade" value="0" label="äº¤æ˜“ä¼šå‘˜"/>
+		<enum name="TradeSettle" value="1" label="äº¤æ˜“ç»“ç®—ä¼šå‘˜"/>
 	</EnumChar>
-	<EnumChar typename="RiskLevel" label="·çÏÕµÈ¼¶" prefix="FAS">
-		<enum name="Low" value="1" label="µÍ·çÏÕ¿Í»§"/>
-		<enum name="Normal" value="2" label="ÆÕÍ¨¿Í»§"/>
-		<enum name="Focus" value="3" label="¹Ø×¢¿Í»§"/>
-		<enum name="Risk" value="4" label="·çÏÕ¿Í»§"/>
+	<EnumChar typename="RiskLevel" label="é£Žé™©ç­‰çº§" prefix="FAS">
+		<enum name="Low" value="1" label="ä½Žé£Žé™©å®¢æˆ·"/>
+		<enum name="Normal" value="2" label="æ™®é€šå®¢æˆ·"/>
+		<enum name="Focus" value="3" label="å…³æ³¨å®¢æˆ·"/>
+		<enum name="Risk" value="4" label="é£Žé™©å®¢æˆ·"/>
 	</EnumChar>
-	<EnumChar typename="FeeAcceptStyle" label="ÊÖÐø·ÑÊÕÈ¡·½Ê½" prefix="FAS">
-		<enum name="ByTrade" value="1" label="°´½»Ò×ÊÕÈ¡"/>
-		<enum name="ByDeliv" value="2" label="°´½»¸îÊÕÈ¡"/>
-		<enum name="None" value="3" label="²»ÊÕ"/>
-		<enum name="FixFee" value="4" label="°´Ö¸¶¨ÊÖÐø·ÑÊÕÈ¡"/>
+	<EnumChar typename="FeeAcceptStyle" label="æ‰‹ç»­è´¹æ”¶å–æ–¹å¼" prefix="FAS">
+		<enum name="ByTrade" value="1" label="æŒ‰äº¤æ˜“æ”¶å–"/>
+		<enum name="ByDeliv" value="2" label="æŒ‰äº¤å‰²æ”¶å–"/>
+		<enum name="None" value="3" label="ä¸æ”¶"/>
+		<enum name="FixFee" value="4" label="æŒ‰æŒ‡å®šæ‰‹ç»­è´¹æ”¶å–"/>
 	</EnumChar>
-	<EnumChar typename="PasswordType" label="ÃÜÂëÀàÐÍ" prefix="PWDT">
-		<enum name="Trade" value="1" label="½»Ò×ÃÜÂë"/>
-		<enum name="Account" value="2" label="×Ê½ðÃÜÂë"/>
+	<EnumChar typename="PasswordType" label="å¯†ç ç±»åž‹" prefix="PWDT">
+		<enum name="Trade" value="1" label="äº¤æ˜“å¯†ç "/>
+		<enum name="Account" value="2" label="èµ„é‡‘å¯†ç "/>
 	</EnumChar>
 	<!-- add by zhangdl end -->
-	<!--×Ê½ð¡¢ÕÛ¿ÛÀàÐÍ-->
-	<EnumChar typename="Algorithm" label="Ó¯¿÷Ëã·¨" prefix="AG">
-		<enum name="All" value="1" label="¸¡Ó¯¸¡¿÷¶¼¼ÆËã"/>
-		<enum name="OnlyLost" value="2" label="¸¡Ó¯²»¼Æ£¬¸¡¿÷¼Æ"/>
-		<enum name="OnlyGain" value="3" label="¸¡Ó¯¼Æ£¬¸¡¿÷²»¼Æ"/>
-		<enum name="None" value="4" label="¸¡Ó¯¸¡¿÷¶¼²»¼ÆËã"/>
+	<!--èµ„é‡‘ã€æŠ˜æ‰£ç±»åž‹-->
+	<EnumChar typename="Algorithm" label="ç›ˆäºç®—æ³•" prefix="AG">
+		<enum name="All" value="1" label="æµ®ç›ˆæµ®äºéƒ½è®¡ç®—"/>
+		<enum name="OnlyLost" value="2" label="æµ®ç›ˆä¸è®¡ï¼Œæµ®äºè®¡"/>
+		<enum name="OnlyGain" value="3" label="æµ®ç›ˆè®¡ï¼Œæµ®äºä¸è®¡"/>
+		<enum name="None" value="4" label="æµ®ç›ˆæµ®äºéƒ½ä¸è®¡ç®—"/>
 	</EnumChar>
-	<EnumChar typename="IncludeCloseProfit" label="ÊÇ·ñ°üº¬Æ½²ÖÓ¯Àû" prefix="ICP">
-		<enum name="Include" value="0" label="°üº¬Æ½²ÖÓ¯Àû"/>
-		<enum name="NotInclude" value="2" label="²»°üº¬Æ½²ÖÓ¯Àû"/>
+	<EnumChar typename="IncludeCloseProfit" label="æ˜¯å¦åŒ…å«å¹³ä»“ç›ˆåˆ©" prefix="ICP">
+		<enum name="Include" value="0" label="åŒ…å«å¹³ä»“ç›ˆåˆ©"/>
+		<enum name="NotInclude" value="2" label="ä¸åŒ…å«å¹³ä»“ç›ˆåˆ©"/>
 	</EnumChar>
-		<EnumChar typename="AllWithoutTrade" label="ÊÇ·ñÊÜ¿ÉÌá±ÈÀýÏÞÖÆ" prefix="AWT">
-		<enum name="Enable" value="0" label="²»ÊÜ¿ÉÌá±ÈÀýÏÞÖÆ"/>
-		<enum name="Disable" value="2" label="ÊÜ¿ÉÌá±ÈÀýÏÞÖÆ"/>
+		<EnumChar typename="AllWithoutTrade" label="æ˜¯å¦å—å¯ææ¯”ä¾‹é™åˆ¶" prefix="AWT">
+		<enum name="Enable" value="0" label="ä¸å—å¯ææ¯”ä¾‹é™åˆ¶"/>
+		<enum name="Disable" value="2" label="å—å¯ææ¯”ä¾‹é™åˆ¶"/>
 	</EnumChar>
-	<String typename="Comment" label="Ó¯¿÷Ëã·¨ËµÃ÷" length="30"/>
-	<!--ÎªÒøÆÚ×ªÕÊÔö¼ÓµÄÀàÐÍbegin ÀÏÏµÍ³-->
-	<String typename="Version" label="°æ±¾ºÅ" length="3"/>
-	<String typename="TradeCode" label="½»Ò×´úÂë" length="6"/>
-	<String typename="TradeDate" label="½»Ò×ÈÕÆÚ" length="8"/>
-	<String typename="TradeTime" label="½»Ò×Ê±¼ä" length="8"/>
-	<String typename="TradeSerial" label="·¢Æð·½Á÷Ë®ºÅ" length="8"/>
-	<Int typename="TradeSerialNo" label="·¢Æð·½Á÷Ë®ºÅ" length="8"/>
-	<String typename="FutureID" label="ÆÚ»õ¹«Ë¾´úÂë" length="10"/>
-	<String typename="BankID" label="ÒøÐÐ´úÂë" length="3"/>
-	<String typename="BankBrchID"  label="ÒøÐÐ·ÖÖÐÐÄ´úÂë" length="4"/>
-  <String typename="BankBranchID" label="·ÖÖÐÐÄ´úÂë" length="10"/>
-	<String typename="OperNo" label="½»Ò×¹ñÔ±" length="16"/>
-	<String typename="DeviceID" label="ÇþµÀ±êÖ¾" length="2"/>
-	<String typename="RecordNum" label="¼ÇÂ¼Êý" length="6"/>
-	<String typename="FutureAccount" label="ÆÚ»õ×Ê½ðÕËºÅ" length="21"/>
-	<EnumChar typename="FuturePwdFlag" label="×Ê½ðÃÜÂëºË¶Ô±êÖ¾" prefix="FPWD">
-		<enum name="UnCheck" value="0" label="²»ºË¶Ô"/>
-		<enum name="Check" value="1" label="ºË¶Ô"/>
+	<String typename="Comment" label="ç›ˆäºç®—æ³•è¯´æ˜Ž" length="30"/>
+	<!--ä¸ºé“¶æœŸè½¬å¸å¢žåŠ çš„ç±»åž‹begin è€ç³»ç»Ÿ-->
+	<String typename="Version" label="ç‰ˆæœ¬å·" length="3"/>
+	<String typename="TradeCode" label="äº¤æ˜“ä»£ç " length="6"/>
+	<String typename="TradeDate" label="äº¤æ˜“æ—¥æœŸ" length="8"/>
+	<String typename="TradeTime" label="äº¤æ˜“æ—¶é—´" length="8"/>
+	<String typename="TradeSerial" label="å‘èµ·æ–¹æµæ°´å·" length="8"/>
+	<Int typename="TradeSerialNo" label="å‘èµ·æ–¹æµæ°´å·" length="8"/>
+	<String typename="FutureID" label="æœŸè´§å…¬å¸ä»£ç " length="10"/>
+	<String typename="BankID" label="é“¶è¡Œä»£ç " length="3"/>
+	<String typename="BankBrchID"  label="é“¶è¡Œåˆ†ä¸­å¿ƒä»£ç " length="4"/>
+  <String typename="BankBranchID" label="åˆ†ä¸­å¿ƒä»£ç " length="10"/>
+	<String typename="OperNo" label="äº¤æ˜“æŸœå‘˜" length="16"/>
+	<String typename="DeviceID" label="æ¸ é“æ ‡å¿—" length="2"/>
+	<String typename="RecordNum" label="è®°å½•æ•°" length="6"/>
+	<String typename="FutureAccount" label="æœŸè´§èµ„é‡‘è´¦å·" length="21"/>
+	<EnumChar typename="FuturePwdFlag" label="èµ„é‡‘å¯†ç æ ¸å¯¹æ ‡å¿—" prefix="FPWD">
+		<enum name="UnCheck" value="0" label="ä¸æ ¸å¯¹"/>
+		<enum name="Check" value="1" label="æ ¸å¯¹"/>
 	</EnumChar>
-	<EnumChar typename="TransferType" label="ÒøÆÚ×ªÕËÀàÐÍ" prefix="TT">
-		<enum name="BankToFuture" value="0" label="ÒøÐÐ×ªÆÚ»õ"/>
-		<enum name="FutureToBank" value="1" label="ÆÚ»õ×ªÒøÐÐ"/>
+	<EnumChar typename="TransferType" label="é“¶æœŸè½¬è´¦ç±»åž‹" prefix="TT">
+		<enum name="BankToFuture" value="0" label="é“¶è¡Œè½¬æœŸè´§"/>
+		<enum name="FutureToBank" value="1" label="æœŸè´§è½¬é“¶è¡Œ"/>
 	</EnumChar>
-	<String typename="FutureAccPwd" label="ÆÚ»õ×Ê½ðÃÜÂë" length="16"/>
-	<String typename="CurrencyCode" label="±ÒÖÖ" length="3"/>
-	<String typename="RetCode" label="ÏìÓ¦´úÂë" length="4"/>
-	<String typename="RetInfo" label="ÏìÓ¦ÐÅÏ¢" length="128"/>
-	<String typename="TradeAmt" label="ÒøÐÐ×ÜÓà¶î" length="19"/>
-	<String typename="UseAmt" label="ÒøÐÐ¿ÉÓÃÓà¶î" length="19"/>
-	<String typename="FetchAmt" label="ÒøÐÐ¿ÉÈ¡Óà¶î" length="19"/>
-	<EnumChar typename="TransferValidFlag" label="×ªÕËÓÐÐ§±êÖ¾" prefix="TVF">
-		<enum name="Invalid" value="0" label="ÎÞÐ§»òÊ§°Ü"/>
-		<enum name="Valid" value="1" label="ÓÐÐ§"/>
-		<enum name="Reverse" value="2" label="³åÕý"/>
+	<String typename="FutureAccPwd" label="æœŸè´§èµ„é‡‘å¯†ç " length="16"/>
+	<String typename="CurrencyCode" label="å¸ç§" length="3"/>
+	<String typename="RetCode" label="å“åº”ä»£ç " length="4"/>
+	<String typename="RetInfo" label="å“åº”ä¿¡æ¯" length="128"/>
+	<String typename="TradeAmt" label="é“¶è¡Œæ€»ä½™é¢" length="19"/>
+	<String typename="UseAmt" label="é“¶è¡Œå¯ç”¨ä½™é¢" length="19"/>
+	<String typename="FetchAmt" label="é“¶è¡Œå¯å–ä½™é¢" length="19"/>
+	<EnumChar typename="TransferValidFlag" label="è½¬è´¦æœ‰æ•ˆæ ‡å¿—" prefix="TVF">
+		<enum name="Invalid" value="0" label="æ— æ•ˆæˆ–å¤±è´¥"/>
+		<enum name="Valid" value="1" label="æœ‰æ•ˆ"/>
+		<enum name="Reverse" value="2" label="å†²æ­£"/>
 	</EnumChar>	
-	<String typename="CertCode" label="Ö¤¼þºÅÂë" length="20"/>
-	<!--ÎªÒøÆÚ×ªÕÊÔö¼ÓµÄÀàÐÍend ÀÏÏµÍ³-->
-	<!--Îª±£Ö¤½ð´æ¹ÜÔö¼ÓµÄÀàÐÍ-->
-	<EnumChar typename="Reason" label="ÊÂÓÉ" prefix="RN">
-		<enum name="CD" value="0" label="´íµ¥"/>
-		<enum name="ZT" value="1" label="×Ê½ðÔÚÍ¾"/>
-		<enum name="QT" value="2" label="ÆäËü"/>
+	<String typename="CertCode" label="è¯ä»¶å·ç " length="20"/>
+	<!--ä¸ºé“¶æœŸè½¬å¸å¢žåŠ çš„ç±»åž‹end è€ç³»ç»Ÿ-->
+	<!--ä¸ºä¿è¯é‡‘å­˜ç®¡å¢žåŠ çš„ç±»åž‹-->
+	<EnumChar typename="Reason" label="äº‹ç”±" prefix="RN">
+		<enum name="CD" value="0" label="é”™å•"/>
+		<enum name="ZT" value="1" label="èµ„é‡‘åœ¨é€”"/>
+		<enum name="QT" value="2" label="å…¶å®ƒ"/>
 	</EnumChar>
-	<String typename="FundProjectID" label="×Ê½ðÏîÄ¿±àºÅ" length="4"/>
-	<EnumChar typename="Sex" label="ÐÔ±ð" prefix="SEX">
-		<enum name="None" value="0" label="Î´Öª"/>
-		<enum name="Man" value="1" label="ÄÐ"/>
-		<enum name="Woman" value="2" label="Å®"/>
+	<String typename="FundProjectID" label="èµ„é‡‘é¡¹ç›®ç¼–å·" length="4"/>
+	<EnumChar typename="Sex" label="æ€§åˆ«" prefix="SEX">
+		<enum name="None" value="0" label="æœªçŸ¥"/>
+		<enum name="Man" value="1" label="ç”·"/>
+		<enum name="Woman" value="2" label="å¥³"/>
 	</EnumChar>
-	<String typename="Profession" label="Ö°Òµ" length="40"/>
-	<String typename="National" label="¹ú¼®" length="30"/>
-	<String typename="Province" label="Ê¡" length="15"/>
-	<String typename="Region" label="Çø" length="15"/>
-	<String typename="Country" label="¹ú¼Ò" length="15"/>
-	<String typename="LicenseNO" label="ÓªÒµÖ´ÕÕ" length="32"/>
-	<String typename="CompanyType" label="ÆóÒµÐÔÖÊ" length="15"/>
-	<String typename="BusinessScope" label="¾­Óª·¶Î§" length="1000"/>
-	<String typename="CapitalCurrency" label="×¢²á×Ê±¾±ÒÖÖ" length="3"/>
-	<EnumChar typename="UserType" label="ÓÃ»§ÀàÐÍ" prefix="UT">
-		<enum name="Investor" value="0" label="Í¶×ÊÕß"/>
-		<enum name="Operator" value="1" label="²Ù×÷Ô±"/>
-		<enum name="SuperUser" value="2" label="¹ÜÀíÔ±"/>
+	<String typename="Profession" label="èŒä¸š" length="40"/>
+	<String typename="National" label="å›½ç±" length="30"/>
+	<String typename="Province" label="çœ" length="15"/>
+	<String typename="Region" label="åŒº" length="15"/>
+	<String typename="Country" label="å›½å®¶" length="15"/>
+	<String typename="LicenseNO" label="è¥ä¸šæ‰§ç…§" length="32"/>
+	<String typename="CompanyType" label="ä¼ä¸šæ€§è´¨" length="15"/>
+	<String typename="BusinessScope" label="ç»è¥èŒƒå›´" length="1000"/>
+	<String typename="CapitalCurrency" label="æ³¨å†Œèµ„æœ¬å¸ç§" length="3"/>
+	<EnumChar typename="UserType" label="ç”¨æˆ·ç±»åž‹" prefix="UT">
+		<enum name="Investor" value="0" label="æŠ•èµ„è€…"/>
+		<enum name="Operator" value="1" label="æ“ä½œå‘˜"/>
+		<enum name="SuperUser" value="2" label="ç®¡ç†å‘˜"/>
 	</EnumChar>
-	<EnumChar typename="RateType" label="·ÑÂÊÀàÐÍ" prefix="RATETYPE">
-		<enum name="MarginRate" value="2" label="±£Ö¤½ðÂÊ"/>
+	<EnumChar typename="RateType" label="è´¹çŽ‡ç±»åž‹" prefix="RATETYPE">
+		<enum name="MarginRate" value="2" label="ä¿è¯é‡‘çŽ‡"/>
 	</EnumChar>
-	<EnumChar typename="NoteType" label="Í¨ÖªÀàÐÍ" prefix="NOTETYPE">
-		<enum name="TradeSettleBill" value="1" label="½»Ò×½áËãµ¥"/>
-		<enum name="TradeSettleMonth" value="2" label="½»Ò×½áËãÔÂ±¨"/>
-		<enum name="CallMarginNotes" value="3" label="×·¼Ó±£Ö¤½ðÍ¨ÖªÊé"/>
-		<enum name="ForceCloseNotes" value="4" label="Ç¿ÐÐÆ½²ÖÍ¨ÖªÊé"/>
-		<enum name="TradeNotes" value="5" label="³É½»Í¨ÖªÊé"/>
-		<enum name="DelivNotes" value="6" label="½»¸îÍ¨ÖªÊé"/>
+	<EnumChar typename="NoteType" label="é€šçŸ¥ç±»åž‹" prefix="NOTETYPE">
+		<enum name="TradeSettleBill" value="1" label="äº¤æ˜“ç»“ç®—å•"/>
+		<enum name="TradeSettleMonth" value="2" label="äº¤æ˜“ç»“ç®—æœˆæŠ¥"/>
+		<enum name="CallMarginNotes" value="3" label="è¿½åŠ ä¿è¯é‡‘é€šçŸ¥ä¹¦"/>
+		<enum name="ForceCloseNotes" value="4" label="å¼ºè¡Œå¹³ä»“é€šçŸ¥ä¹¦"/>
+		<enum name="TradeNotes" value="5" label="æˆäº¤é€šçŸ¥ä¹¦"/>
+		<enum name="DelivNotes" value="6" label="äº¤å‰²é€šçŸ¥ä¹¦"/>
 	</EnumChar>
-	<EnumChar typename="SettlementStyle" label="½áËãµ¥·½Ê½" prefix="SBS">
-		<enum name="Day" value="1" label="ÖðÈÕ¶¢ÊÐ"/>
-		<enum name="Volume" value="2" label="Öð±Ê¶Ô³å"/>
+	<EnumChar typename="SettlementStyle" label="ç»“ç®—å•æ–¹å¼" prefix="SBS">
+		<enum name="Day" value="1" label="é€æ—¥ç›¯å¸‚"/>
+		<enum name="Volume" value="2" label="é€ç¬”å¯¹å†²"/>
 	</EnumChar>
-	<String typename="InstitutionDNS" length="255" label="ÓòÃû"/>
-	<String typename="Sentence" length="500" label="Óï¾ä"/>
-	<EnumChar typename="SettlementBillType" label="½áËãµ¥ÀàÐÍ" prefix="ST">
-		<enum name="Day" value="0" label="ÈÕ±¨"/>
-		<enum name="Month" value="1" label="ÔÂ±¨"/>
+	<String typename="InstitutionDNS" length="255" label="åŸŸå"/>
+	<String typename="Sentence" length="500" label="è¯­å¥"/>
+	<EnumChar typename="SettlementBillType" label="ç»“ç®—å•ç±»åž‹" prefix="ST">
+		<enum name="Day" value="0" label="æ—¥æŠ¥"/>
+		<enum name="Month" value="1" label="æœˆæŠ¥"/>
 	</EnumChar>
-	<EnumChar typename="UserRightType" label="¿Í»§È¨ÏÞÀàÐÍ" prefix="URT">
-		<enum name="Logon" value="1" label="µÇÂ¼"/>
-		<enum name="Transfer" value="2" label="ÒøÆÚ×ªÕÊ"/>
-		<enum name="EMail" value="3" label="ÓÊ¼Ä½áËãµ¥"/>
-		<enum name="Fax" value="4" label="´«Õæ½áËãµ¥"/>
-		<enum name="ConditionOrder" value="5" label="Ìõ¼þµ¥"/>
+	<EnumChar typename="UserRightType" label="å®¢æˆ·æƒé™ç±»åž‹" prefix="URT">
+		<enum name="Logon" value="1" label="ç™»å½•"/>
+		<enum name="Transfer" value="2" label="é“¶æœŸè½¬å¸"/>
+		<enum name="EMail" value="3" label="é‚®å¯„ç»“ç®—å•"/>
+		<enum name="Fax" value="4" label="ä¼ çœŸç»“ç®—å•"/>
+		<enum name="ConditionOrder" value="5" label="æ¡ä»¶å•"/>
 	</EnumChar>
-	<EnumChar typename="MarginPriceType" label="±£Ö¤½ð¼Û¸ñÀàÐÍ" prefix="MPT">
-		<enum name="PreSettlementPrice" value="1" label="×ò½áËã¼Û"/>
-		<enum name="SettlementPrice" value="2" label="×îÐÂ¼Û"/>
-		<enum name="AveragePrice" value="3" label="³É½»¾ù¼Û"/>
-		<enum name="OpenPrice" value="4" label="¿ª²Ö¼Û"/>
+	<EnumChar typename="MarginPriceType" label="ä¿è¯é‡‘ä»·æ ¼ç±»åž‹" prefix="MPT">
+		<enum name="PreSettlementPrice" value="1" label="æ˜¨ç»“ç®—ä»·"/>
+		<enum name="SettlementPrice" value="2" label="æœ€æ–°ä»·"/>
+		<enum name="AveragePrice" value="3" label="æˆäº¤å‡ä»·"/>
+		<enum name="OpenPrice" value="4" label="å¼€ä»“ä»·"/>
 	</EnumChar>
-	<EnumChar typename="BillGenStatus" label="½áËãµ¥Éú³É×´Ì¬" prefix="BGS">
-		<enum name="None" value="0" label="²»Éú³É"/>
-		<enum name="NoGenerated" value="1" label="Î´Éú³É"/>
-		<enum name="Generated" value="2" label="ÒÑÉú³É"/>
+	<EnumChar typename="BillGenStatus" label="ç»“ç®—å•ç”ŸæˆçŠ¶æ€" prefix="BGS">
+		<enum name="None" value="0" label="ä¸ç”Ÿæˆ"/>
+		<enum name="NoGenerated" value="1" label="æœªç”Ÿæˆ"/>
+		<enum name="Generated" value="2" label="å·²ç”Ÿæˆ"/>
 	</EnumChar>
-	<EnumChar typename="AlgoType" label="Ëã·¨ÀàÐÍ" prefix="AT">
-		<enum name="HandlePositionAlgo" value="1" label="³Ö²Ö´¦ÀíËã·¨"/>
-		<enum name="FindMarginRateAlgo" value="2" label="Ñ°ÕÒ±£Ö¤½ðÂÊËã·¨"/>
+	<EnumChar typename="AlgoType" label="ç®—æ³•ç±»åž‹" prefix="AT">
+		<enum name="HandlePositionAlgo" value="1" label="æŒä»“å¤„ç†ç®—æ³•"/>
+		<enum name="FindMarginRateAlgo" value="2" label="å¯»æ‰¾ä¿è¯é‡‘çŽ‡ç®—æ³•"/>
 	</EnumChar>
-	<EnumChar typename="HandlePositionAlgoID" label="³Ö²Ö´¦ÀíËã·¨±àºÅ" prefix="HPA">
-		<enum name="Base" value="1" label="»ù±¾"/>
-		<enum name="DCE" value="2" label="´óÁ¬ÉÌÆ·½»Ò×Ëù"/>
-		<enum name="CZCE" value="3" label="Ö£ÖÝÉÌÆ·½»Ò×Ëù"/>
+	<EnumChar typename="HandlePositionAlgoID" label="æŒä»“å¤„ç†ç®—æ³•ç¼–å·" prefix="HPA">
+		<enum name="Base" value="1" label="åŸºæœ¬"/>
+		<enum name="DCE" value="2" label="å¤§è¿žå•†å“äº¤æ˜“æ‰€"/>
+		<enum name="CZCE" value="3" label="éƒ‘å·žå•†å“äº¤æ˜“æ‰€"/>
 	</EnumChar>
-	<EnumChar typename="FindMarginRateAlgoID" label="Ñ°ÕÒ±£Ö¤½ðÂÊËã·¨±àºÅ" prefix="FMRA">
-		<enum name="Base" value="1" label="»ù±¾"/>
-		<enum name="DCE" value="2" label="´óÁ¬ÉÌÆ·½»Ò×Ëù"/>
-		<enum name="CZCE" value="3" label="Ö£ÖÝÉÌÆ·½»Ò×Ëù"/>
+	<EnumChar typename="FindMarginRateAlgoID" label="å¯»æ‰¾ä¿è¯é‡‘çŽ‡ç®—æ³•ç¼–å·" prefix="FMRA">
+		<enum name="Base" value="1" label="åŸºæœ¬"/>
+		<enum name="DCE" value="2" label="å¤§è¿žå•†å“äº¤æ˜“æ‰€"/>
+		<enum name="CZCE" value="3" label="éƒ‘å·žå•†å“äº¤æ˜“æ‰€"/>
 	</EnumChar>
-	<EnumChar typename="HandleTradingAccountAlgoID" label="×Ê½ð´¦ÀíËã·¨±àºÅ" prefix="HTAA">
-		<enum name="Base" value="1" label="»ù±¾"/>
-		<enum name="DCE" value="2" label="´óÁ¬ÉÌÆ·½»Ò×Ëù"/>
-		<enum name="CZCE" value="3" label="Ö£ÖÝÉÌÆ·½»Ò×Ëù"/>
+	<EnumChar typename="HandleTradingAccountAlgoID" label="èµ„é‡‘å¤„ç†ç®—æ³•ç¼–å·" prefix="HTAA">
+		<enum name="Base" value="1" label="åŸºæœ¬"/>
+		<enum name="DCE" value="2" label="å¤§è¿žå•†å“äº¤æ˜“æ‰€"/>
+		<enum name="CZCE" value="3" label="éƒ‘å·žå•†å“äº¤æ˜“æ‰€"/>
 	</EnumChar>
-	<EnumChar typename="PersonType" label="ÁªÏµÈËÀàÐÍ" prefix="PST">
-		<enum name="Order" value="1" label="Ö¸¶¨ÏÂµ¥ÈË"/>
-		<enum name="Open" value="2" label="¿ª»§ÊÚÈ¨ÈË"/>
-		<enum name="Fund" value="3" label="×Ê½ðµ÷²¦ÈË"/>
-		<enum name="Settlement" value="4" label="½áËãµ¥È·ÈÏÈË"/>
+	<EnumChar typename="PersonType" label="è”ç³»äººç±»åž‹" prefix="PST">
+		<enum name="Order" value="1" label="æŒ‡å®šä¸‹å•äºº"/>
+		<enum name="Open" value="2" label="å¼€æˆ·æŽˆæƒäºº"/>
+		<enum name="Fund" value="3" label="èµ„é‡‘è°ƒæ‹¨äºº"/>
+		<enum name="Settlement" value="4" label="ç»“ç®—å•ç¡®è®¤äºº"/>
 	</EnumChar>
-	<EnumChar typename="QueryInvestorRange" label="²éÑ¯·¶Î§" prefix="QIR">
-		<enum name="All" value="1" label="ËùÓÐ"/>
-		<enum name="Group" value="2" label="²éÑ¯·ÖÀà"/>
-		<enum name="Single" value="3" label="µ¥Ò»Í¶×ÊÕß"/>
+	<EnumChar typename="QueryInvestorRange" label="æŸ¥è¯¢èŒƒå›´" prefix="QIR">
+		<enum name="All" value="1" label="æ‰€æœ‰"/>
+		<enum name="Group" value="2" label="æŸ¥è¯¢åˆ†ç±»"/>
+		<enum name="Single" value="3" label="å•ä¸€æŠ•èµ„è€…"/>
 	</EnumChar>
-	<EnumChar typename="InvestorRiskStatus" label="Í¶×ÊÕß·çÏÕ×´Ì¬" prefix="IRS">
-		<enum name="Normal" value="1" label="Õý³£"/>
-		<enum name="Warn" value="2" label="¾¯¸æ"/>
-		<enum name="Call" value="3" label="×·±£"/>
-		<enum name="Force" value="4" label="Ç¿Æ½"/>
-		<enum name="Exception" value="5" label="Òì³£"/>
+	<EnumChar typename="InvestorRiskStatus" label="æŠ•èµ„è€…é£Žé™©çŠ¶æ€" prefix="IRS">
+		<enum name="Normal" value="1" label="æ­£å¸¸"/>
+		<enum name="Warn" value="2" label="è­¦å‘Š"/>
+		<enum name="Call" value="3" label="è¿½ä¿"/>
+		<enum name="Force" value="4" label="å¼ºå¹³"/>
+		<enum name="Exception" value="5" label="å¼‚å¸¸"/>
 	</EnumChar>
-	<RangeInt typename="LegID" length="1" from="0" to="4" label="µ¥ÍÈ±àºÅ"/>
-	<RangeInt typename="LegMultiple" length="2" from="1" to="10" label="µ¥ÍÈ³ËÊý"/>
-	<Int typename="ImplyLevel" length="2" label="ÅÉÉú²ãÊý"/>
-	<String typename="ClearAccount" length="32" label="½áËãÕË»§"/>
-	<String typename="OrganNO" length="5" label="½áËãÕË»§"/>
-	<String typename="ClearbarchID" length="5" label="½áËãÕË»§ÁªÐÐºÅ"/>
-	<EnumChar typename="UserEventType" label="ÓÃ»§ÊÂ¼þÀàÐÍ" prefix="UET">
-		<enum name="Login" value="1" label="µÇÂ¼"/>
-		<enum name="Logout" value="2" label="µÇ³ö"/>
-		<enum name="Trading" value="3" label="½»Ò×³É¹¦"/>
-		<enum name="TradingError" value="4" label="½»Ò×Ê§°Ü"/>
-		<enum name="UpdatePassword" value="5" label="ÐÞ¸ÄÃÜÂë"/>
-		<enum name="Other" value="9" label="ÆäËû"/>
+	<RangeInt typename="LegID" length="1" from="0" to="4" label="å•è…¿ç¼–å·"/>
+	<RangeInt typename="LegMultiple" length="2" from="1" to="10" label="å•è…¿ä¹˜æ•°"/>
+	<Int typename="ImplyLevel" length="2" label="æ´¾ç”Ÿå±‚æ•°"/>
+	<String typename="ClearAccount" length="32" label="ç»“ç®—è´¦æˆ·"/>
+	<String typename="OrganNO" length="5" label="ç»“ç®—è´¦æˆ·"/>
+	<String typename="ClearbarchID" length="5" label="ç»“ç®—è´¦æˆ·è”è¡Œå·"/>
+	<EnumChar typename="UserEventType" label="ç”¨æˆ·äº‹ä»¶ç±»åž‹" prefix="UET">
+		<enum name="Login" value="1" label="ç™»å½•"/>
+		<enum name="Logout" value="2" label="ç™»å‡º"/>
+		<enum name="Trading" value="3" label="äº¤æ˜“æˆåŠŸ"/>
+		<enum name="TradingError" value="4" label="äº¤æ˜“å¤±è´¥"/>
+		<enum name="UpdatePassword" value="5" label="ä¿®æ”¹å¯†ç "/>
+		<enum name="Other" value="9" label="å…¶ä»–"/>
 	</EnumChar>
-	<String typename="UserEventInfo" label="ÓÃ»§ÊÂ¼þÐÅÏ¢" length="1024"/>
-	<EnumChar typename="CloseStyle" label="Æ½²Ö·½Ê½" prefix="ICS">
-		<enum name="Close" value="0" label="ÏÈ¿ªÏÈÆ½"/>
-		<enum name="CloseToday" value="1" label="ÏÈÆ½½ñÔÙÆ½×ò"/>
+	<String typename="UserEventInfo" label="ç”¨æˆ·äº‹ä»¶ä¿¡æ¯" length="1024"/>
+	<EnumChar typename="CloseStyle" label="å¹³ä»“æ–¹å¼" prefix="ICS">
+		<enum name="Close" value="0" label="å…ˆå¼€å…ˆå¹³"/>
+		<enum name="CloseToday" value="1" label="å…ˆå¹³ä»Šå†å¹³æ˜¨"/>
 	</EnumChar>
-		<EnumChar typename="StatMode" label="Í³¼Æ·½Ê½" prefix="SM">
+		<EnumChar typename="StatMode" label="ç»Ÿè®¡æ–¹å¼" prefix="SM">
 		<enum name="Non" value="0" label="----"/>
-		<enum name="Instrument" value="1" label="°´ºÏÔ¼Í³¼Æ"/>
-		<enum name="Product" value="2" label="°´²úÆ·Í³¼Æ"/>
-		<enum name="Investor" value="3" label="°´Í¶×ÊÕßÍ³¼Æ"/>
+		<enum name="Instrument" value="1" label="æŒ‰åˆçº¦ç»Ÿè®¡"/>
+		<enum name="Product" value="2" label="æŒ‰äº§å“ç»Ÿè®¡"/>
+		<enum name="Investor" value="3" label="æŒ‰æŠ•èµ„è€…ç»Ÿè®¡"/>
 	</EnumChar>
-	<EnumChar typename="ParkedOrderStatus" label="Ô¤Âñµ¥×´Ì¬" prefix="PAOS">
-		<enum name="NotSend" value="1" label="Î´·¢ËÍ"/>
-		<enum name="Send" value="2" label="ÒÑ·¢ËÍ"/>
-		<enum name="Deleted" value="3" label="ÒÑÉ¾³ý"/>
+	<EnumChar typename="ParkedOrderStatus" label="é¢„åŸ‹å•çŠ¶æ€" prefix="PAOS">
+		<enum name="NotSend" value="1" label="æœªå‘é€"/>
+		<enum name="Send" value="2" label="å·²å‘é€"/>
+		<enum name="Deleted" value="3" label="å·²åˆ é™¤"/>
 	</EnumChar>
-	<String typename="ParkedOrderID" label="Ô¤Âñ±¨µ¥±àºÅ" length="12"/>
-	<String typename="ParkedOrderActionID" label="Ô¤Âñ³·µ¥±àºÅ" length="12"/>
-	<EnumChar typename="VirDealStatus" label="´¦Àí×´Ì¬" prefix="VDS">
-		<enum name="Dealing" value="1" label="ÕýÔÚ´¦Àí"/>
-		<enum name="DeaclSucceed" value="2" label="´¦Àí³É¹¦"/>
+	<String typename="ParkedOrderID" label="é¢„åŸ‹æŠ¥å•ç¼–å·" length="12"/>
+	<String typename="ParkedOrderActionID" label="é¢„åŸ‹æ’¤å•ç¼–å·" length="12"/>
+	<EnumChar typename="VirDealStatus" label="å¤„ç†çŠ¶æ€" prefix="VDS">
+		<enum name="Dealing" value="1" label="æ­£åœ¨å¤„ç†"/>
+		<enum name="DeaclSucceed" value="2" label="å¤„ç†æˆåŠŸ"/>
 	</EnumChar>
-	<EnumChar typename="OrgSystemID" label="Ô­ÓÐÏµÍ³´úÂë" prefix="ORGS">
-		<enum name="Standard" value="0" label="×ÛºÏ½»Ò×Æ½Ì¨"/>
-		<enum name="ESunny" value="1" label="Ò×Ê¢ÏµÍ³"/>
-		<enum name="KingStarV6" value="2" label="½ðÊË´ïV6ÏµÍ³"/>
+	<EnumChar typename="OrgSystemID" label="åŽŸæœ‰ç³»ç»Ÿä»£ç " prefix="ORGS">
+		<enum name="Standard" value="0" label="ç»¼åˆäº¤æ˜“å¹³å°"/>
+		<enum name="ESunny" value="1" label="æ˜“ç››ç³»ç»Ÿ"/>
+		<enum name="KingStarV6" value="2" label="é‡‘ä»•è¾¾V6ç³»ç»Ÿ"/>
 	</EnumChar>
-	<EnumChar typename="VirTradeStatus" label="½»Ò××´Ì¬" prefix="VTS">
-		<enum name="NaturalDeal" value="0" label="Õý³£´¦ÀíÖÐ"/>
-		<enum name="SucceedEnd" value="1" label="³É¹¦½áÊø"/>
-		<enum name="FailedEND" value="2" label="Ê§°Ü½áÊø"/>
-		<enum name="Exception" value="3" label="Òì³£ÖÐ"/>
-		<enum name="ManualDeal" value="4" label="ÒÑÈË¹¤Òì³£´¦Àí"/>
-		<enum name="MesException" value="5" label="Í¨Ñ¶Òì³£ £¬ÇëÈË¹¤´¦Àí"/>
-		<enum name="SysException" value="6" label="ÏµÍ³³ö´í£¬ÇëÈË¹¤´¦Àí"/>
+	<EnumChar typename="VirTradeStatus" label="äº¤æ˜“çŠ¶æ€" prefix="VTS">
+		<enum name="NaturalDeal" value="0" label="æ­£å¸¸å¤„ç†ä¸­"/>
+		<enum name="SucceedEnd" value="1" label="æˆåŠŸç»“æŸ"/>
+		<enum name="FailedEND" value="2" label="å¤±è´¥ç»“æŸ"/>
+		<enum name="Exception" value="3" label="å¼‚å¸¸ä¸­"/>
+		<enum name="ManualDeal" value="4" label="å·²äººå·¥å¼‚å¸¸å¤„ç†"/>
+		<enum name="MesException" value="5" label="é€šè®¯å¼‚å¸¸ ï¼Œè¯·äººå·¥å¤„ç†"/>
+		<enum name="SysException" value="6" label="ç³»ç»Ÿå‡ºé”™ï¼Œè¯·äººå·¥å¤„ç†"/>
 	</EnumChar>	
-	<EnumChar typename="VirBankAccType" label="ÒøÐÐÕÊ»§ÀàÐÍ" prefix="VBAT">
-		<enum name="BankBook"   value="1" label="´æÕÛ"/>
-		<enum name="BankCard"   value="2" label="´¢Ðî¿¨"/>
-		<enum name="CreditCard" value="3" label="ÐÅÓÃ¿¨"/>
+	<EnumChar typename="VirBankAccType" label="é“¶è¡Œå¸æˆ·ç±»åž‹" prefix="VBAT">
+		<enum name="BankBook"   value="1" label="å­˜æŠ˜"/>
+		<enum name="BankCard"   value="2" label="å‚¨è“„å¡"/>
+		<enum name="CreditCard" value="3" label="ä¿¡ç”¨å¡"/>
 	</EnumChar>		
-	<EnumChar typename="VirementStatus" label="ÒøÐÐÕÊ»§ÀàÐÍ" prefix="VMS">
-		<enum name="Natural" value="0" label="Õý³£"/>
-		<enum name="Canceled" value="9" label="Ïú»§"/>
+	<EnumChar typename="VirementStatus" label="é“¶è¡Œå¸æˆ·ç±»åž‹" prefix="VMS">
+		<enum name="Natural" value="0" label="æ­£å¸¸"/>
+		<enum name="Canceled" value="9" label="é”€æˆ·"/>
 	</EnumChar>	
-	<EnumChar typename="VirementAvailAbility" label="ÓÐÐ§±êÖ¾" prefix="VAA">
-		<enum name="NoAvailAbility"  value="0" label="Î´È·ÈÏ"/>
-		<enum name="AvailAbility"    value="1" label="ÓÐÐ§"/>
-		<enum name="Repeal"          value="2" label="³åÕý"/>
+	<EnumChar typename="VirementAvailAbility" label="æœ‰æ•ˆæ ‡å¿—" prefix="VAA">
+		<enum name="NoAvailAbility"  value="0" label="æœªç¡®è®¤"/>
+		<enum name="AvailAbility"    value="1" label="æœ‰æ•ˆ"/>
+		<enum name="Repeal"          value="2" label="å†²æ­£"/>
 	</EnumChar>	
-	<EnumChar typename="VirementTradeCode" label="½»Ò×´úÂë" prefix="VTC">
-		<enum name="BankBankToFuture"  value="102001" label="ÒøÐÐ·¢ÆðÒøÐÐ×Ê½ð×ªÆÚ»õ"/>
-		<enum name="BankFutureToBank"  value="102002" label="ÒøÐÐ·¢ÆðÆÚ»õ×Ê½ð×ªÒøÐÐ"/>
-		<enum name="FutureBankToFuture" value="202001" label="ÆÚ»õ·¢ÆðÒøÐÐ×Ê½ð×ªÆÚ»õ"/>
-		<enum name="FutureFutureToBank" value="202002" label="ÆÚ»õ·¢ÆðÆÚ»õ×Ê½ð×ªÒøÐÐ"/>	
+	<EnumChar typename="VirementTradeCode" label="äº¤æ˜“ä»£ç " prefix="VTC">
+		<enum name="BankBankToFuture"  value="102001" label="é“¶è¡Œå‘èµ·é“¶è¡Œèµ„é‡‘è½¬æœŸè´§"/>
+		<enum name="BankFutureToBank"  value="102002" label="é“¶è¡Œå‘èµ·æœŸè´§èµ„é‡‘è½¬é“¶è¡Œ"/>
+		<enum name="FutureBankToFuture" value="202001" label="æœŸè´§å‘èµ·é“¶è¡Œèµ„é‡‘è½¬æœŸè´§"/>
+		<enum name="FutureFutureToBank" value="202002" label="æœŸè´§å‘èµ·æœŸè´§èµ„é‡‘è½¬é“¶è¡Œ"/>	
 	</EnumChar>
-	<String typename="PhotoTypeName" length="40" label="Ó°ÏñÀàÐÍÃû³Æ"/>
-	<String typename="PhotoTypeID"   length="4" label="Ó°ÏñÀàÐÍ´úÂë"/>
-	<String typename="PhotoName"     length="160" label="Ó°ÏñÃû³Æ"/>
-	<Int typename="TopicID" length="4" label="Ö÷Ìâ´úÂë"/>
+	<String typename="PhotoTypeName" length="40" label="å½±åƒç±»åž‹åç§°"/>
+	<String typename="PhotoTypeID"   length="4" label="å½±åƒç±»åž‹ä»£ç "/>
+	<String typename="PhotoName"     length="160" label="å½±åƒåç§°"/>
+	<Int typename="TopicID" length="4" label="ä¸»é¢˜ä»£ç "/>
 	
-	<!--·´Ï´Ç®ÀàÐÍ add by zhang.c-->
-	<String typename="ReportTypeID" length="2" label="½»Ò×±¨¸æÀàÐÍ±êÊ¶"/>
-	<String typename="CharacterID" length="4" label="½»Ò×ÌØÕ÷´úÂë"/>
-	<String typename="AMLParamID" length="20" label="²ÎÊý´úÂë"/>
+	<!--åæ´—é’±ç±»åž‹ add by zhang.c-->
+	<String typename="ReportTypeID" length="2" label="äº¤æ˜“æŠ¥å‘Šç±»åž‹æ ‡è¯†"/>
+	<String typename="CharacterID" length="4" label="äº¤æ˜“ç‰¹å¾ä»£ç "/>
+	<String typename="AMLParamID" length="20" label="å‚æ•°ä»£ç "/>
 	
-	<String typename="AMLInvestorType" length="2" label="Í¶×ÊÕßÀàÐÍ"/>
-	<String typename="AMLIdCardType" length="2" label="Ö¤¼þÀàÐÍ"/>
-	<String typename="AMLTradeDirect" length="2" label="×Ê½ð½ø³ö·½Ïò"/>
-	<String typename="AMLTradeModel" length="2" label="×Ê½ð½ø³ö·½Ê½"/>
-	<String typename="AMLParamID" length="20" label="²ÎÊý´úÂë"/>
+	<String typename="AMLInvestorType" length="2" label="æŠ•èµ„è€…ç±»åž‹"/>
+	<String typename="AMLIdCardType" length="2" label="è¯ä»¶ç±»åž‹"/>
+	<String typename="AMLTradeDirect" length="2" label="èµ„é‡‘è¿›å‡ºæ–¹å‘"/>
+	<String typename="AMLTradeModel" length="2" label="èµ„é‡‘è¿›å‡ºæ–¹å¼"/>
+	<String typename="AMLParamID" length="20" label="å‚æ•°ä»£ç "/>
 	
-	<FixNumber typename="AMLOpParamValue" length="12" precision="3" label="ÒµÎñ²ÎÊý´úÂëÖµ"/>		
-	<String typename="AMLCustomerCardType" length="80" label="¿Í»§Éí·ÝÖ¤¼þ/Ö¤Ã÷ÎÄ¼þÀàÐÍ"/> 
-	<String typename="AMLInstitutionName" length="64" label="½ðÈÚ»ú¹¹ÍøµãÃû³Æ" />
-	<String typename="AMLDistrictID" length="6" label="½ðÈÚ»ú¹¹ÍøµãËùÔÚµØÇøÐÐÕþÇø»®´úÂë" />
-	<String typename="AMLRelationShip" length="2" label="½ðÈÚ»ú¹¹ÍøµãÓë´ó¶î½»Ò×µÄ¹ØÏµ" />
-	<String typename="AMLInstitutionType" length="2" label="½ðÈÚ»ú¹¹Íøµã´úÂëÀàÐÍ" />
-	<String typename="AMLInstitutionID" length="12" label="½ðÈÚ»ú¹¹Íøµã´úÂë" />
-	<String typename="AMLAccountType" length="4" label="ÕË»§ÀàÐÍ" />
-	<String typename="AMLTradingType" length="6" label="½»Ò×·½Ê½" />
-	<String typename="AMLTransactClass" length="6" label="ÉæÍâÊÕÖ§½»Ò×·ÖÀàÓë´úÂë" />
-	<String typename="AMLCapitalIO" length="2" label="×Ê½ðÊÕ¸¶±êÊ¶" />
-	<String typename="AMLSite" length="9" label="½»Ò×µØµã" />
-  <String typename="AMLCapitalPurpose" length="128" label="×Ê½ðÓÃÍ¾" />
-	<String typename="AMLReportType" length="1" label="±¨ÎÄÀàÐÍ" />
-	<String typename="AMLSerialNo" length="4" label="±àºÅ" />
-	<String typename="AMLStatus" length="1" label="×´Ì¬" />
-	<String typename="AMLGenStatus" length="1" label="×´Ì¬" />
-	<String typename="AMLSeqCode" length="64" label="ÒµÎñ±êÊ¶ºÅ" />
-	<String typename="AMLFileName" length="256" label="AMLÎÄ¼þÃû" />
-	<Float typename="AMLMoney" length="20" precision="3" label="·´Ï´Ç®×Ê½ð"/>
-	<Int typename="AMLFileAmount" length="4" label="·´Ï´Ç®×Ê½ð"/>
-	<String typename="CFMMCKey" length="20" label="ÃÜÔ¿ÀàÐÍ(±£Ö¤½ð¼à¹Ü)" />
-	<EnumChar typename="CFMMCKeyKind" label="¶¯Ì¬ÃÜÔ¿Àà±ð(±£Ö¤½ð¼à¹Ü)" prefix="CFMMCKK">
-		<enum name="REQUEST" value="R" label="Ö÷¶¯ÇëÇó¸üÐÂ"/>
-		<enum name="AUTO" value="A" label="CFMMC×Ô¶¯¸üÐÂ"/>
-		<enum name="MANUAL" value="M" label="CFMMCÊÖ¶¯¸üÐÂ"/>
+	<FixNumber typename="AMLOpParamValue" length="12" precision="3" label="ä¸šåŠ¡å‚æ•°ä»£ç å€¼"/>		
+	<String typename="AMLCustomerCardType" length="80" label="å®¢æˆ·èº«ä»½è¯ä»¶/è¯æ˜Žæ–‡ä»¶ç±»åž‹"/> 
+	<String typename="AMLInstitutionName" length="64" label="é‡‘èžæœºæž„ç½‘ç‚¹åç§°" />
+	<String typename="AMLDistrictID" length="6" label="é‡‘èžæœºæž„ç½‘ç‚¹æ‰€åœ¨åœ°åŒºè¡Œæ”¿åŒºåˆ’ä»£ç " />
+	<String typename="AMLRelationShip" length="2" label="é‡‘èžæœºæž„ç½‘ç‚¹ä¸Žå¤§é¢äº¤æ˜“çš„å…³ç³»" />
+	<String typename="AMLInstitutionType" length="2" label="é‡‘èžæœºæž„ç½‘ç‚¹ä»£ç ç±»åž‹" />
+	<String typename="AMLInstitutionID" length="12" label="é‡‘èžæœºæž„ç½‘ç‚¹ä»£ç " />
+	<String typename="AMLAccountType" length="4" label="è´¦æˆ·ç±»åž‹" />
+	<String typename="AMLTradingType" length="6" label="äº¤æ˜“æ–¹å¼" />
+	<String typename="AMLTransactClass" length="6" label="æ¶‰å¤–æ”¶æ”¯äº¤æ˜“åˆ†ç±»ä¸Žä»£ç " />
+	<String typename="AMLCapitalIO" length="2" label="èµ„é‡‘æ”¶ä»˜æ ‡è¯†" />
+	<String typename="AMLSite" length="9" label="äº¤æ˜“åœ°ç‚¹" />
+  <String typename="AMLCapitalPurpose" length="128" label="èµ„é‡‘ç”¨é€”" />
+	<String typename="AMLReportType" length="1" label="æŠ¥æ–‡ç±»åž‹" />
+	<String typename="AMLSerialNo" length="4" label="ç¼–å·" />
+	<String typename="AMLStatus" length="1" label="çŠ¶æ€" />
+	<String typename="AMLGenStatus" length="1" label="çŠ¶æ€" />
+	<String typename="AMLSeqCode" length="64" label="ä¸šåŠ¡æ ‡è¯†å·" />
+	<String typename="AMLFileName" length="256" label="AMLæ–‡ä»¶å" />
+	<Float typename="AMLMoney" length="20" precision="3" label="åæ´—é’±èµ„é‡‘"/>
+	<Int typename="AMLFileAmount" length="4" label="åæ´—é’±èµ„é‡‘"/>
+	<String typename="CFMMCKey" length="20" label="å¯†é’¥ç±»åž‹(ä¿è¯é‡‘ç›‘ç®¡)" />
+	<EnumChar typename="CFMMCKeyKind" label="åŠ¨æ€å¯†é’¥ç±»åˆ«(ä¿è¯é‡‘ç›‘ç®¡)" prefix="CFMMCKK">
+		<enum name="REQUEST" value="R" label="ä¸»åŠ¨è¯·æ±‚æ›´æ–°"/>
+		<enum name="AUTO" value="A" label="CFMMCè‡ªåŠ¨æ›´æ–°"/>
+		<enum name="MANUAL" value="M" label="CFMMCæ‰‹åŠ¨æ›´æ–°"/>
 	</EnumChar>
-	<!--·´Ï´Ç®ÀàÐÍ add by zhang.c-->
-	 <!--added by ×ÛºÏ½»Ò×Æ½Ì¨ÒøÆÚ×ªÕÊ£¬zhang.hb start ÐÂÏµÍ³-->
-	<VString typename="IndividualName" label="¸öÈËÐÕÃû" length="50"/>
-	<String typename="CurrencyID" length="3" label="±ÒÖÖ´úÂë"/>
-	<String typename="CustNumber" length="35" label="¿Í»§±àºÅ"/>
-	<String typename="OrganCode" length="35" label="»ú¹¹±àÂë"/>
-	<String typename="OrganName" length="70" label="»ú¹¹Ãû³Æ"/>
-	<String typename="SuperOrganCode" length="11" label="ÉÏ¼¶»ú¹¹±àÂë,¼´ÆÚ»õ¹«Ë¾×Ü²¿¡¢ÒøÐÐ×ÜÐÐ"/>
-	<String typename="SubBranchID" length="30" label="·ÖÖ§»ú¹¹"/>
-	<String typename="SubBranchName" length="70" label="·ÖÖ§»ú¹¹Ãû³Æ"/>
-	<String typename="BranchNetCode" length="30" label="»ú¹¹ÍøµãºÅ"/>
-	<String typename="BranchNetName" length="70" label="»ú¹¹ÍøµãÃû³Æ"/>
-	<String typename="OrganFlag" length="1" label="»ú¹¹±êÊ¶"/>
-	<String typename="BankCodingForFuture" length="32" label="ÒøÐÐ¶ÔÆÚ»õ¹«Ë¾µÄ±àÂë"/>
-	<String typename="BankReturnCode" length="6" label="ÒøÐÐ¶Ô·µ»ØÂëµÄ¶¨Òå"/>
-	<String typename="PlateReturnCode" length="4" label="ÒøÆÚ×ªÕÊÆ½Ì¨¶Ô·µ»ØÂëµÄ¶¨Òå"/>
-	<String typename="BankSubBranchID" length="30" label="ÒøÐÐ·ÖÖ§»ú¹¹±àÂë"/>
-	<String typename="FutureBranchID" length="30" label="ÆÚ»õ·ÖÖ§»ú¹¹±àÂë"/>	
-	<String typename="ReturnCode" length="6" label="·µ»Ø´úÂë"/>
-	<String typename="OperatorCode" length="16" label="²Ù×÷Ô±"/>
-	<String typename="ClearDepID" length="5" label="»ú¹¹½áËãÕÊ»§»ú¹¹ºÅ"/>
-	<String typename="ClearBrchID" length="5" label="»ú¹¹½áËãÕÊ»§ÁªÐÐºÅ"/>
-	<String typename="ClearName" length="70" label="»ú¹¹½áËãÕÊ»§Ãû³Æ"/>
-	<String typename="BankAccountName" length="70" label="ÒøÐÐÕÊ»§Ãû³Æ"/>
-	<String typename="InvDepID" length="5" label="»ú¹¹Í¶×ÊÈËÕËºÅ»ú¹¹ºÅ"/>
-	<String typename="InvBrchID" length="5" label="»ú¹¹Í¶×ÊÈËÁªÐÐºÅ"/>
-	<String typename="MessageFormatVersion" length="35" label="ÐÅÏ¢¸ñÊ½°æ±¾"/>
-	<String typename="Digest" length="35" label="ÕªÒª"/>
-	<String typename="AuthenticData" length="128" label="ÈÏÖ¤Êý¾Ý"/>
-	<String typename="PasswordKey" length="128" label="ÃÜÔ¿"/>
-	<String typename="FutureAccountName" length="128" label="ÆÚ»õÕÊ»§Ãû³Æ"/>
-	<VString typename="MobilePhone" label="ÊÖ»ú" length="20"/>
-	<VString typename="FutureMainKey" length="128" label="ÆÚ»õ¹«Ë¾Ö÷ÃÜÔ¿"/>
-	<VString typename="FutureWorkKey" length="128" label="ÆÚ»õ¹«Ë¾¹¤×÷ÃÜÔ¿"/>
-	<VString typename="FutureTransKey" length="128" label="ÆÚ»õ¹«Ë¾´«ÊäÃÜÔ¿"/>
-	<VString typename="BankMainKey" length="128" label="ÒøÐÐÖ÷ÃÜÔ¿"/>
-	<VString typename="BankWorkKey" length="128" label="ÒøÐÐ¹¤×÷ÃÜÔ¿"/>
-	<VString typename="BankTransKey" length="128" label="ÒøÐÐ´«ÊäÃÜÔ¿"/>
-	<VString typename="BankServerDescription" length="128" label="ÒøÐÐ·þÎñÆ÷ÃèÊöÐÅÏ¢"/>
-	<VString typename="AddInfo" length="128" label="¸½¼ÓÐÅÏ¢"/>
-	<VString typename="DescrInfoForReturnCode" length="128" label="·µ»ØÂëÃèÊö"/>
-	<VString typename="CountryCode" label="¹ú¼Ò´úÂë" length="20"/>
-	<Int typename="Serial" length="8" label="Á÷Ë®ºÅ"/>
-	<Int typename="PlateSerial" length="8" label="Æ½Ì¨Á÷Ë®ºÅ"/>
-	<String typename="BankSerial" length="12" label="ÒøÐÐÁ÷Ë®ºÅ"/>
-	<Int typename="CorrectSerial" label="±»³åÕý½»Ò×Á÷Ë®ºÅ" length="8"/>
-	<Int typename="FutureSerial" length="8" label="ÆÚ»õ¹«Ë¾Á÷Ë®ºÅ"/>
-	<Int typename="ApplicationID" length="3" label="Ó¦ÓÃ±êÊ¶"/>
-	<Int typename="BankProxyID" length="3" label="ÒøÐÐ´úÀí±êÊ¶"/>
-	<Int typename="FBTCoreID" length="3" label="ÒøÆÚ×ªÕÊºËÐÄÏµÍ³±êÊ¶"/>
-	<Int typename="ServerPort" length="8" label="·þÎñ¶Ë¿ÚºÅ"/>
-	<Int typename="RepealedTimes" length="8" label="ÒÑ¾­³åÕý´ÎÊý"/>
-	<Int typename="RepealTimeInterval" length="10" label="³åÕýÊ±¼ä¼ä¸ô"/>
-	<Int typename="TotalTimes" length="2" label="Ã¿ÈÕÀÛ¼Æ×ªÕÊ´ÎÊý"/>
-	<Int typename="FBTRequestID" length="10" label="ÇëÇóID"/>
-	<Int typename="TID" length="10" label="½»Ò×ID"/>
-	<Float typename="TradeAmount" label="½»Ò×½ð¶î£¨Ôª£©" length="19" precision="3"/>
-	<Float typename="CustFee" label="Ó¦ÊÕ¿Í»§·ÑÓÃ£¨Ôª£©" length="19" precision="3"/>
-	<Float typename="FutureFee" label="Ó¦ÊÕÆÚ»õ¹«Ë¾·ÑÓÃ£¨Ôª£©" length="19" precision="3"/>
-	<Float typename="SingleMaxAmt" label="µ¥±Ê×î¸ßÏÞ¶î" length="19" precision="3"/>
-	<Float typename="SingleMinAmt" label="µ¥±Ê×îµÍÏÞ¶î" length="19" precision="3"/>
-	<Float typename="TotalAmt" label="Ã¿ÈÕÀÛ¼Æ×ªÕÊ¶î¶È" length="19" precision="3"/>
-  <EnumChar typename="CertificationType" label="Ö¤¼þÀàÐÍ" prefix="CFT">
-		<enum name="IDCard" value="0" label="Éí·ÝÖ¤"/>
-		<enum name="Passport" value="1" label="»¤ÕÕ"/>
-		<enum name="OfficerIDCard" value="2" label="¾ü¹ÙÖ¤"/>
-		<enum name="SoldierIDCard" value="3" label="Ê¿±øÖ¤"/>
-		<enum name="HomeComingCard" value="4" label="»ØÏçÖ¤"/>
-		<enum name="HouseholdRegister " value="5" label="»§¿Ú²¾"/>
-		<enum name="LicenseNo" value="6" label="ÓªÒµÖ´ÕÕºÅ"/>
-		<enum name="InstitutionCodeCard" value="7" label="×éÖ¯»ú¹¹´úÂëÖ¤"/>
-		<enum name="TempLicenseNo" value="8" label="ÁÙÊ±ÓªÒµÖ´ÕÕºÅ"/>
-		<enum name="NoEnterpriseLicenseNo" value="9" label="Ãñ°ì·ÇÆóÒµµÇ¼ÇÖ¤Êé"/>
-		<enum name="OtherCard" value="x" label="ÆäËûÖ¤¼þ"/>
-		<enum name="SuperDepAgree" value="a" label="Ö÷¹Ü²¿ÃÅÅúÎÄ"/>
+	<!--åæ´—é’±ç±»åž‹ add by zhang.c-->
+	 <!--added by ç»¼åˆäº¤æ˜“å¹³å°é“¶æœŸè½¬å¸ï¼Œzhang.hb start æ–°ç³»ç»Ÿ-->
+	<VString typename="IndividualName" label="ä¸ªäººå§“å" length="50"/>
+	<String typename="CurrencyID" length="3" label="å¸ç§ä»£ç "/>
+	<String typename="CustNumber" length="35" label="å®¢æˆ·ç¼–å·"/>
+	<String typename="OrganCode" length="35" label="æœºæž„ç¼–ç "/>
+	<String typename="OrganName" length="70" label="æœºæž„åç§°"/>
+	<String typename="SuperOrganCode" length="11" label="ä¸Šçº§æœºæž„ç¼–ç ,å³æœŸè´§å…¬å¸æ€»éƒ¨ã€é“¶è¡Œæ€»è¡Œ"/>
+	<String typename="SubBranchID" length="30" label="åˆ†æ”¯æœºæž„"/>
+	<String typename="SubBranchName" length="70" label="åˆ†æ”¯æœºæž„åç§°"/>
+	<String typename="BranchNetCode" length="30" label="æœºæž„ç½‘ç‚¹å·"/>
+	<String typename="BranchNetName" length="70" label="æœºæž„ç½‘ç‚¹åç§°"/>
+	<String typename="OrganFlag" length="1" label="æœºæž„æ ‡è¯†"/>
+	<String typename="BankCodingForFuture" length="32" label="é“¶è¡Œå¯¹æœŸè´§å…¬å¸çš„ç¼–ç "/>
+	<String typename="BankReturnCode" length="6" label="é“¶è¡Œå¯¹è¿”å›žç çš„å®šä¹‰"/>
+	<String typename="PlateReturnCode" length="4" label="é“¶æœŸè½¬å¸å¹³å°å¯¹è¿”å›žç çš„å®šä¹‰"/>
+	<String typename="BankSubBranchID" length="30" label="é“¶è¡Œåˆ†æ”¯æœºæž„ç¼–ç "/>
+	<String typename="FutureBranchID" length="30" label="æœŸè´§åˆ†æ”¯æœºæž„ç¼–ç "/>	
+	<String typename="ReturnCode" length="6" label="è¿”å›žä»£ç "/>
+	<String typename="OperatorCode" length="16" label="æ“ä½œå‘˜"/>
+	<String typename="ClearDepID" length="5" label="æœºæž„ç»“ç®—å¸æˆ·æœºæž„å·"/>
+	<String typename="ClearBrchID" length="5" label="æœºæž„ç»“ç®—å¸æˆ·è”è¡Œå·"/>
+	<String typename="ClearName" length="70" label="æœºæž„ç»“ç®—å¸æˆ·åç§°"/>
+	<String typename="BankAccountName" length="70" label="é“¶è¡Œå¸æˆ·åç§°"/>
+	<String typename="InvDepID" length="5" label="æœºæž„æŠ•èµ„äººè´¦å·æœºæž„å·"/>
+	<String typename="InvBrchID" length="5" label="æœºæž„æŠ•èµ„äººè”è¡Œå·"/>
+	<String typename="MessageFormatVersion" length="35" label="ä¿¡æ¯æ ¼å¼ç‰ˆæœ¬"/>
+	<String typename="Digest" length="35" label="æ‘˜è¦"/>
+	<String typename="AuthenticData" length="128" label="è®¤è¯æ•°æ®"/>
+	<String typename="PasswordKey" length="128" label="å¯†é’¥"/>
+	<String typename="FutureAccountName" length="128" label="æœŸè´§å¸æˆ·åç§°"/>
+	<VString typename="MobilePhone" label="æ‰‹æœº" length="20"/>
+	<VString typename="FutureMainKey" length="128" label="æœŸè´§å…¬å¸ä¸»å¯†é’¥"/>
+	<VString typename="FutureWorkKey" length="128" label="æœŸè´§å…¬å¸å·¥ä½œå¯†é’¥"/>
+	<VString typename="FutureTransKey" length="128" label="æœŸè´§å…¬å¸ä¼ è¾“å¯†é’¥"/>
+	<VString typename="BankMainKey" length="128" label="é“¶è¡Œä¸»å¯†é’¥"/>
+	<VString typename="BankWorkKey" length="128" label="é“¶è¡Œå·¥ä½œå¯†é’¥"/>
+	<VString typename="BankTransKey" length="128" label="é“¶è¡Œä¼ è¾“å¯†é’¥"/>
+	<VString typename="BankServerDescription" length="128" label="é“¶è¡ŒæœåŠ¡å™¨æè¿°ä¿¡æ¯"/>
+	<VString typename="AddInfo" length="128" label="é™„åŠ ä¿¡æ¯"/>
+	<VString typename="DescrInfoForReturnCode" length="128" label="è¿”å›žç æè¿°"/>
+	<VString typename="CountryCode" label="å›½å®¶ä»£ç " length="20"/>
+	<Int typename="Serial" length="8" label="æµæ°´å·"/>
+	<Int typename="PlateSerial" length="8" label="å¹³å°æµæ°´å·"/>
+	<String typename="BankSerial" length="12" label="é“¶è¡Œæµæ°´å·"/>
+	<Int typename="CorrectSerial" label="è¢«å†²æ­£äº¤æ˜“æµæ°´å·" length="8"/>
+	<Int typename="FutureSerial" length="8" label="æœŸè´§å…¬å¸æµæ°´å·"/>
+	<Int typename="ApplicationID" length="3" label="åº”ç”¨æ ‡è¯†"/>
+	<Int typename="BankProxyID" length="3" label="é“¶è¡Œä»£ç†æ ‡è¯†"/>
+	<Int typename="FBTCoreID" length="3" label="é“¶æœŸè½¬å¸æ ¸å¿ƒç³»ç»Ÿæ ‡è¯†"/>
+	<Int typename="ServerPort" length="8" label="æœåŠ¡ç«¯å£å·"/>
+	<Int typename="RepealedTimes" length="8" label="å·²ç»å†²æ­£æ¬¡æ•°"/>
+	<Int typename="RepealTimeInterval" length="10" label="å†²æ­£æ—¶é—´é—´éš”"/>
+	<Int typename="TotalTimes" length="2" label="æ¯æ—¥ç´¯è®¡è½¬å¸æ¬¡æ•°"/>
+	<Int typename="FBTRequestID" length="10" label="è¯·æ±‚ID"/>
+	<Int typename="TID" length="10" label="äº¤æ˜“ID"/>
+	<Float typename="TradeAmount" label="äº¤æ˜“é‡‘é¢ï¼ˆå…ƒï¼‰" length="19" precision="3"/>
+	<Float typename="CustFee" label="åº”æ”¶å®¢æˆ·è´¹ç”¨ï¼ˆå…ƒï¼‰" length="19" precision="3"/>
+	<Float typename="FutureFee" label="åº”æ”¶æœŸè´§å…¬å¸è´¹ç”¨ï¼ˆå…ƒï¼‰" length="19" precision="3"/>
+	<Float typename="SingleMaxAmt" label="å•ç¬”æœ€é«˜é™é¢" length="19" precision="3"/>
+	<Float typename="SingleMinAmt" label="å•ç¬”æœ€ä½Žé™é¢" length="19" precision="3"/>
+	<Float typename="TotalAmt" label="æ¯æ—¥ç´¯è®¡è½¬å¸é¢åº¦" length="19" precision="3"/>
+  <EnumChar typename="CertificationType" label="è¯ä»¶ç±»åž‹" prefix="CFT">
+		<enum name="IDCard" value="0" label="èº«ä»½è¯"/>
+		<enum name="Passport" value="1" label="æŠ¤ç…§"/>
+		<enum name="OfficerIDCard" value="2" label="å†›å®˜è¯"/>
+		<enum name="SoldierIDCard" value="3" label="å£«å…µè¯"/>
+		<enum name="HomeComingCard" value="4" label="å›žä¹¡è¯"/>
+		<enum name="HouseholdRegister " value="5" label="æˆ·å£ç°¿"/>
+		<enum name="LicenseNo" value="6" label="è¥ä¸šæ‰§ç…§å·"/>
+		<enum name="InstitutionCodeCard" value="7" label="ç»„ç»‡æœºæž„ä»£ç è¯"/>
+		<enum name="TempLicenseNo" value="8" label="ä¸´æ—¶è¥ä¸šæ‰§ç…§å·"/>
+		<enum name="NoEnterpriseLicenseNo" value="9" label="æ°‘åŠžéžä¼ä¸šç™»è®°è¯ä¹¦"/>
+		<enum name="OtherCard" value="x" label="å…¶ä»–è¯ä»¶"/>
+		<enum name="SuperDepAgree" value="a" label="ä¸»ç®¡éƒ¨é—¨æ‰¹æ–‡"/>
 	</EnumChar>
-	<EnumChar typename="FileBusinessCode" label="ÎÄ¼þÒµÎñ¹¦ÄÜ" prefix="FBC">
-		<enum name="Others" value="0" label="ÆäËû"/>
-		<enum name="TransferDetails" value="1" label="×ªÕË½»Ò×Ã÷Ï¸¶ÔÕË"/>
-		<enum name="CustAccStatus" value="2" label="¿Í»§ÕË»§×´Ì¬¶ÔÕË"/>
-		<enum name="AccountTradeDetails" value="3" label="ÕË»§Àà½»Ò×Ã÷Ï¸¶ÔÕË"/>
-		<enum name="FutureAccountChangeInfoDetails" value="4" label="ÆÚ»õÕË»§ÐÅÏ¢±ä¸üÃ÷Ï¸¶ÔÕË"/>
-		<enum name="CustMoneyDetail" value="5" label="¿Í»§×Ê½ðÌ¨ÕËÓà¶îÃ÷Ï¸¶ÔÕË"/>
-		<enum name="CustCancelAccountInfo" value="6" label="¿Í»§Ïú»§½áÏ¢Ã÷Ï¸¶ÔÕË"/>
-		<enum name="CustMoneyResult" value="7" label="¿Í»§×Ê½ðÓà¶î¶ÔÕË½á¹û"/>
-		<enum name="OthersExceptionResult" value="8" label="ÆäËü¶ÔÕËÒì³£½á¹ûÎÄ¼þ"/>
-		<enum name="CustInterestNetMoneyDetails" value="9" label="¿Í»§½áÏ¢¾»¶îÃ÷Ï¸"/>
-		<enum name="CustMoneySendAndReceiveDetails" value="a" label="¿Í»§×Ê½ð½»ÊÕÃ÷Ï¸"/>
-		<enum name="CorporationMoneyTotal" value="b" label="·¨ÈË´æ¹ÜÒøÐÐ×Ê½ð½»ÊÕ»ã×Ü"/>
-		<enum name="MainbodyMoneyTotal" value="c" label="Ö÷Ìå¼ä×Ê½ð½»ÊÕ»ã×Ü"/>
-		<enum name="MainPartMonitorData" value="d" label="×Ü·ÖÆ½ºâ¼à¹ÜÊý¾Ý"/>
-		<enum name="PreparationMoney" value="e" label="´æ¹ÜÒøÐÐ±¸¸¶½ðÓà¶î"/>
-		<enum name="BankMoneyMonitorData" value="f" label="Ð­°ì´æ¹ÜÒøÐÐ×Ê½ð¼à¹ÜÊý¾Ý"/>
+	<EnumChar typename="FileBusinessCode" label="æ–‡ä»¶ä¸šåŠ¡åŠŸèƒ½" prefix="FBC">
+		<enum name="Others" value="0" label="å…¶ä»–"/>
+		<enum name="TransferDetails" value="1" label="è½¬è´¦äº¤æ˜“æ˜Žç»†å¯¹è´¦"/>
+		<enum name="CustAccStatus" value="2" label="å®¢æˆ·è´¦æˆ·çŠ¶æ€å¯¹è´¦"/>
+		<enum name="AccountTradeDetails" value="3" label="è´¦æˆ·ç±»äº¤æ˜“æ˜Žç»†å¯¹è´¦"/>
+		<enum name="FutureAccountChangeInfoDetails" value="4" label="æœŸè´§è´¦æˆ·ä¿¡æ¯å˜æ›´æ˜Žç»†å¯¹è´¦"/>
+		<enum name="CustMoneyDetail" value="5" label="å®¢æˆ·èµ„é‡‘å°è´¦ä½™é¢æ˜Žç»†å¯¹è´¦"/>
+		<enum name="CustCancelAccountInfo" value="6" label="å®¢æˆ·é”€æˆ·ç»“æ¯æ˜Žç»†å¯¹è´¦"/>
+		<enum name="CustMoneyResult" value="7" label="å®¢æˆ·èµ„é‡‘ä½™é¢å¯¹è´¦ç»“æžœ"/>
+		<enum name="OthersExceptionResult" value="8" label="å…¶å®ƒå¯¹è´¦å¼‚å¸¸ç»“æžœæ–‡ä»¶"/>
+		<enum name="CustInterestNetMoneyDetails" value="9" label="å®¢æˆ·ç»“æ¯å‡€é¢æ˜Žç»†"/>
+		<enum name="CustMoneySendAndReceiveDetails" value="a" label="å®¢æˆ·èµ„é‡‘äº¤æ”¶æ˜Žç»†"/>
+		<enum name="CorporationMoneyTotal" value="b" label="æ³•äººå­˜ç®¡é“¶è¡Œèµ„é‡‘äº¤æ”¶æ±‡æ€»"/>
+		<enum name="MainbodyMoneyTotal" value="c" label="ä¸»ä½“é—´èµ„é‡‘äº¤æ”¶æ±‡æ€»"/>
+		<enum name="MainPartMonitorData" value="d" label="æ€»åˆ†å¹³è¡¡ç›‘ç®¡æ•°æ®"/>
+		<enum name="PreparationMoney" value="e" label="å­˜ç®¡é“¶è¡Œå¤‡ä»˜é‡‘ä½™é¢"/>
+		<enum name="BankMoneyMonitorData" value="f" label="ååŠžå­˜ç®¡é“¶è¡Œèµ„é‡‘ç›‘ç®¡æ•°æ®"/>
 	</EnumChar>
-	<EnumChar typename="CashExchangeCode" label="»ã³®±êÖ¾" prefix="CEC">
-		<enum name="Exchange" value="1" label="»ã"/>
-		<enum name="Cash" value="2" label="³®"/>
+	<EnumChar typename="CashExchangeCode" label="æ±‡é’žæ ‡å¿—" prefix="CEC">
+		<enum name="Exchange" value="1" label="æ±‡"/>
+		<enum name="Cash" value="2" label="é’ž"/>
 	</EnumChar>
-	<EnumChar typename="YesNoIndicator" label="ÊÇ»ò·ñ±êÊ¶" prefix="YNI">
-		<enum name="Yes" value="0" label="ÊÇ"/>
-		<enum name="No" value="1" label="·ñ"/>
+	<EnumChar typename="YesNoIndicator" label="æ˜¯æˆ–å¦æ ‡è¯†" prefix="YNI">
+		<enum name="Yes" value="0" label="æ˜¯"/>
+		<enum name="No" value="1" label="å¦"/>
 	</EnumChar>
-  <EnumChar typename="BanlanceType" label="Óà¶îÀàÐÍ" prefix="BLT">
-		<enum name="CurrentMoney" value="0" label="µ±Ç°Óà¶î"/>
-		<enum name="UsableMoney" value="1" label="¿ÉÓÃÓà¶î"/>
-		<enum name="FetchableMoney" value="2" label="¿ÉÈ¡Óà¶î"/>
-		<enum name="FreezeMoney" value="3" label="¶³½áÓà¶î"/>
+  <EnumChar typename="BanlanceType" label="ä½™é¢ç±»åž‹" prefix="BLT">
+		<enum name="CurrentMoney" value="0" label="å½“å‰ä½™é¢"/>
+		<enum name="UsableMoney" value="1" label="å¯ç”¨ä½™é¢"/>
+		<enum name="FetchableMoney" value="2" label="å¯å–ä½™é¢"/>
+		<enum name="FreezeMoney" value="3" label="å†»ç»“ä½™é¢"/>
 	</EnumChar>
-	<EnumChar typename="Gender" label="ÐÔ±ð" prefix="GD">
-		<enum name="Unknown" value="0" label="Î´Öª×´Ì¬"/>
-		<enum name="Male" value="1" label="ÄÐ"/>
-		<enum name="Female" value="2" label="Å®"/>
+	<EnumChar typename="Gender" label="æ€§åˆ«" prefix="GD">
+		<enum name="Unknown" value="0" label="æœªçŸ¥çŠ¶æ€"/>
+		<enum name="Male" value="1" label="ç”·"/>
+		<enum name="Female" value="2" label="å¥³"/>
 	</EnumChar>
-	<EnumChar typename="FeePayFlag" label="·ÑÓÃÖ§¸¶±êÖ¾" prefix="FPF">
-		<enum name="BEN" value="0" label="ÓÉÊÜÒæ·½Ö§¸¶·ÑÓÃ"/>
-		<enum name="OUR" value="1" label="ÓÉ·¢ËÍ·½Ö§¸¶·ÑÓÃ"/>
-		<enum name="SHA" value="2" label="ÓÉ·¢ËÍ·½Ö§¸¶·¢ÆðµÄ·ÑÓÃ£¬ÊÜÒæ·½Ö§¸¶½ÓÊÜµÄ·ÑÓÃ"/>		
+	<EnumChar typename="FeePayFlag" label="è´¹ç”¨æ”¯ä»˜æ ‡å¿—" prefix="FPF">
+		<enum name="BEN" value="0" label="ç”±å—ç›Šæ–¹æ”¯ä»˜è´¹ç”¨"/>
+		<enum name="OUR" value="1" label="ç”±å‘é€æ–¹æ”¯ä»˜è´¹ç”¨"/>
+		<enum name="SHA" value="2" label="ç”±å‘é€æ–¹æ”¯ä»˜å‘èµ·çš„è´¹ç”¨ï¼Œå—ç›Šæ–¹æ”¯ä»˜æŽ¥å—çš„è´¹ç”¨"/>		
 	</EnumChar>
-	<EnumChar typename="PassWordKeyType" label="ÃÜÔ¿ÀàÐÍ" prefix="PWKT">
-		<enum name="ExchangeKey" value="0" label="½»»»ÃÜÔ¿"/>
-		<enum name="PassWordKey" value="1" label="ÃÜÂëÃÜÔ¿"/>
-		<enum name="MACKey" value="2" label="MACÃÜÔ¿"/>
-		<enum name="MessageKey" value="3" label="±¨ÎÄÃÜÔ¿"/>
+	<EnumChar typename="PassWordKeyType" label="å¯†é’¥ç±»åž‹" prefix="PWKT">
+		<enum name="ExchangeKey" value="0" label="äº¤æ¢å¯†é’¥"/>
+		<enum name="PassWordKey" value="1" label="å¯†ç å¯†é’¥"/>
+		<enum name="MACKey" value="2" label="MACå¯†é’¥"/>
+		<enum name="MessageKey" value="3" label="æŠ¥æ–‡å¯†é’¥"/>
 	</EnumChar>
-	<EnumChar typename="FBTPassWordType" label="ÃÜÂëÀàÐÍ" prefix="PWT">
-		<enum name="Query" value="0" label="²éÑ¯"/>
-		<enum name="Fetch" value="1" label="È¡¿î"/>
-		<enum name="Transfer" value="2" label="×ªÕÊ"/>
-		<enum name="Trade" value="3" label="½»Ò×"/>
+	<EnumChar typename="FBTPassWordType" label="å¯†ç ç±»åž‹" prefix="PWT">
+		<enum name="Query" value="0" label="æŸ¥è¯¢"/>
+		<enum name="Fetch" value="1" label="å–æ¬¾"/>
+		<enum name="Transfer" value="2" label="è½¬å¸"/>
+		<enum name="Trade" value="3" label="äº¤æ˜“"/>
 	</EnumChar>
-	<EnumChar typename="FBTEncryMode" label="¼ÓÃÜ·½Ê½" prefix="EM">
-		<enum name="NoEncry" value="0" label="²»¼ÓÃÜ"/>
+	<EnumChar typename="FBTEncryMode" label="åŠ å¯†æ–¹å¼" prefix="EM">
+		<enum name="NoEncry" value="0" label="ä¸åŠ å¯†"/>
 		<enum name="DES" value="1" label="DES"/>
 		<enum name="3DES" value="2" label="3DES"/>
   </EnumChar>
-	<EnumChar typename="BankRepealFlag" label="ÒøÐÐ³åÕý±êÖ¾" prefix="BRF">
-	  <enum name="BankNotNeedRepeal" value="0" label="ÒøÐÐÎÞÐè×Ô¶¯³åÕý"/>
-		<enum name="BankWaitingRepeal" value="1" label="ÒøÐÐ´ý×Ô¶¯³åÕý"/>
-		<enum name="BankBeenRepealed" value="2" label="ÒøÐÐÒÑ×Ô¶¯³åÕý"/>		
+	<EnumChar typename="BankRepealFlag" label="é“¶è¡Œå†²æ­£æ ‡å¿—" prefix="BRF">
+	  <enum name="BankNotNeedRepeal" value="0" label="é“¶è¡Œæ— éœ€è‡ªåŠ¨å†²æ­£"/>
+		<enum name="BankWaitingRepeal" value="1" label="é“¶è¡Œå¾…è‡ªåŠ¨å†²æ­£"/>
+		<enum name="BankBeenRepealed" value="2" label="é“¶è¡Œå·²è‡ªåŠ¨å†²æ­£"/>		
 	</EnumChar>
-	<EnumChar typename="InstitutionRepealFlag" label="ÆÚÉÌ³åÕý±êÖ¾" prefix="BRORF">
-	  <enum name="InstitutionNotNeedRepeal" value="0" label="ÆÚÉÌÎÞÐè×Ô¶¯³åÕý"/>
-		<enum name="InstitutionWaitingRepeal" value="1" label="ÆÚÉÌ´ý×Ô¶¯³åÕý"/>
-		<enum name="InstitutionBeenRepealed" value="2" label="ÆÚÉÌÒÑ×Ô¶¯³åÕý"/>		
+	<EnumChar typename="InstitutionRepealFlag" label="æœŸå•†å†²æ­£æ ‡å¿—" prefix="BRORF">
+	  <enum name="InstitutionNotNeedRepeal" value="0" label="æœŸå•†æ— éœ€è‡ªåŠ¨å†²æ­£"/>
+		<enum name="InstitutionWaitingRepeal" value="1" label="æœŸå•†å¾…è‡ªåŠ¨å†²æ­£"/>
+		<enum name="InstitutionBeenRepealed" value="2" label="æœŸå•†å·²è‡ªåŠ¨å†²æ­£"/>		
 	</EnumChar>
-	<EnumChar typename="InstitutionType" label="»ú¹¹Àà±ð" prefix="TS">
-		<enum name="Bank" value="0" label="ÒøÐÐ"/>
-		<enum name="Future" value="1" label="ÆÚÉÌ"/>
-		<enum name="Store" value="2" label="È¯ÉÌ"/>
+	<EnumChar typename="InstitutionType" label="æœºæž„ç±»åˆ«" prefix="TS">
+		<enum name="Bank" value="0" label="é“¶è¡Œ"/>
+		<enum name="Future" value="1" label="æœŸå•†"/>
+		<enum name="Store" value="2" label="åˆ¸å•†"/>
 	</EnumChar>
-	<EnumChar typename="LastFragment" label="×îºó·ÖÆ¬±êÖ¾" prefix="LF">
-		<enum name="Yes" value="0" label="ÊÇ×îºó·ÖÆ¬"/>
-		<enum name="No" value="1" label="²»ÊÇ×îºó·ÖÆ¬"/>
+	<EnumChar typename="LastFragment" label="æœ€åŽåˆ†ç‰‡æ ‡å¿—" prefix="LF">
+		<enum name="Yes" value="0" label="æ˜¯æœ€åŽåˆ†ç‰‡"/>
+		<enum name="No" value="1" label="ä¸æ˜¯æœ€åŽåˆ†ç‰‡"/>
 	</EnumChar>
-	<EnumChar typename="BankAccStatus" label="ÒøÐÐÕË»§×´Ì¬" prefix="BAS">
-		<enum name="Normal" value="0" label="Õý³£"/>
-		<enum name="Freeze" value="1" label="¶³½á"/>
-		<enum name="ReportLoss" value="2" label="¹ÒÊ§"/>		
+	<EnumChar typename="BankAccStatus" label="é“¶è¡Œè´¦æˆ·çŠ¶æ€" prefix="BAS">
+		<enum name="Normal" value="0" label="æ­£å¸¸"/>
+		<enum name="Freeze" value="1" label="å†»ç»“"/>
+		<enum name="ReportLoss" value="2" label="æŒ‚å¤±"/>		
 	</EnumChar>
-	<EnumChar typename="MoneyAccountStatus" label="×Ê½ðÕË»§×´Ì¬" prefix="MAS">
-		<enum name="Normal" value="0" label="Õý³£"/>
-		<enum name="Cancel" value="1" label="Ïú»§"/>
+	<EnumChar typename="MoneyAccountStatus" label="èµ„é‡‘è´¦æˆ·çŠ¶æ€" prefix="MAS">
+		<enum name="Normal" value="0" label="æ­£å¸¸"/>
+		<enum name="Cancel" value="1" label="é”€æˆ·"/>
 	</EnumChar>
-	<EnumChar typename="ManageStatus" label="´æ¹Ü×´Ì¬" prefix="MSS">
-		<enum name="Point" value="0" label="Ö¸¶¨´æ¹Ü"/>
-		<enum name="PrePoint" value="1" label="Ô¤Ö¸¶¨"/>
-		<enum name="CancelPoint" value="2" label="³·ÏúÖ¸¶¨"/>		
+	<EnumChar typename="ManageStatus" label="å­˜ç®¡çŠ¶æ€" prefix="MSS">
+		<enum name="Point" value="0" label="æŒ‡å®šå­˜ç®¡"/>
+		<enum name="PrePoint" value="1" label="é¢„æŒ‡å®š"/>
+		<enum name="CancelPoint" value="2" label="æ’¤é”€æŒ‡å®š"/>		
 	</EnumChar>
-	<EnumChar typename="SystemType" label="Ó¦ÓÃÏµÍ³ÀàÐÍ" prefix="SYT">
-		<enum name="FutureBankTransfer" value="0" label="ÒøÆÚ×ªÕÊ"/>
-		<enum name="StockBankTransfer" value="1" label="ÒøÖ¤×ªÕÊ"/>
-		<enum name="TheThirdPartStore" value="2" label="µÚÈý·½´æ¹Ü"/>
+	<EnumChar typename="SystemType" label="åº”ç”¨ç³»ç»Ÿç±»åž‹" prefix="SYT">
+		<enum name="FutureBankTransfer" value="0" label="é“¶æœŸè½¬å¸"/>
+		<enum name="StockBankTransfer" value="1" label="é“¶è¯è½¬å¸"/>
+		<enum name="TheThirdPartStore" value="2" label="ç¬¬ä¸‰æ–¹å­˜ç®¡"/>
 	</EnumChar>
-	<EnumChar typename="TxnEndFlag" label="ÒøÆÚ×ªÕÊ»®×ª½á¹û±êÖ¾" prefix="TEF">
-		<enum name="NormalProcessing" value="0" label="Õý³£´¦ÀíÖÐ"/>
-		<enum name="Success" value="1" label="³É¹¦½áÊø"/>
-		<enum name="Failed" value="2" label="Ê§°Ü½áÊø"/>
-		<enum name="Abnormal" value="3" label="Òì³£ÖÐ"/>
-		<enum name="ManualProcessedForException" value="4" label="ÒÑÈË¹¤Òì³£´¦Àí"/>
-		<enum name="CommuFailedNeedManualProcess" value="5" label="Í¨Ñ¶Òì³£ £¬ÇëÈË¹¤´¦Àí"/>
-		<enum name="SysErrorNeedManualProcess" value="6" label="ÏµÍ³³ö´í£¬ÇëÈË¹¤´¦Àí"/>
+	<EnumChar typename="TxnEndFlag" label="é“¶æœŸè½¬å¸åˆ’è½¬ç»“æžœæ ‡å¿—" prefix="TEF">
+		<enum name="NormalProcessing" value="0" label="æ­£å¸¸å¤„ç†ä¸­"/>
+		<enum name="Success" value="1" label="æˆåŠŸç»“æŸ"/>
+		<enum name="Failed" value="2" label="å¤±è´¥ç»“æŸ"/>
+		<enum name="Abnormal" value="3" label="å¼‚å¸¸ä¸­"/>
+		<enum name="ManualProcessedForException" value="4" label="å·²äººå·¥å¼‚å¸¸å¤„ç†"/>
+		<enum name="CommuFailedNeedManualProcess" value="5" label="é€šè®¯å¼‚å¸¸ ï¼Œè¯·äººå·¥å¤„ç†"/>
+		<enum name="SysErrorNeedManualProcess" value="6" label="ç³»ç»Ÿå‡ºé”™ï¼Œè¯·äººå·¥å¤„ç†"/>
 	</EnumChar>
-	<EnumChar typename="ProcessStatus" label="ÒøÆÚ×ªÕÊ·þÎñ´¦Àí×´Ì¬" prefix="PSS">
-		<enum name="NotProcess" value="0" label="Î´´¦Àí"/>
-		<enum name="StartProcess" value="1" label="¿ªÊ¼´¦Àí"/>
-		<enum name="Finished" value="2" label="´¦ÀíÍê³É"/>
+	<EnumChar typename="ProcessStatus" label="é“¶æœŸè½¬å¸æœåŠ¡å¤„ç†çŠ¶æ€" prefix="PSS">
+		<enum name="NotProcess" value="0" label="æœªå¤„ç†"/>
+		<enum name="StartProcess" value="1" label="å¼€å§‹å¤„ç†"/>
+		<enum name="Finished" value="2" label="å¤„ç†å®Œæˆ"/>
 	</EnumChar>
-	<EnumChar typename="CustType" label="¿Í»§ÀàÐÍ" prefix="CUSTT">
-		<enum name="Person" value="0" label="×ÔÈ»ÈË"/>
-		<enum name="Institution" value="1" label="»ú¹¹»§"/>
+	<EnumChar typename="CustType" label="å®¢æˆ·ç±»åž‹" prefix="CUSTT">
+		<enum name="Person" value="0" label="è‡ªç„¶äºº"/>
+		<enum name="Institution" value="1" label="æœºæž„æˆ·"/>
 	</EnumChar>
-	<EnumChar typename="FBTTransferDirection" label="ÒøÆÚ×ªÕÊ·½Ïò" prefix="FBTTD">
-		<enum name="FromBankToFuture" value="1" label="Èë½ð£¬ÒøÐÐ×ªÆÚ»õ"/>
-		<enum name="FromFutureToBank" value="2" label="³ö½ð£¬ÆÚ»õ×ªÒøÐÐ"/>
+	<EnumChar typename="FBTTransferDirection" label="é“¶æœŸè½¬å¸æ–¹å‘" prefix="FBTTD">
+		<enum name="FromBankToFuture" value="1" label="å…¥é‡‘ï¼Œé“¶è¡Œè½¬æœŸè´§"/>
+		<enum name="FromFutureToBank" value="2" label="å‡ºé‡‘ï¼ŒæœŸè´§è½¬é“¶è¡Œ"/>
 	</EnumChar>
-	<EnumChar typename="OpenOrDestroy" label="¿ªÏú»§Àà±ð" prefix="OOD">
-		<enum name="Open" value="1" label="¿ª»§"/>
-		<enum name="Destroy" value="0" label="Ïú»§"/>
+	<EnumChar typename="OpenOrDestroy" label="å¼€é”€æˆ·ç±»åˆ«" prefix="OOD">
+		<enum name="Open" value="1" label="å¼€æˆ·"/>
+		<enum name="Destroy" value="0" label="é”€æˆ·"/>
 	</EnumChar>
-	<EnumChar typename="AvailabilityFlag" label="ÓÐÐ§±êÖ¾" prefix="AVAF">
-		<enum name="Invalid" value="0" label="Î´È·ÈÏ"/>
-		<enum name="Valid" value="1" label="ÓÐÐ§"/>
-		<enum name="Repeal" value="2" label="³åÕý"/>
+	<EnumChar typename="AvailabilityFlag" label="æœ‰æ•ˆæ ‡å¿—" prefix="AVAF">
+		<enum name="Invalid" value="0" label="æœªç¡®è®¤"/>
+		<enum name="Valid" value="1" label="æœ‰æ•ˆ"/>
+		<enum name="Repeal" value="2" label="å†²æ­£"/>
 	</EnumChar>
-	<EnumChar typename="OrganType" label="»ú¹¹ÀàÐÍ" prefix="OT">
-		<enum name="Bank" value="1" label="ÒøÐÐ´úÀí"/>
-		<enum name="Future" value="2" label="½»Ò×Ç°ÖÃ"/>
-		<enum name="PlateForm" value="9" label="ÒøÆÚ×ªÕÊÆ½Ì¨¹ÜÀí"/>
+	<EnumChar typename="OrganType" label="æœºæž„ç±»åž‹" prefix="OT">
+		<enum name="Bank" value="1" label="é“¶è¡Œä»£ç†"/>
+		<enum name="Future" value="2" label="äº¤æ˜“å‰ç½®"/>
+		<enum name="PlateForm" value="9" label="é“¶æœŸè½¬å¸å¹³å°ç®¡ç†"/>
 	</EnumChar>
-	<EnumChar typename="OrganLevel" label="»ú¹¹¼¶±ð" prefix="OL">
-		<enum name="HeadQuarters" value="1" label="ÒøÐÐ×ÜÐÐ»òÆÚÉÌ×Ü²¿"/>
-		<enum name="Branch" value="2" label="ÒøÐÐ·ÖÖÐÐÄ»òÆÚ»õ¹«Ë¾ÓªÒµ²¿"/>
+	<EnumChar typename="OrganLevel" label="æœºæž„çº§åˆ«" prefix="OL">
+		<enum name="HeadQuarters" value="1" label="é“¶è¡Œæ€»è¡Œæˆ–æœŸå•†æ€»éƒ¨"/>
+		<enum name="Branch" value="2" label="é“¶è¡Œåˆ†ä¸­å¿ƒæˆ–æœŸè´§å…¬å¸è¥ä¸šéƒ¨"/>
 	</EnumChar>
-	<EnumChar typename="ProtocalID" label="Ð­ÒéÀàÐÍ" prefix="PID">
-		<enum name="FutureProtocal" value="0" label="ÆÚÉÌÐ­Òé"/>
-		<enum name="ICBCProtocal" value="1" label="¹¤ÐÐÐ­Òé"/>
-		<enum name="ABCProtocal" value="2" label="Å©ÐÐÐ­Òé"/>
-		<enum name="CBCProtocal" value="3" label="ÖÐ¹úÒøÐÐÐ­Òé"/>
-		<enum name="CCBProtocal" value="4" label="½¨ÐÐÐ­Òé"/>
-		<enum name="BOCOMProtocal" value="5" label="½»ÐÐÐ­Òé"/>
-		<enum name="FBTPlateFormProtocal" value="X" label="ÒøÆÚ×ªÕÊÆ½Ì¨Ð­Òé"/>
+	<EnumChar typename="ProtocalID" label="åè®®ç±»åž‹" prefix="PID">
+		<enum name="FutureProtocal" value="0" label="æœŸå•†åè®®"/>
+		<enum name="ICBCProtocal" value="1" label="å·¥è¡Œåè®®"/>
+		<enum name="ABCProtocal" value="2" label="å†œè¡Œåè®®"/>
+		<enum name="CBCProtocal" value="3" label="ä¸­å›½é“¶è¡Œåè®®"/>
+		<enum name="CCBProtocal" value="4" label="å»ºè¡Œåè®®"/>
+		<enum name="BOCOMProtocal" value="5" label="äº¤è¡Œåè®®"/>
+		<enum name="FBTPlateFormProtocal" value="X" label="é“¶æœŸè½¬å¸å¹³å°åè®®"/>
 	</EnumChar>
-	<EnumChar typename="ConnectMode" label="Ì×½Ó×ÖÁ¬½Ó·½Ê½" prefix="CM">
-		<enum name="ShortConnect" value="0" label="¶ÌÁ¬½Ó"/>
-		<enum name="LongConnect" value="1" label="³¤Á¬½Ó"/>
+	<EnumChar typename="ConnectMode" label="å¥—æŽ¥å­—è¿žæŽ¥æ–¹å¼" prefix="CM">
+		<enum name="ShortConnect" value="0" label="çŸ­è¿žæŽ¥"/>
+		<enum name="LongConnect" value="1" label="é•¿è¿žæŽ¥"/>
 	</EnumChar>
-	<EnumChar typename="SyncMode" label="Ì×½Ó×ÖÍ¨ÐÅ·½Ê½" prefix="SRM">
-		<enum name="ASync" value="0" label="Òì²½"/>
-		<enum name="Sync" value="1" label="Í¬²½"/>
+	<EnumChar typename="SyncMode" label="å¥—æŽ¥å­—é€šä¿¡æ–¹å¼" prefix="SRM">
+		<enum name="ASync" value="0" label="å¼‚æ­¥"/>
+		<enum name="Sync" value="1" label="åŒæ­¥"/>
 	</EnumChar>
 	
-	<EnumChar typename="BankAccType" label="ÒøÐÐÕÊºÅÀàÐÍ" prefix="BAT">
-		<enum name="BankBook" value="1" label="ÒøÐÐ´æÕÛ"/>
-		<enum name="SavingCard" value="2" label="´¢Ðî¿¨"/>
-		<enum name="CreditCard" value="3" label="ÐÅÓÃ¿¨"/>
+	<EnumChar typename="BankAccType" label="é“¶è¡Œå¸å·ç±»åž‹" prefix="BAT">
+		<enum name="BankBook" value="1" label="é“¶è¡Œå­˜æŠ˜"/>
+		<enum name="SavingCard" value="2" label="å‚¨è“„å¡"/>
+		<enum name="CreditCard" value="3" label="ä¿¡ç”¨å¡"/>
 	</EnumChar>
-	<EnumChar typename="FutureAccType" label="ÆÚ»õ¹«Ë¾ÕÊºÅÀàÐÍ" prefix="FAT">
-		<enum name="BankBook" value="1" label="ÒøÐÐ´æÕÛ"/>
-		<enum name="SavingCard" value="2" label="´¢Ðî¿¨"/>
-		<enum name="CreditCard" value="3" label="ÐÅÓÃ¿¨"/>
+	<EnumChar typename="FutureAccType" label="æœŸè´§å…¬å¸å¸å·ç±»åž‹" prefix="FAT">
+		<enum name="BankBook" value="1" label="é“¶è¡Œå­˜æŠ˜"/>
+		<enum name="SavingCard" value="2" label="å‚¨è“„å¡"/>
+		<enum name="CreditCard" value="3" label="ä¿¡ç”¨å¡"/>
 	</EnumChar>
-	<EnumChar typename="OrganStatus" label="½ÓÈë»ú¹¹×´Ì¬" prefix="OS">
-		<enum name="Ready" value="0" label="ÆôÓÃ"/>
-		<enum name="CheckIn" value="1" label="Ç©µ½"/>
-		<enum name="CheckOut" value="2" label="Ç©ÍË"/>
-		<enum name="CheckFileArrived" value="3" label="¶ÔÕÊÎÄ¼þµ½´ï"/>
-		<enum name="CheckDetail" value="4" label="¶ÔÕÊ"/>
-		<enum name="DayEndClean" value="5" label="ÈÕÖÕÇåÀí"/>
-		<enum name="Invalid" value="9" label="×¢Ïú"/>
+	<EnumChar typename="OrganStatus" label="æŽ¥å…¥æœºæž„çŠ¶æ€" prefix="OS">
+		<enum name="Ready" value="0" label="å¯ç”¨"/>
+		<enum name="CheckIn" value="1" label="ç­¾åˆ°"/>
+		<enum name="CheckOut" value="2" label="ç­¾é€€"/>
+		<enum name="CheckFileArrived" value="3" label="å¯¹å¸æ–‡ä»¶åˆ°è¾¾"/>
+		<enum name="CheckDetail" value="4" label="å¯¹å¸"/>
+		<enum name="DayEndClean" value="5" label="æ—¥ç»ˆæ¸…ç†"/>
+		<enum name="Invalid" value="9" label="æ³¨é”€"/>
 	</EnumChar>
-  <EnumChar typename="CCBFeeMode" label="½¨ÐÐÊÕ·ÑÄ£Ê½" prefix="CCBFM">
-		<enum name="ByAmount" value="1" label="°´½ð¶î¿ÛÊÕ"/>
-		<enum name="ByMonth" value="2" label="°´ÔÂ¿ÛÊÕ"/>		
+  <EnumChar typename="CCBFeeMode" label="å»ºè¡Œæ”¶è´¹æ¨¡å¼" prefix="CCBFM">
+		<enum name="ByAmount" value="1" label="æŒ‰é‡‘é¢æ‰£æ”¶"/>
+		<enum name="ByMonth" value="2" label="æŒ‰æœˆæ‰£æ”¶"/>		
 	</EnumChar>
-  <EnumChar typename="CommApiType" label="Í¨Ñ¶APIÀàÐÍ" prefix="CAPIT">
-    <enum name="Client" value="1" label="¿Í»§¶Ë"/>
-    <enum name="Server" value="2" label="·þÎñ¶Ë"/> 
-    <enum name="UserApi" value="3" label="½»Ò×ÏµÍ³µÄUserApi"/>     
+  <EnumChar typename="CommApiType" label="é€šè®¯APIç±»åž‹" prefix="CAPIT">
+    <enum name="Client" value="1" label="å®¢æˆ·ç«¯"/>
+    <enum name="Server" value="2" label="æœåŠ¡ç«¯"/> 
+    <enum name="UserApi" value="3" label="äº¤æ˜“ç³»ç»Ÿçš„UserApi"/>     
   </EnumChar>   
-  <Int typename="ServiceID" label="·þÎñ±àºÅ" length="10"/>	
-  <Int typename="ServiceLineNo" label="·þÎñÏßÂ·±àºÅ" length="10"/>	
-  <String typename="ServiceName" label="·þÎñÃû" length="60" />			
-  <EnumChar typename="LinkStatus" label="Á¬½Ó×´Ì¬" prefix="LS">
-    <enum name="Connected" value="1" label="ÒÑ¾­Á¬½Ó"/>
-    <enum name="Disconnected" value="2" label="Ã»ÓÐÁ¬½Ó"/> 
+  <Int typename="ServiceID" label="æœåŠ¡ç¼–å·" length="10"/>	
+  <Int typename="ServiceLineNo" label="æœåŠ¡çº¿è·¯ç¼–å·" length="10"/>	
+  <String typename="ServiceName" label="æœåŠ¡å" length="60" />			
+  <EnumChar typename="LinkStatus" label="è¿žæŽ¥çŠ¶æ€" prefix="LS">
+    <enum name="Connected" value="1" label="å·²ç»è¿žæŽ¥"/>
+    <enum name="Disconnected" value="2" label="æ²¡æœ‰è¿žæŽ¥"/> 
   </EnumChar>  
-  <Int typename="CommApiPointer" label="Í¨Ñ¶APIÖ¸Õë" length="10"/>   
-  <EnumChar typename="PwdFlag" label="ÃÜÂëºË¶Ô±êÖ¾" prefix="BPWDF">
-		<enum name="NoCheck" value="0" label="²»ºË¶Ô"/>
-		<enum name="BlankCheck" value="1" label="Ã÷ÎÄºË¶Ô"/>
-	<enum name="EncryptCheck" value="2" label="ÃÜÎÄºË¶Ô"/>				
+  <Int typename="CommApiPointer" label="é€šè®¯APIæŒ‡é’ˆ" length="10"/>   
+  <EnumChar typename="PwdFlag" label="å¯†ç æ ¸å¯¹æ ‡å¿—" prefix="BPWDF">
+		<enum name="NoCheck" value="0" label="ä¸æ ¸å¯¹"/>
+		<enum name="BlankCheck" value="1" label="æ˜Žæ–‡æ ¸å¯¹"/>
+	<enum name="EncryptCheck" value="2" label="å¯†æ–‡æ ¸å¯¹"/>				
 	</EnumChar>
-  <EnumChar typename="SecuAccType" label="ÆÚ»õÕÊºÅÀàÐÍ" prefix="SAT">
-		<enum name="AccountID" value="1" label="×Ê½ðÕÊºÅ"/>
-		<enum name="CardID" value="2" label="×Ê½ð¿¨ºÅ"/>
-		<enum name="SHStockholderID" value="3" label="ÉÏº£¹É¶«ÕÊºÅ"/>				
-		<enum name="SZStockholderID" value="4" label="ÉîÛÚ¹É¶«ÕÊºÅ"/>						
+  <EnumChar typename="SecuAccType" label="æœŸè´§å¸å·ç±»åž‹" prefix="SAT">
+		<enum name="AccountID" value="1" label="èµ„é‡‘å¸å·"/>
+		<enum name="CardID" value="2" label="èµ„é‡‘å¡å·"/>
+		<enum name="SHStockholderID" value="3" label="ä¸Šæµ·è‚¡ä¸œå¸å·"/>				
+		<enum name="SZStockholderID" value="4" label="æ·±åœ³è‚¡ä¸œå¸å·"/>						
 	</EnumChar> 
-  <EnumChar typename="TransferStatus" label="×ªÕË½»Ò××´Ì¬" prefix="TRFS">
-		<enum name="Normal" value="0" label="Õý³£"/>
-		<enum name="Repealed" value="1" label="±»³åÕý"/>
+  <EnumChar typename="TransferStatus" label="è½¬è´¦äº¤æ˜“çŠ¶æ€" prefix="TRFS">
+		<enum name="Normal" value="0" label="æ­£å¸¸"/>
+		<enum name="Repealed" value="1" label="è¢«å†²æ­£"/>
 	</EnumChar>	
-	<EnumChar typename="SponsorType" label="·¢Æð·½" prefix="SPTYPE">
-		<enum name="Institution" value="0" label="ÆÚÉÌ"/>
-		<enum name="Bank" value="1" label="ÒøÐÐ"/>
+	<EnumChar typename="SponsorType" label="å‘èµ·æ–¹" prefix="SPTYPE">
+		<enum name="Institution" value="0" label="æœŸå•†"/>
+		<enum name="Bank" value="1" label="é“¶è¡Œ"/>
 	</EnumChar>
-	<EnumChar typename="ReqRspType" label="ÇëÇóÏìÓ¦Àà±ð" prefix="REQRSP">
-		<enum name="Request" value="0" label="ÇëÇó"/>
-		<enum name="Response" value="1" label="ÏìÓ¦"/>
+	<EnumChar typename="ReqRspType" label="è¯·æ±‚å“åº”ç±»åˆ«" prefix="REQRSP">
+		<enum name="Request" value="0" label="è¯·æ±‚"/>
+		<enum name="Response" value="1" label="å“åº”"/>
 	</EnumChar>
-	<EnumChar typename="FBTUserEventType" label="ÒøÆÚ×ªÕÊÓÃ»§ÊÂ¼þÀàÐÍ" prefix="FBTUET">
-		<enum name="SignIn" value="0" label="Ç©µ½"/>
-		<enum name="FromBankToFuture" value="1" label="ÒøÐÐ×ªÆÚ»õ"/>
-		<enum name="FromFutureToBank" value="2" label="ÆÚ»õ×ªÒøÐÐ"/>
-		<enum name="OpenAccount" value="3"    label="¿ª»§"/>
-		<enum name="CancelAccount" value="4"  label="Ïú»§"/>
-		<enum name="ChangeAccount" value="5"  label="±ä¸üÒøÐÐÕË»§"/>
-		<enum name="RepealFromBankToFuture" value="6" label="³åÕýÒøÐÐ×ªÆÚ»õ"/>
-		<enum name="RepealFromFutureToBank" value="7" label="³åÕýÆÚ»õ×ªÒøÐÐ"/>
-		<enum name="QueryBankAccount" value="8" label="²éÑ¯ÒøÐÐÕË»§"/>
-		<enum name="QueryFutureAccount" value="9" label="²éÑ¯ÆÚ»õÕË»§"/>
-		<enum name="SignOut" value="A" label="Ç©ÍË"/>
-		<enum name="SyncKey" value="B" label="ÃÜÔ¿Í¬²½"/>
-		<enum name="Other" value="Z" label="ÆäËû"/>
+	<EnumChar typename="FBTUserEventType" label="é“¶æœŸè½¬å¸ç”¨æˆ·äº‹ä»¶ç±»åž‹" prefix="FBTUET">
+		<enum name="SignIn" value="0" label="ç­¾åˆ°"/>
+		<enum name="FromBankToFuture" value="1" label="é“¶è¡Œè½¬æœŸè´§"/>
+		<enum name="FromFutureToBank" value="2" label="æœŸè´§è½¬é“¶è¡Œ"/>
+		<enum name="OpenAccount" value="3"    label="å¼€æˆ·"/>
+		<enum name="CancelAccount" value="4"  label="é”€æˆ·"/>
+		<enum name="ChangeAccount" value="5"  label="å˜æ›´é“¶è¡Œè´¦æˆ·"/>
+		<enum name="RepealFromBankToFuture" value="6" label="å†²æ­£é“¶è¡Œè½¬æœŸè´§"/>
+		<enum name="RepealFromFutureToBank" value="7" label="å†²æ­£æœŸè´§è½¬é“¶è¡Œ"/>
+		<enum name="QueryBankAccount" value="8" label="æŸ¥è¯¢é“¶è¡Œè´¦æˆ·"/>
+		<enum name="QueryFutureAccount" value="9" label="æŸ¥è¯¢æœŸè´§è´¦æˆ·"/>
+		<enum name="SignOut" value="A" label="ç­¾é€€"/>
+		<enum name="SyncKey" value="B" label="å¯†é’¥åŒæ­¥"/>
+		<enum name="Other" value="Z" label="å…¶ä»–"/>
 	</EnumChar>
-		<String typename="BankIDByBank" length="20" label="ÒøÐÐ×Ô¼ºµÄ±àÂë"/>	
-	<!--added by ×ÛºÏ½»Ò×Æ½Ì¨ÒøÆÚ×ªÕÊ£¬zhang.hb end ÐÂÏµÍ³-->
-	<!-- ·ç¿Ø start-->
-	<EnumChar typename="NotifyClass" label="·çÏÕÍ¨ÖªÀàÐÍ" prefix="NC">
-		<enum name="NOERROR" value="0" label="Õý³£"/>
-		<enum name="Warn" value="1" label="¾¯Ê¾"/>
-		<enum name="Call" value="2" label="×·±£"/>
-		<enum name="Force" value="3" label="Ç¿Æ½"/>
-		<enum name="CHUANCANG" value="4" label="´©²Ö"/>
-		<enum name="Exception" value="5" label="Òì³£"/>
+		<String typename="BankIDByBank" length="20" label="é“¶è¡Œè‡ªå·±çš„ç¼–ç "/>	
+	<!--added by ç»¼åˆäº¤æ˜“å¹³å°é“¶æœŸè½¬å¸ï¼Œzhang.hb end æ–°ç³»ç»Ÿ-->
+	<!-- é£ŽæŽ§ start-->
+	<EnumChar typename="NotifyClass" label="é£Žé™©é€šçŸ¥ç±»åž‹" prefix="NC">
+		<enum name="NOERROR" value="0" label="æ­£å¸¸"/>
+		<enum name="Warn" value="1" label="è­¦ç¤º"/>
+		<enum name="Call" value="2" label="è¿½ä¿"/>
+		<enum name="Force" value="3" label="å¼ºå¹³"/>
+		<enum name="CHUANCANG" value="4" label="ç©¿ä»“"/>
+		<enum name="Exception" value="5" label="å¼‚å¸¸"/>
 	</EnumChar>
-	<String typename="RiskNofityInfo" label="¿Í»§·çÏÕÍ¨ÖªÏûÏ¢" length="256"/>
-	<String typename="ForceCloseSceneId" label="Ç¿Æ½³¡¾°±àºÅ" length="23"/>
-	<EnumChar typename="ForceCloseType" label="Ç¿Æ½µ¥ÀàÐÍ" prefix="FCT">
-		<enum name="Manual" value="0" label="ÊÖ¹¤Ç¿Æ½"/>
-		<enum name="Single" value="1" label="µ¥Ò»Í¶×ÊÕß¸¨ÖúÇ¿Æ½"/>
-		<enum name="Group" value="2" label="ÅúÁ¿Í¶×ÊÕß¸¨ÖúÇ¿Æ½"/>
+	<String typename="RiskNofityInfo" label="å®¢æˆ·é£Žé™©é€šçŸ¥æ¶ˆæ¯" length="256"/>
+	<String typename="ForceCloseSceneId" label="å¼ºå¹³åœºæ™¯ç¼–å·" length="23"/>
+	<EnumChar typename="ForceCloseType" label="å¼ºå¹³å•ç±»åž‹" prefix="FCT">
+		<enum name="Manual" value="0" label="æ‰‹å·¥å¼ºå¹³"/>
+		<enum name="Single" value="1" label="å•ä¸€æŠ•èµ„è€…è¾…åŠ©å¼ºå¹³"/>
+		<enum name="Group" value="2" label="æ‰¹é‡æŠ•èµ„è€…è¾…åŠ©å¼ºå¹³"/>
 	</EnumChar>
-	<String typename="InstrumentIDs" label="¶à¸ö²úÆ·´úÂë,ÓÃ+·Ö¸ô,Èçcu+zn" length="100"/>
-	<EnumChar typename="RiskNotifyMethod" label="·çÏÕÍ¨ÖªÍ¾¾¶" prefix="RNM">
-		<enum name="System" value="0" label="ÏµÍ³Í¨Öª"/>
-		<enum name="SMS" value="1" label="¶ÌÐÅÍ¨Öª"/>
-		<enum name="EMail" value="2" label="ÓÊ¼þÍ¨Öª"/>
-		<enum name="Manual" value="3" label="ÈË¹¤Í¨Öª"/>
+	<String typename="InstrumentIDs" label="å¤šä¸ªäº§å“ä»£ç ,ç”¨+åˆ†éš”,å¦‚cu+zn" length="100"/>
+	<EnumChar typename="RiskNotifyMethod" label="é£Žé™©é€šçŸ¥é€”å¾„" prefix="RNM">
+		<enum name="System" value="0" label="ç³»ç»Ÿé€šçŸ¥"/>
+		<enum name="SMS" value="1" label="çŸ­ä¿¡é€šçŸ¥"/>
+		<enum name="EMail" value="2" label="é‚®ä»¶é€šçŸ¥"/>
+		<enum name="Manual" value="3" label="äººå·¥é€šçŸ¥"/>
 	</EnumChar>
-	<EnumChar typename="RiskNotifyStatus" label="·çÏÕÍ¨Öª×´Ì¬" prefix="RNS">
-		<enum name="NotGen" value="0" label="Î´Éú³É"/>
-		<enum name="Generated" value="1" label="ÒÑÉú³ÉÎ´·¢ËÍ"/>
-		<enum name="SendError" value="2" label="·¢ËÍÊ§°Ü"/>
-		<enum name="SendOk" value="3" label="ÒÑ·¢ËÍÎ´½ÓÊÕ"/>
-		<enum name="Received" value="4" label="ÒÑ½ÓÊÕÎ´È·ÈÏ"/>
-		<enum name="Confirmed" value="5" label="ÒÑÈ·ÈÏ"/>
+	<EnumChar typename="RiskNotifyStatus" label="é£Žé™©é€šçŸ¥çŠ¶æ€" prefix="RNS">
+		<enum name="NotGen" value="0" label="æœªç”Ÿæˆ"/>
+		<enum name="Generated" value="1" label="å·²ç”Ÿæˆæœªå‘é€"/>
+		<enum name="SendError" value="2" label="å‘é€å¤±è´¥"/>
+		<enum name="SendOk" value="3" label="å·²å‘é€æœªæŽ¥æ”¶"/>
+		<enum name="Received" value="4" label="å·²æŽ¥æ”¶æœªç¡®è®¤"/>
+		<enum name="Confirmed" value="5" label="å·²ç¡®è®¤"/>
 	</EnumChar>
-	<EnumChar typename="RiskUserEvent" label="·ç¿ØÓÃ»§²Ù×÷ÊÂ¼þ" prefix="RUE">
-		<enum name="ExportData" value="0" label="µ¼³öÊý¾Ý"/>
+	<EnumChar typename="RiskUserEvent" label="é£ŽæŽ§ç”¨æˆ·æ“ä½œäº‹ä»¶" prefix="RUE">
+		<enum name="ExportData" value="0" label="å¯¼å‡ºæ•°æ®"/>
 	</EnumChar>
-	<Int typename="ParamID" label="²ÎÊý´úÂë" length="8"/>
-	<String typename="ParamName" label="²ÎÊýÃû" length="40"/>
-	<String typename="ParamValue" label="²ÎÊýÖµ" length="40"/>
-	<!-- ·ç¿Ø end-->
+	<Int typename="ParamID" label="å‚æ•°ä»£ç " length="8"/>
+	<String typename="ParamName" label="å‚æ•°å" length="40"/>
+	<String typename="ParamValue" label="å‚æ•°å€¼" length="40"/>
+	<!-- é£ŽæŽ§ end-->
 
-	<!-- Ìõ¼þµ¥ start-->
-	<EnumChar typename="ConditionalOrderSortType" label="Ìõ¼þµ¥Ë÷ÒýÌõ¼þ" prefix="COST">
-		<enum name="LastPriceAsc" value="0" label="Ê¹ÓÃ×îÐÂ¼ÛÉýÐò"/>
-		<enum name="LastPriceDesc" value="1" label="Ê¹ÓÃ×îÐÂ¼Û½µÐò"/>
-		<enum name="AskPriceAsc" value="2" label="Ê¹ÓÃÂô¼ÛÉýÐò"/>
-		<enum name="AskPriceDesc" value="3"    label="Ê¹ÓÃÂô¼Û½µÐò"/>
-		<enum name="BidPriceAsc" value="4"  label="Ê¹ÓÃÂò¼ÛÉýÐò"/>
-		<enum name="BidPriceDesc" value="5"  label="Ê¹ÓÃÂò¼Û½µÐò"/>
+	<!-- æ¡ä»¶å• start-->
+	<EnumChar typename="ConditionalOrderSortType" label="æ¡ä»¶å•ç´¢å¼•æ¡ä»¶" prefix="COST">
+		<enum name="LastPriceAsc" value="0" label="ä½¿ç”¨æœ€æ–°ä»·å‡åº"/>
+		<enum name="LastPriceDesc" value="1" label="ä½¿ç”¨æœ€æ–°ä»·é™åº"/>
+		<enum name="AskPriceAsc" value="2" label="ä½¿ç”¨å–ä»·å‡åº"/>
+		<enum name="AskPriceDesc" value="3"    label="ä½¿ç”¨å–ä»·é™åº"/>
+		<enum name="BidPriceAsc" value="4"  label="ä½¿ç”¨ä¹°ä»·å‡åº"/>
+		<enum name="BidPriceDesc" value="5"  label="ä½¿ç”¨ä¹°ä»·é™åº"/>
 	</EnumChar>
-	<!-- Ìõ¼þµ¥ end-->
-	<!--Í³Ò»¿ª»§ÀàÐÍ add by zhang.yc -->
-	<EnumChar typename="SendType" label="±¨ËÍ×´Ì¬" prefix="UOAST">
-		<enum name="NoSend"  value="0" label="Î´·¢ËÍ"/>
-		<enum name="Sended"  value="1" label="ÒÑ·¢ËÍ"/>
-		<enum name="Generated" value="2" label="ÒÑÉú³É"/>
-		<enum name="SendFail" value="3" label="±¨ËÍÊ§°Ü"/>
-		<enum name="Success" value="4" label="½ÓÊÕ³É¹¦"/>
-		<enum name="Fail" value="5" label="½ÓÊÕÊ§°Ü"/>
-		<enum name="Cancel" value="6" label="È¡Ïû±¨ËÍ"/>
+	<!-- æ¡ä»¶å• end-->
+	<!--ç»Ÿä¸€å¼€æˆ·ç±»åž‹ add by zhang.yc -->
+	<EnumChar typename="SendType" label="æŠ¥é€çŠ¶æ€" prefix="UOAST">
+		<enum name="NoSend"  value="0" label="æœªå‘é€"/>
+		<enum name="Sended"  value="1" label="å·²å‘é€"/>
+		<enum name="Generated" value="2" label="å·²ç”Ÿæˆ"/>
+		<enum name="SendFail" value="3" label="æŠ¥é€å¤±è´¥"/>
+		<enum name="Success" value="4" label="æŽ¥æ”¶æˆåŠŸ"/>
+		<enum name="Fail" value="5" label="æŽ¥æ”¶å¤±è´¥"/>
+		<enum name="Cancel" value="6" label="å–æ¶ˆæŠ¥é€"/>
 	</EnumChar>
-	<EnumChar typename="ClientIDStatus" label="½»Ò×±àÂë×´Ì¬" prefix="UOACS">
-		<enum name="NoApply"  value="1" label="Î´ÉêÇë"/>
-		<enum name="Submited" value="2" label="ÒÑÌá½»ÉêÇë"/>
-		<enum name="Sended" value="3" label="ÒÑ·¢ËÍÉêÇë"/>
-		<enum name="Success" value="4" label="Íê³É"/>
-		<enum name="Refuse" value="5" label="¾Ü¾ø"/>
-		<enum name="Cancel" value="6" label="ÒÑ³·Ïú±àÂë"/>
+	<EnumChar typename="ClientIDStatus" label="äº¤æ˜“ç¼–ç çŠ¶æ€" prefix="UOACS">
+		<enum name="NoApply"  value="1" label="æœªç”³è¯·"/>
+		<enum name="Submited" value="2" label="å·²æäº¤ç”³è¯·"/>
+		<enum name="Sended" value="3" label="å·²å‘é€ç”³è¯·"/>
+		<enum name="Success" value="4" label="å®Œæˆ"/>
+		<enum name="Refuse" value="5" label="æ‹’ç»"/>
+		<enum name="Cancel" value="6" label="å·²æ’¤é”€ç¼–ç "/>
 	</EnumChar>
-	<String typename="IndustryID" length="16" label="ÐÐÒµ±àÂë" />
-	<String typename="QuestionID" length="4" label="ÌØÓÐÐÅÏ¢±àºÅ" />
-	<VString typename="QuestionContent" length="40" label="ÌØÓÐÐÅÏ¢ËµÃ÷" />
-	<String typename="OptionID" length="12" label="Ñ¡Ïî±àºÅ" />
-	<VString typename="OptionContent" length="60" label="Ñ¡ÏîËµÃ÷" />
-	<EnumChar typename="QuestionType" label="ÌØÓÐÐÅÏ¢ÀàÐÍ" prefix="QT">
-		<enum name="Radio"  value="1" label="µ¥Ñ¡"/>
-		<enum name="Option" value="2" label="¶àÑ¡"/>
-		<enum name="Blank" value="3" label="Ìî¿Õ"/>
+	<String typename="IndustryID" length="16" label="è¡Œä¸šç¼–ç " />
+	<String typename="QuestionID" length="4" label="ç‰¹æœ‰ä¿¡æ¯ç¼–å·" />
+	<VString typename="QuestionContent" length="40" label="ç‰¹æœ‰ä¿¡æ¯è¯´æ˜Ž" />
+	<String typename="OptionID" length="12" label="é€‰é¡¹ç¼–å·" />
+	<VString typename="OptionContent" length="60" label="é€‰é¡¹è¯´æ˜Ž" />
+	<EnumChar typename="QuestionType" label="ç‰¹æœ‰ä¿¡æ¯ç±»åž‹" prefix="QT">
+		<enum name="Radio"  value="1" label="å•é€‰"/>
+		<enum name="Option" value="2" label="å¤šé€‰"/>
+		<enum name="Blank" value="3" label="å¡«ç©º"/>
 	</EnumChar>
-	<String typename="ProcessID" length="32" label="ÒµÎñÁ÷Ë®ºÅ" />
-	<Int typename="SeqNo" length="38" label="Á÷Ë®ºÅ" />
-	<String typename="UOAProcessStatus" length="2" label="Á÷³Ì×´Ì¬" />
-	<EnumChar typename="ProcessType" label="Á÷³Ì¹¦ÄÜÀàÐÍ" prefix="PT">
-	 	<enum name="ApplyTradingCode" value="1" label="ÉêÇë½»Ò×±àÂë" />
-	 	<enum name="CancelTradingCode" value="2" label="³·Ïú½»Ò×±àÂë" />
-	 	<enum name="ModifyIDCard" value="3" label="ÐÞ¸ÄÉí·ÝÐÅÏ¢" />
-	 	<enum name="ModifyNoIDCard" value="4" label="ÐÞ¸ÄÒ»°ãÐÅÏ¢" />
-	 	<enum name="ExchOpenBak" value="5" label="½»Ò×Ëù¿ª»§±¨±¸" />
-	 	<enum name="ExchCancelBak" value="6" label="½»Ò×ËùÏú»§±¨±¸" />
+	<String typename="ProcessID" length="32" label="ä¸šåŠ¡æµæ°´å·" />
+	<Int typename="SeqNo" length="38" label="æµæ°´å·" />
+	<String typename="UOAProcessStatus" length="2" label="æµç¨‹çŠ¶æ€" />
+	<EnumChar typename="ProcessType" label="æµç¨‹åŠŸèƒ½ç±»åž‹" prefix="PT">
+	 	<enum name="ApplyTradingCode" value="1" label="ç”³è¯·äº¤æ˜“ç¼–ç " />
+	 	<enum name="CancelTradingCode" value="2" label="æ’¤é”€äº¤æ˜“ç¼–ç " />
+	 	<enum name="ModifyIDCard" value="3" label="ä¿®æ”¹èº«ä»½ä¿¡æ¯" />
+	 	<enum name="ModifyNoIDCard" value="4" label="ä¿®æ”¹ä¸€èˆ¬ä¿¡æ¯" />
+	 	<enum name="ExchOpenBak" value="5" label="äº¤æ˜“æ‰€å¼€æˆ·æŠ¥å¤‡" />
+	 	<enum name="ExchCancelBak" value="6" label="äº¤æ˜“æ‰€é”€æˆ·æŠ¥å¤‡" />
 	</EnumChar>
-	<EnumChar typename="BusinessType" label="ÒµÎñÀàÐÍ" prefix="BT">
-	 	<enum name="Request" value="1" label="ÇëÇó" />
-	 	<enum name="Response" value="2" label="Ó¦´ð" />
-	 	<enum name="Notice" value="3" label="Í¨Öª" />
+	<EnumChar typename="BusinessType" label="ä¸šåŠ¡ç±»åž‹" prefix="BT">
+	 	<enum name="Request" value="1" label="è¯·æ±‚" />
+	 	<enum name="Response" value="2" label="åº”ç­”" />
+	 	<enum name="Notice" value="3" label="é€šçŸ¥" />
 	</EnumChar>
-	<EnumChar typename="CfmmcReturnCode" label="¼à¿ØÖÐÐÄ·µ»ØÂë" prefix="CRC">
-	 	<enum name="Success" value="0" label="³É¹¦" />
-	 	<enum name="Working" value="1" label="¸Ã¿Í»§ÒÑ¾­ÓÐÁ÷³ÌÔÚ´¦ÀíÖÐ" />
-	 	<enum name="InfoFail" value="2" label="¼à¿ØÖÐ¿Í»§×ÊÁÏ¼ì²éÊ§°Ü" />
-	 	<enum name="IDCardFail" value="3" label="¼à¿ØÖÐÊµÃûÖÆ¼ì²éÊ§°Ü" />
-	 	<enum name="OtherFail" value="4" label="ÆäËû´íÎó" />
+	<EnumChar typename="CfmmcReturnCode" label="ç›‘æŽ§ä¸­å¿ƒè¿”å›žç " prefix="CRC">
+	 	<enum name="Success" value="0" label="æˆåŠŸ" />
+	 	<enum name="Working" value="1" label="è¯¥å®¢æˆ·å·²ç»æœ‰æµç¨‹åœ¨å¤„ç†ä¸­" />
+	 	<enum name="InfoFail" value="2" label="ç›‘æŽ§ä¸­å®¢æˆ·èµ„æ–™æ£€æŸ¥å¤±è´¥" />
+	 	<enum name="IDCardFail" value="3" label="ç›‘æŽ§ä¸­å®žååˆ¶æ£€æŸ¥å¤±è´¥" />
+	 	<enum name="OtherFail" value="4" label="å…¶ä»–é”™è¯¯" />
 	</EnumChar>
-	<Int typename="ExReturnCode" length="32" label="½»Ò×Ëù·µ»ØÂë" />
-	<EnumChar typename="ClientType" label="¿Í»§ÀàÐÍ" prefix="CfMMCCT">
-		<enum name="All" value="0" label="ËùÓÐ"/>
-		<enum name="Person" value="1" label="¸öÈË"/>
-		<enum name="Company" value="2" label="µ¥Î»"/>
+	<Int typename="ExReturnCode" length="32" label="äº¤æ˜“æ‰€è¿”å›žç " />
+	<EnumChar typename="ClientType" label="å®¢æˆ·ç±»åž‹" prefix="CfMMCCT">
+		<enum name="All" value="0" label="æ‰€æœ‰"/>
+		<enum name="Person" value="1" label="ä¸ªäºº"/>
+		<enum name="Company" value="2" label="å•ä½"/>
 	</EnumChar>
-	<EnumChar typename="ExchangeIDType" label="½»Ò×Ëù±àºÅ" prefix="EIDT">
-		<enum name="SHFE" value="S" label="ÉÏº£ÆÚ»õ½»Ò×Ëù"/>
-		<enum name="CZCE" value="Z" label="Ö£ÖÝÉÌÆ·½»Ò×Ëù"/>
-		<enum name="DCE" value="D" label="´óÁ¬ÉÌÆ·½»Ò×Ëù"/>
-		<enum name="CFFEX" value="J" label="ÖÐ¹ú½ðÈÚÆÚ»õ½»Ò×Ëù"/>
+	<EnumChar typename="ExchangeIDType" label="äº¤æ˜“æ‰€ç¼–å·" prefix="EIDT">
+		<enum name="SHFE" value="S" label="ä¸Šæµ·æœŸè´§äº¤æ˜“æ‰€"/>
+		<enum name="CZCE" value="Z" label="éƒ‘å·žå•†å“äº¤æ˜“æ‰€"/>
+		<enum name="DCE" value="D" label="å¤§è¿žå•†å“äº¤æ˜“æ‰€"/>
+		<enum name="CFFEX" value="J" label="ä¸­å›½é‡‘èžæœŸè´§äº¤æ˜“æ‰€"/>
 	</EnumChar>
-    <EnumChar typename="ExClientIDType" label="½»Ò×±àÂëÀàÐÍ" prefix="ECIDT">
-		<enum name="Hedge" value="1" label="Ì×±£"/>
-		<enum name="Arbitrage" value="2" label="Ì×Àû"/>
-		<enum name="Speculation" value="3" label="Í¶»ú"/>
+    <EnumChar typename="ExClientIDType" label="äº¤æ˜“ç¼–ç ç±»åž‹" prefix="ECIDT">
+		<enum name="Hedge" value="1" label="å¥—ä¿"/>
+		<enum name="Arbitrage" value="2" label="å¥—åˆ©"/>
+		<enum name="Speculation" value="3" label="æŠ•æœº"/>
 	</EnumChar>
-	<String typename="ClientClassify" length="10" label="¿Í»§·ÖÀàÂë" />
-	<String typename="UOAOrganType" length="8" label="µ¥Î»ÐÔÖÊ" />
-	<String typename="UOACountryCode" length="8" label="¹ú¼Ò´úÂë" />
-	<String typename="AreaCode" length="8" label="ÇøºÅ" />
-	<String typename="FuturesID" length="20" label="¼à¿ØÖÐÐÄÎª¿Í»§·ÖÅäµÄ´úÂë" />
-	<String typename="CffmcDate" label="ÈÕÆÚ" length="10"/>
-	<String typename="CffmcTime" label="Ê±¼ä" length="10"/>
-	<String typename="NocID" label="×éÖ¯»ú¹¹´úÂë" length="20"/>
-	<EnumChar typename="UpdateFlag" label="¸üÐÂ×´Ì¬" prefix="UF">
-		<enum name="NoUpdate" value="0" label="Î´¸üÐÂ"/>
-		<enum name="Success" value="1" label="¸üÐÂÈ«²¿ÐÅÏ¢³É¹¦"/>
-		<enum name="Fail" value="2" label="¸üÐÂÈ«²¿ÐÅÏ¢Ê§°Ü"/>
-		<enum name="TCSuccess" value="3" label="¸üÐÂ½»Ò×±àÂë³É¹¦"/>
-		<enum name="TCFail" value="4" label="¸üÐÂ½»Ò×±àÂëÊ§°Ü"/> 
-		<enum name="Cancel" value="5" label="ÒÑ¶ªÆú"/>
+	<String typename="ClientClassify" length="10" label="å®¢æˆ·åˆ†ç±»ç " />
+	<String typename="UOAOrganType" length="8" label="å•ä½æ€§è´¨" />
+	<String typename="UOACountryCode" length="8" label="å›½å®¶ä»£ç " />
+	<String typename="AreaCode" length="8" label="åŒºå·" />
+	<String typename="FuturesID" length="20" label="ç›‘æŽ§ä¸­å¿ƒä¸ºå®¢æˆ·åˆ†é…çš„ä»£ç " />
+	<String typename="CffmcDate" label="æ—¥æœŸ" length="10"/>
+	<String typename="CffmcTime" label="æ—¶é—´" length="10"/>
+	<String typename="NocID" label="ç»„ç»‡æœºæž„ä»£ç " length="20"/>
+	<EnumChar typename="UpdateFlag" label="æ›´æ–°çŠ¶æ€" prefix="UF">
+		<enum name="NoUpdate" value="0" label="æœªæ›´æ–°"/>
+		<enum name="Success" value="1" label="æ›´æ–°å…¨éƒ¨ä¿¡æ¯æˆåŠŸ"/>
+		<enum name="Fail" value="2" label="æ›´æ–°å…¨éƒ¨ä¿¡æ¯å¤±è´¥"/>
+		<enum name="TCSuccess" value="3" label="æ›´æ–°äº¤æ˜“ç¼–ç æˆåŠŸ"/>
+		<enum name="TCFail" value="4" label="æ›´æ–°äº¤æ˜“ç¼–ç å¤±è´¥"/> 
+		<enum name="Cancel" value="5" label="å·²ä¸¢å¼ƒ"/>
 	</EnumChar>
-	<EnumChar typename="ApplyOperateID" label="ÉêÇë¶¯×÷" prefix="AOID">
-		<enum name="OpenInvestor" value="1" label="¿ª»§"/>
-	 	<enum name="ModifyIDCard" value="2" label="ÐÞ¸ÄÉí·ÝÐÅÏ¢" />
-	 	<enum name="ModifyNoIDCard" value="3" label="ÐÞ¸ÄÒ»°ãÐÅÏ¢" />
-	 	<enum name="ApplyTradingCode" value="4" label="ÉêÇë½»Ò×±àÂë" />
-	 	<enum name="CancelTradingCode" value="5" label="³·Ïú½»Ò×±àÂë" />
-	 	<enum name="CancelInvestor" value="6" label="Ïú»§" />
+	<EnumChar typename="ApplyOperateID" label="ç”³è¯·åŠ¨ä½œ" prefix="AOID">
+		<enum name="OpenInvestor" value="1" label="å¼€æˆ·"/>
+	 	<enum name="ModifyIDCard" value="2" label="ä¿®æ”¹èº«ä»½ä¿¡æ¯" />
+	 	<enum name="ModifyNoIDCard" value="3" label="ä¿®æ”¹ä¸€èˆ¬ä¿¡æ¯" />
+	 	<enum name="ApplyTradingCode" value="4" label="ç”³è¯·äº¤æ˜“ç¼–ç " />
+	 	<enum name="CancelTradingCode" value="5" label="æ’¤é”€äº¤æ˜“ç¼–ç " />
+	 	<enum name="CancelInvestor" value="6" label="é”€æˆ·" />
 	</EnumChar>
-	<EnumChar typename="ApplyStatusID" label="ÉêÇë×´Ì¬" prefix="ASID">
-		<enum name="NoComplete" value="1" label="Î´²¹È«"/>
-		<enum name="Submited" value="2" label="ÒÑÌá½»"/>
-		<enum name="Checked" value="3" label="ÒÑÉóºË"/>
-		<enum name="Refused" value="4" label="ÒÑ¾Ü¾ø"/>
-		<enum name="Deleted" value="5" label="ÒÑÉ¾³ý"/>
+	<EnumChar typename="ApplyStatusID" label="ç”³è¯·çŠ¶æ€" prefix="ASID">
+		<enum name="NoComplete" value="1" label="æœªè¡¥å…¨"/>
+		<enum name="Submited" value="2" label="å·²æäº¤"/>
+		<enum name="Checked" value="3" label="å·²å®¡æ ¸"/>
+		<enum name="Refused" value="4" label="å·²æ‹’ç»"/>
+		<enum name="Deleted" value="5" label="å·²åˆ é™¤"/>
 	</EnumChar>
-	<EnumChar typename="SendMethod" label="·¢ËÍ·½Ê½" prefix="UOASM">
-		<enum name="ByAPI" value="1" label="µç×Ó·¢ËÍ"/>
-		<enum name="ByFile" value="2" label="ÎÄ¼þ·¢ËÍ"/>
+	<EnumChar typename="SendMethod" label="å‘é€æ–¹å¼" prefix="UOASM">
+		<enum name="ByAPI" value="1" label="ç”µå­å‘é€"/>
+		<enum name="ByFile" value="2" label="æ–‡ä»¶å‘é€"/>
 	</EnumChar>
-	<!-- Í³Ò»¿ª»§ÀàÐÍ add by zhang.yc -->
-	<String typename="EventType" label="ÒµÎñ²Ù×÷ÀàÐÍ" length="32"/>
-	<EnumChar typename="EventMode" label="²Ù×÷·½·¨" prefix="EvM">
-		<enum name="ADD" value="1" label="Ôö¼Ó"/>
-		<enum name="UPDATE" value="2" label="ÐÞ¸Ä"/>
-		<enum name="DELETE" value="3" label="É¾³ý"/>
-		<enum name="CHECK" value="4" label="¸´ºË"/>
-		<enum name="COPY" value="5" label="¸´ÖÆ"/>
+	<!-- ç»Ÿä¸€å¼€æˆ·ç±»åž‹ add by zhang.yc -->
+	<String typename="EventType" label="ä¸šåŠ¡æ“ä½œç±»åž‹" length="32"/>
+	<EnumChar typename="EventMode" label="æ“ä½œæ–¹æ³•" prefix="EvM">
+		<enum name="ADD" value="1" label="å¢žåŠ "/>
+		<enum name="UPDATE" value="2" label="ä¿®æ”¹"/>
+		<enum name="DELETE" value="3" label="åˆ é™¤"/>
+		<enum name="CHECK" value="4" label="å¤æ ¸"/>
+		<enum name="COPY" value="5" label="å¤åˆ¶"/>
 	</EnumChar>
-	<EnumChar typename="UOAAutoSend" label="Í³Ò»¿ª»§ÉêÇë×Ô¶¯·¢ËÍ" prefix="UOAA">
-		<enum name="ASR" value="1" label="×Ô¶¯·¢ËÍ²¢½ÓÊÕ"/>
-		<enum name="ASNR" value="2" label="×Ô¶¯·¢ËÍ£¬²»×Ô¶¯½ÓÊÕ"/>
-		<enum name="NSAR" value="3" label="²»×Ô¶¯·¢ËÍ£¬×Ô¶¯½ÓÊÕ"/>
-		<enum name="NSR" value="4" label="²»×Ô¶¯·¢ËÍ£¬Ò²²»×Ô¶¯½ÓÊÕ"/>
+	<EnumChar typename="UOAAutoSend" label="ç»Ÿä¸€å¼€æˆ·ç”³è¯·è‡ªåŠ¨å‘é€" prefix="UOAA">
+		<enum name="ASR" value="1" label="è‡ªåŠ¨å‘é€å¹¶æŽ¥æ”¶"/>
+		<enum name="ASNR" value="2" label="è‡ªåŠ¨å‘é€ï¼Œä¸è‡ªåŠ¨æŽ¥æ”¶"/>
+		<enum name="NSAR" value="3" label="ä¸è‡ªåŠ¨å‘é€ï¼Œè‡ªåŠ¨æŽ¥æ”¶"/>
+		<enum name="NSR" value="4" label="ä¸è‡ªåŠ¨å‘é€ï¼Œä¹Ÿä¸è‡ªåŠ¨æŽ¥æ”¶"/>
 	</EnumChar>
-	 <Int typename="QueryDepth" label="²éÑ¯Éî¶È" length="1"/>	
-	 <Int typename="DataCenterID" label="Êý¾ÝÖÐÐÄ´úÂë" length="3"/>
-	<!--¸´ºË¹ÜÀí add by wu.y-->
-	<EnumChar typename="FlowID" label="Á÷³ÌID" prefix="EvM">
-		<enum name="InvestorGroupFlow" value="1" label="Í¶×ÊÕß¶ÔÓ¦Í¶×ÊÕß×éÉèÖÃ"/>
-		<enum name="InvestorRate" value="2" label="Í¶×ÊÕßÊÖÐø·ÑÂÊÉèÖÃ"/>
-		<enum name="InvestorCommRateModel" value="3" label="Í¶×ÊÕßÊÖÐø·ÑÂÊÄ£°å¹ØÏµÉèÖÃ"/>
+	 <Int typename="QueryDepth" label="æŸ¥è¯¢æ·±åº¦" length="1"/>	
+	 <Int typename="DataCenterID" label="æ•°æ®ä¸­å¿ƒä»£ç " length="3"/>
+	<!--å¤æ ¸ç®¡ç† add by wu.y-->
+	<EnumChar typename="FlowID" label="æµç¨‹ID" prefix="EvM">
+		<enum name="InvestorGroupFlow" value="1" label="æŠ•èµ„è€…å¯¹åº”æŠ•èµ„è€…ç»„è®¾ç½®"/>
+		<enum name="InvestorRate" value="2" label="æŠ•èµ„è€…æ‰‹ç»­è´¹çŽ‡è®¾ç½®"/>
+		<enum name="InvestorCommRateModel" value="3" label="æŠ•èµ„è€…æ‰‹ç»­è´¹çŽ‡æ¨¡æ¿å…³ç³»è®¾ç½®"/>
 	</EnumChar>
-	<EnumChar typename="CheckLevel" label="¸´ºË¼¶±ð" prefix="CL">
-	  <enum name="Zero" value="0" label="Áã¼¶¸´ºË"/>
-		<enum name="One" value="1" label="Ò»¼¶¸´ºË"/>
-		<enum name="Two" value="2" label="¶þ¼¶¸´ºË"/>
+	<EnumChar typename="CheckLevel" label="å¤æ ¸çº§åˆ«" prefix="CL">
+	  <enum name="Zero" value="0" label="é›¶çº§å¤æ ¸"/>
+		<enum name="One" value="1" label="ä¸€çº§å¤æ ¸"/>
+		<enum name="Two" value="2" label="äºŒçº§å¤æ ¸"/>
 	</EnumChar>
-	<Int typename="CheckNo" label="²Ù×÷´ÎÊý" length="5"/>
-	<EnumChar typename="CheckStatus" label="¸´ºË¼¶±ð" prefix="CHS">
-	  <enum name="Init" value="0" label="Î´¸´ºË"/>
-		<enum name="Checking" value="1" label="¸´ºËÖÐ"/>
-		<enum name="Checked" value="2" label="ÒÑ¸´ºË"/>
-		<enum name="Refuse" value="3" label="¾Ü¾ø"/>
-		<enum name="Cancel" value="4" label="×÷·Ï"/>
+	<Int typename="CheckNo" label="æ“ä½œæ¬¡æ•°" length="5"/>
+	<EnumChar typename="CheckStatus" label="å¤æ ¸çº§åˆ«" prefix="CHS">
+	  <enum name="Init" value="0" label="æœªå¤æ ¸"/>
+		<enum name="Checking" value="1" label="å¤æ ¸ä¸­"/>
+		<enum name="Checked" value="2" label="å·²å¤æ ¸"/>
+		<enum name="Refuse" value="3" label="æ‹’ç»"/>
+		<enum name="Cancel" value="4" label="ä½œåºŸ"/>
 	</EnumChar>
-	<EnumChar typename="UsedStatus" label="ÉúÐ§×´Ì¬" prefix="CHU">
-	  <enum name="Unused" value="0" label="Î´ÉúÐ§"/>
-		<enum name="Used" value="1" label="ÒÑÉúÐ§"/>
-		<enum name="Fail" value="2" label="ÉúÐ§Ê§°Ü"/>
+	<EnumChar typename="UsedStatus" label="ç”Ÿæ•ˆçŠ¶æ€" prefix="CHU">
+	  <enum name="Unused" value="0" label="æœªç”Ÿæ•ˆ"/>
+		<enum name="Used" value="1" label="å·²ç”Ÿæ•ˆ"/>
+		<enum name="Fail" value="2" label="ç”Ÿæ•ˆå¤±è´¥"/>
 	</EnumChar>
-	<!--Í¶×ÊÕß±£Ö¤½ðÂÊÄ£ÐÍ add by wu.y-->
-	<String typename="RateTemplateName" length="60" label="Ä£ÐÍÃû³Æ"/>
-	<VString typename="PropertyString" label="ÓÃÓÚ²éÑ¯µÄÍ¶×ÊÊôÐÔ×Ö¶Î" length="2048"/>
-	<EnumChar typename="BankAcountOrigin" label="ÕË»§À´Ô´" prefix="BAO">
-	  <enum name="ByAccProperty" value="0" label="ÊÖ¹¤Â¼Èë"/>
-		<enum name="ByFBTransfer" value="1" label="ÒøÆÚ×ªÕË"/>
+	<!--æŠ•èµ„è€…ä¿è¯é‡‘çŽ‡æ¨¡åž‹ add by wu.y-->
+	<String typename="RateTemplateName" length="60" label="æ¨¡åž‹åç§°"/>
+	<VString typename="PropertyString" label="ç”¨äºŽæŸ¥è¯¢çš„æŠ•èµ„å±žæ€§å­—æ®µ" length="2048"/>
+	<EnumChar typename="BankAcountOrigin" label="è´¦æˆ·æ¥æº" prefix="BAO">
+	  <enum name="ByAccProperty" value="0" label="æ‰‹å·¥å½•å…¥"/>
+		<enum name="ByFBTransfer" value="1" label="é“¶æœŸè½¬è´¦"/>
 	</EnumChar>
-	<EnumChar typename="MonthBillTradeSum" label="½áËãµ¥ÔÂ±¨³É½»»ã×Ü·½Ê½" prefix="MBTS">
-	  <enum name="ByInstrument" value="0" label="Í¬ÈÕÍ¬ºÏÔ¼"/>
-		<enum name="ByDayInsPrc" value="1" label="Í¬ÈÕÍ¬ºÏÔ¼Í¬¼Û¸ñ"/>
-		<enum name="ByDayIns" value="2" label="Í¬ºÏÔ¼"/>
+	<EnumChar typename="MonthBillTradeSum" label="ç»“ç®—å•æœˆæŠ¥æˆäº¤æ±‡æ€»æ–¹å¼" prefix="MBTS">
+	  <enum name="ByInstrument" value="0" label="åŒæ—¥åŒåˆçº¦"/>
+		<enum name="ByDayInsPrc" value="1" label="åŒæ—¥åŒåˆçº¦åŒä»·æ ¼"/>
+		<enum name="ByDayIns" value="2" label="åŒåˆçº¦"/>
 	</EnumChar>
-	<EnumChar typename="FBTTradeCodeEnum" label="ÒøÆÚ½»Ò×´úÂëÃ¶¾Ù" prefix="FTC">
-	  <enum name="BankLaunchBankToInstitution" value="102001" label="ÒøÐÐ·¢ÆðÒøÐÐ×ªÆÚ»õ"/>
-		<enum name="InstitutionLaunchBankToInstitution" value="202001" label="ÆÚ»õ·¢ÆðÒøÐÐ×ªÆÚ»õ"/>
-		<enum name="BankLaunchInstitutionToBank" value="102002" label="ÒøÐÐ·¢ÆðÆÚ»õ×ªÒøÐÐ"/>
-		<enum name="InstitutionLaunchInstitutionToBank" value="202002" label="ÆÚ»õ·¢ÆðÆÚ»õ×ªÒøÐÐ"/>
+	<EnumChar typename="FBTTradeCodeEnum" label="é“¶æœŸäº¤æ˜“ä»£ç æžšä¸¾" prefix="FTC">
+	  <enum name="BankLaunchBankToInstitution" value="102001" label="é“¶è¡Œå‘èµ·é“¶è¡Œè½¬æœŸè´§"/>
+		<enum name="InstitutionLaunchBankToInstitution" value="202001" label="æœŸè´§å‘èµ·é“¶è¡Œè½¬æœŸè´§"/>
+		<enum name="BankLaunchInstitutionToBank" value="102002" label="é“¶è¡Œå‘èµ·æœŸè´§è½¬é“¶è¡Œ"/>
+		<enum name="InstitutionLaunchInstitutionToBank" value="202002" label="æœŸè´§å‘èµ·æœŸè´§è½¬é“¶è¡Œ"/>
 	</EnumChar>   	
-	<String typename="RateTemplateID" length="8" label="Ä£ÐÍ´úÂë"/>
-	<String typename="RiskRate" length="20" label="·çÏÕ¶È"/>
-	<Int typename="Timestamp" label="Ê±¼ä´Á" length="20"/>
-    <!--ºÅ¶Î¹ÜÀí add by jmx-->
-    <String typename="InvestorIDRuleName" length="60" label="ºÅ¶Î¹æÔòÃû³Æ"/>
-    <VString typename="InvestorIDRuleExpr" length="512" label="ºÅ¶Î¹æÔò±í´ïÊ½"/>
-  <Int typename="LastDrift" label="ÉÏ´ÎOTPÆ¯ÒÆÖµ" length="10"/>
-  <Int typename="LastSuccess" label="ÉÏ´ÎOTP³É¹¦Öµ" length="10"/>
-	<String typename="AuthKey" label="ÁîÅÆÃÜÔ¿" length="40"/>
-	<String typename="SerialNumber" label="ÐòÁÐºÅ" length="16"/>
-	<EnumChar typename="OTPType" label="¶¯Ì¬ÁîÅÆÀàÐÍ" prefix="OTP">
-		<enum name="NONE" value="0" label="ÎÞ¶¯Ì¬ÁîÅÆ"/>
-		<enum name="TOTP" value="1" label="Ê±¼äÁîÅÆ"/>
+	<String typename="RateTemplateID" length="8" label="æ¨¡åž‹ä»£ç "/>
+	<String typename="RiskRate" length="20" label="é£Žé™©åº¦"/>
+	<Int typename="Timestamp" label="æ—¶é—´æˆ³" length="20"/>
+    <!--å·æ®µç®¡ç† add by jmx-->
+    <String typename="InvestorIDRuleName" length="60" label="å·æ®µè§„åˆ™åç§°"/>
+    <VString typename="InvestorIDRuleExpr" length="512" label="å·æ®µè§„åˆ™è¡¨è¾¾å¼"/>
+  <Int typename="LastDrift" label="ä¸Šæ¬¡OTPæ¼‚ç§»å€¼" length="10"/>
+  <Int typename="LastSuccess" label="ä¸Šæ¬¡OTPæˆåŠŸå€¼" length="10"/>
+	<String typename="AuthKey" label="ä»¤ç‰Œå¯†é’¥" length="40"/>
+	<String typename="SerialNumber" label="åºåˆ—å·" length="16"/>
+	<EnumChar typename="OTPType" label="åŠ¨æ€ä»¤ç‰Œç±»åž‹" prefix="OTP">
+		<enum name="NONE" value="0" label="æ— åŠ¨æ€ä»¤ç‰Œ"/>
+		<enum name="TOTP" value="1" label="æ—¶é—´ä»¤ç‰Œ"/>
 	</EnumChar>
-	<String typename="OTPVendorsID" label="¶¯Ì¬ÁîÅÆÌá¹©ÉÌ" length="1"/>
-	<String typename="OTPVendorsName" label="¶¯Ì¬ÁîÅÆÌá¹©ÉÌÃû³Æ" length="60"/>
-	<EnumChar typename="OTPStatus" label="¶¯Ì¬ÁîÅÆ×´Ì¬" prefix="OTPS">
-		<enum name="Unused" value="0" label="Î´Ê¹ÓÃ"/>
-		<enum name="Used" value="1" label="ÒÑÊ¹ÓÃ"/>
-		<enum name="Disuse" value="2" label="×¢Ïú"/>
+	<String typename="OTPVendorsID" label="åŠ¨æ€ä»¤ç‰Œæä¾›å•†" length="1"/>
+	<String typename="OTPVendorsName" label="åŠ¨æ€ä»¤ç‰Œæä¾›å•†åç§°" length="60"/>
+	<EnumChar typename="OTPStatus" label="åŠ¨æ€ä»¤ç‰ŒçŠ¶æ€" prefix="OTPS">
+		<enum name="Unused" value="0" label="æœªä½¿ç”¨"/>
+		<enum name="Used" value="1" label="å·²ä½¿ç”¨"/>
+		<enum name="Disuse" value="2" label="æ³¨é”€"/>
 	</EnumChar>
-	<EnumChar typename="InstitutionUserType" label="¾­¼Ã¹«Ë¾ÓÃ»§ÀàÐÍ" prefix="BUT">
-		<enum name="Investor" value="1" label="Í¶×ÊÕß"/>
-		<enum name="InstitutionUser" value="2" label="²Ù×÷Ô±"/>
+	<EnumChar typename="InstitutionUserType" label="ç»æµŽå…¬å¸ç”¨æˆ·ç±»åž‹" prefix="BUT">
+		<enum name="Investor" value="1" label="æŠ•èµ„è€…"/>
+		<enum name="InstitutionUser" value="2" label="æ“ä½œå‘˜"/>
 	</EnumChar>
-	<EnumChar typename="FutureType" label="ÆÚ»õÀàÐÍ" prefix="FUTT">
-		<enum name="Commodity" value="1" label="ÉÌÆ·ÆÚ»õ"/>
-		<enum name="Financial" value="2" label="½ðÈÚÆÚ»õ"/>
+	<EnumChar typename="FutureType" label="æœŸè´§ç±»åž‹" prefix="FUTT">
+		<enum name="Commodity" value="1" label="å•†å“æœŸè´§"/>
+		<enum name="Financial" value="2" label="é‡‘èžæœŸè´§"/>
 	</EnumChar>
-	<EnumChar typename="FundEventType" label="×Ê½ð¹ÜÀí²Ù×÷ÀàÐÍ" prefix="FET">
-		<enum name="Restriction" value="0" label="×ªÕËÏÞ¶î"/>
-		<enum name="TodayRestriction" value="1" label="µ±ÈÕ×ªÕËÏÞ¶î"/>
-		<enum name="Transfer" value="2" label="ÆÚÉÌÁ÷Ë®"/>
-		<enum name="Credit" value="3" label="×Ê½ð¶³½á"/>
-		<enum name="InvestorWithdrawAlm" value="4" label="Í¶×ÊÕß¿ÉÌá×Ê½ð±ÈÀý"/>
-		<enum name="BankRestriction" value="5" label="µ¥¸öÒøÐÐÕÊ»§×ªÕËÏÞ¶î"/>
+	<EnumChar typename="FundEventType" label="èµ„é‡‘ç®¡ç†æ“ä½œç±»åž‹" prefix="FET">
+		<enum name="Restriction" value="0" label="è½¬è´¦é™é¢"/>
+		<enum name="TodayRestriction" value="1" label="å½“æ—¥è½¬è´¦é™é¢"/>
+		<enum name="Transfer" value="2" label="æœŸå•†æµæ°´"/>
+		<enum name="Credit" value="3" label="èµ„é‡‘å†»ç»“"/>
+		<enum name="InvestorWithdrawAlm" value="4" label="æŠ•èµ„è€…å¯æèµ„é‡‘æ¯”ä¾‹"/>
+		<enum name="BankRestriction" value="5" label="å•ä¸ªé“¶è¡Œå¸æˆ·è½¬è´¦é™é¢"/>
 	</EnumChar>
-	<EnumChar typename="AccountSourceType" label="×Ê½ðÕË»§À´Ô´" prefix="AST">
-		<enum name="FBTransfer" value="0" label="ÒøÆÚÍ¬²½"/>
-		<enum name="ManualEntry" value="1" label="ÊÖ¹¤Â¼Èë"/>
+	<EnumChar typename="AccountSourceType" label="èµ„é‡‘è´¦æˆ·æ¥æº" prefix="AST">
+		<enum name="FBTransfer" value="0" label="é“¶æœŸåŒæ­¥"/>
+		<enum name="ManualEntry" value="1" label="æ‰‹å·¥å½•å…¥"/>
 	</EnumChar>
-	<EnumChar typename="CodeSourceType" label="½»Ò×±àÂëÀ´Ô´" prefix="CST">
-		<enum name="UnifyAccount" value="0" label="Í³Ò»¿ª»§"/>
-		<enum name="ManualEntry" value="1" label="ÊÖ¹¤Â¼Èë"/>
+	<EnumChar typename="CodeSourceType" label="äº¤æ˜“ç¼–ç æ¥æº" prefix="CST">
+		<enum name="UnifyAccount" value="0" label="ç»Ÿä¸€å¼€æˆ·"/>
+		<enum name="ManualEntry" value="1" label="æ‰‹å·¥å½•å…¥"/>
 	</EnumChar>
-	<EnumChar typename="UserRange" label="²Ù×÷Ô±·¶Î§" prefix="UR">
-		<enum name="All" value="0" label="ËùÓÐ"/>
-		<enum name="Single" value="1" label="µ¥Ò»²Ù×÷Ô±"/>
+	<EnumChar typename="UserRange" label="æ“ä½œå‘˜èŒƒå›´" prefix="UR">
+		<enum name="All" value="0" label="æ‰€æœ‰"/>
+		<enum name="Single" value="1" label="å•ä¸€æ“ä½œå‘˜"/>
 	</EnumChar>
-	<String typename="TimeSpan" label="Ê±¼ä¿ç¶È" length="8"/>
-	<String typename="ImportSequenceID" label="¶¯Ì¬ÁîÅÆµ¼ÈëÅú´Î±àºÅ" length="16"/>
-	<EnumChar typename="ByGroup" label="½»Ò×Í³¼Æ±í°´¿Í»§Í³¼Æ·½Ê½" prefix="BG">
-		<enum name="Investor" value="2" label="°´Í¶×ÊÕßÍ³¼Æ"/>
-		<enum name="Group" value="1" label="°´ÀàÍ³¼Æ"/>
+	<String typename="TimeSpan" label="æ—¶é—´è·¨åº¦" length="8"/>
+	<String typename="ImportSequenceID" label="åŠ¨æ€ä»¤ç‰Œå¯¼å…¥æ‰¹æ¬¡ç¼–å·" length="16"/>
+	<EnumChar typename="ByGroup" label="äº¤æ˜“ç»Ÿè®¡è¡¨æŒ‰å®¢æˆ·ç»Ÿè®¡æ–¹å¼" prefix="BG">
+		<enum name="Investor" value="2" label="æŒ‰æŠ•èµ„è€…ç»Ÿè®¡"/>
+		<enum name="Group" value="1" label="æŒ‰ç±»ç»Ÿè®¡"/>
 	</EnumChar>
-	<EnumChar typename="TradeSumStatMode" label="½»Ò×Í³¼Æ±í°´·¶Î§Í³¼Æ·½Ê½" prefix="TSSM">
-		<enum name="Instrument" value="1" label="°´ºÏÔ¼Í³¼Æ"/>
-		<enum name="Product" value="2" label="°´²úÆ·Í³¼Æ"/>
-		<enum name="Exchange" value="3" label="°´½»Ò×ËùÍ³¼Æ"/>
+	<EnumChar typename="TradeSumStatMode" label="äº¤æ˜“ç»Ÿè®¡è¡¨æŒ‰èŒƒå›´ç»Ÿè®¡æ–¹å¼" prefix="TSSM">
+		<enum name="Instrument" value="1" label="æŒ‰åˆçº¦ç»Ÿè®¡"/>
+		<enum name="Product" value="2" label="æŒ‰äº§å“ç»Ÿè®¡"/>
+		<enum name="Exchange" value="3" label="æŒ‰äº¤æ˜“æ‰€ç»Ÿè®¡"/>
 	</EnumChar>
-	<Int typename="ComType" label="×éºÏ³É½»ÀàÐÍ" length="2"/>
-	<String typename="UserProductID" label="²úÆ·±êÊ¶" length="32"/>
-	<String typename="UserProductName" label="²úÆ·Ãû³Æ" length="64"/>
-	<String typename="UserProductMemo" label="²úÆ·ËµÃ÷" length="128"/>
-	<String typename="CSRCCancelFlag" label="ÐÂÔö»ò±ä¸ü±êÖ¾" length="1"/>
-	<String typename="CSRCDate" label="ÈÕÆÚ" length="10"/>
-	<String typename="CSRCInvestorName" label="¿Í»§Ãû³Æ" length="80"/>
-	<String typename="CSRCInvestorID" label="¿Í»§´úÂë" length="12"/>
-	<String typename="CSRCIdentifiedCardNo" label="Ö¤¼þºÅÂë" length="40"/>
-	<String typename="CSRCClientID" label="½»Ò×±àÂë" length="10"/>
-	<String typename="CSRCBankFlag" label="ÒøÐÐ±êÊ¶" length="2"/>
-	<String typename="CSRCBankAccount" label="ÒøÐÐÕË»§" length="22"/>
-	<String typename="CSRCOpenName" label="¿ª»§ÈË" length="40"/>
-	<String typename="CSRCMemo" label="ËµÃ÷" length="40"/>
-	<String typename="CSRCTime" label="Ê±¼ä" length="10"/>
-	<String typename="CSRCTradeID" label="³É½»Á÷Ë®ºÅ" length="20"/>
-	<String typename="CSRCExchangeInstID" label="ºÏÔ¼´úÂë" length="6"/>
-	<String typename="CSRCMortgageName" label="ÖÊÑºÆ·Ãû³Æ" length="6"/>
-	<String typename="CSRCReason" label="ÊÂÓÉ" length="2"/>
-	<String typename="IsSettlement" label="ÊÇ·ñÎª·Ç½áËã»áÔ±" length="1"/>
-	<Float typename="CSRCMoney" length="14" precision="2" label="×Ê½ð"/>
-	<String typename="CommModelName" label="ÊÖÐø·ÑÂÊÄ£°åÃû³Æ" length="160"/>
-	<VString typename="CommModelMemo" label="ÊÖÐø·ÑÂÊÄ£°å±¸×¢" length="1024"/>
-	<EnumChar typename="RateInvestorRange" label="Í¶×ÊÕß·¶Î§" prefix="RIR">
-		<enum name="All" value="1" label="ËùÓÐ"/>
-		<enum name="Model" value="2" label="·ÑÂÊÄ£°å"/>
-		<enum name="Single" value="3" label="µ¥Ò»Í¶×ÊÕß"/>
+	<Int typename="ComType" label="ç»„åˆæˆäº¤ç±»åž‹" length="2"/>
+	<String typename="UserProductID" label="äº§å“æ ‡è¯†" length="32"/>
+	<String typename="UserProductName" label="äº§å“åç§°" length="64"/>
+	<String typename="UserProductMemo" label="äº§å“è¯´æ˜Ž" length="128"/>
+	<String typename="CSRCCancelFlag" label="æ–°å¢žæˆ–å˜æ›´æ ‡å¿—" length="1"/>
+	<String typename="CSRCDate" label="æ—¥æœŸ" length="10"/>
+	<String typename="CSRCInvestorName" label="å®¢æˆ·åç§°" length="80"/>
+	<String typename="CSRCInvestorID" label="å®¢æˆ·ä»£ç " length="12"/>
+	<String typename="CSRCIdentifiedCardNo" label="è¯ä»¶å·ç " length="40"/>
+	<String typename="CSRCClientID" label="äº¤æ˜“ç¼–ç " length="10"/>
+	<String typename="CSRCBankFlag" label="é“¶è¡Œæ ‡è¯†" length="2"/>
+	<String typename="CSRCBankAccount" label="é“¶è¡Œè´¦æˆ·" length="22"/>
+	<String typename="CSRCOpenName" label="å¼€æˆ·äºº" length="40"/>
+	<String typename="CSRCMemo" label="è¯´æ˜Ž" length="40"/>
+	<String typename="CSRCTime" label="æ—¶é—´" length="10"/>
+	<String typename="CSRCTradeID" label="æˆäº¤æµæ°´å·" length="20"/>
+	<String typename="CSRCExchangeInstID" label="åˆçº¦ä»£ç " length="6"/>
+	<String typename="CSRCMortgageName" label="è´¨æŠ¼å“åç§°" length="6"/>
+	<String typename="CSRCReason" label="äº‹ç”±" length="2"/>
+	<String typename="IsSettlement" label="æ˜¯å¦ä¸ºéžç»“ç®—ä¼šå‘˜" length="1"/>
+	<Float typename="CSRCMoney" length="14" precision="2" label="èµ„é‡‘"/>
+	<String typename="CommModelName" label="æ‰‹ç»­è´¹çŽ‡æ¨¡æ¿åç§°" length="160"/>
+	<VString typename="CommModelMemo" label="æ‰‹ç»­è´¹çŽ‡æ¨¡æ¿å¤‡æ³¨" length="1024"/>
+	<EnumChar typename="RateInvestorRange" label="æŠ•èµ„è€…èŒƒå›´" prefix="RIR">
+		<enum name="All" value="1" label="æ‰€æœ‰"/>
+		<enum name="Model" value="2" label="è´¹çŽ‡æ¨¡æ¿"/>
+		<enum name="Single" value="3" label="å•ä¸€æŠ•èµ„è€…"/>
 	</EnumChar>
-	<String typename="AgentInstitutionID" label="´úÀí¾­¼Í¹«Ë¾´úÂë" length="12"/>
+	<String typename="AgentInstitutionID" label="ä»£ç†ç»çºªå…¬å¸ä»£ç " length="12"/>
     <!--add by zhang.wb 20100701 begin-->
-    <Int typename="DRIdentityID" label="ÔÖ±¸ÖÐÐÄ±êÊ¶ºÅ" length="4"/>
-    <VString typename="DRIdentityName" label="ÔÖ±¸ÖÐÐÄ±êÊ¶ºÅÃû³Æ" length="64"/>
-    <String typename="DBLinkID" label="DBLink±êÊ¶ºÅ" length="30"/>
-  	<EnumChar typename="SyncDataStatus" label="Ö÷¶þÏ¯Êý¾ÝÍ¬²½×´Ì¬" prefix="SDS">
-  		<enum name="Initialize" value="0" label="Î´Í¬²½"/>
-  		<enum name="Settlementing" value="1" label="Í¬²½ÖÐ"/>
-  		<enum name="Settlemented" value="2" label="ÒÑÍ¬²½"/>
+    <Int typename="DRIdentityID" label="ç¾å¤‡ä¸­å¿ƒæ ‡è¯†å·" length="4"/>
+    <VString typename="DRIdentityName" label="ç¾å¤‡ä¸­å¿ƒæ ‡è¯†å·åç§°" length="64"/>
+    <String typename="DBLinkID" label="DBLinkæ ‡è¯†å·" length="30"/>
+  	<EnumChar typename="SyncDataStatus" label="ä¸»äºŒå¸­æ•°æ®åŒæ­¥çŠ¶æ€" prefix="SDS">
+  		<enum name="Initialize" value="0" label="æœªåŒæ­¥"/>
+  		<enum name="Settlementing" value="1" label="åŒæ­¥ä¸­"/>
+  		<enum name="Settlemented" value="2" label="å·²åŒæ­¥"/>
   	</EnumChar>    
   	<!--add by zhang.wb 20100701 begin-->
-	<EnumChar typename="TradeSource" label="³É½»À´Ô´" prefix="TSRC">
-		<enum name="NORMAL" value="0" label="À´×Ô½»Ò×ËùÆÕÍ¨»Ø±¨"/>
-		<enum name="QUERY" value="1" label="À´×Ô²éÑ¯"/>
+	<EnumChar typename="TradeSource" label="æˆäº¤æ¥æº" prefix="TSRC">
+		<enum name="NORMAL" value="0" label="æ¥è‡ªäº¤æ˜“æ‰€æ™®é€šå›žæŠ¥"/>
+		<enum name="QUERY" value="1" label="æ¥è‡ªæŸ¥è¯¢"/>
 	</EnumChar>
-		<EnumChar typename="FlexStatMode" label="²úÆ·ºÏÔ¼Í³¼Æ·½Ê½" prefix="FSM">
-		<enum name="Product" value="1" label="²úÆ·Í³¼Æ"/>
-		<enum name="Exchange" value="2" label="½»Ò×ËùÍ³¼Æ"/>
-		<enum name="All" value="3" label="Í³¼ÆËùÓÐ"/>
+		<EnumChar typename="FlexStatMode" label="äº§å“åˆçº¦ç»Ÿè®¡æ–¹å¼" prefix="FSM">
+		<enum name="Product" value="1" label="äº§å“ç»Ÿè®¡"/>
+		<enum name="Exchange" value="2" label="äº¤æ˜“æ‰€ç»Ÿè®¡"/>
+		<enum name="All" value="3" label="ç»Ÿè®¡æ‰€æœ‰"/>
 	</EnumChar>
-		<EnumChar typename="ByInvestorRange" label="Í¶×ÊÕß·¶Î§Í³¼Æ·½Ê½" prefix="BIR">
-		<enum name="Property" value="1" label="ÊôÐÔÍ³¼Æ"/>
-		<enum name="All" value="2" label="Í³¼ÆËùÓÐ"/>
+		<EnumChar typename="ByInvestorRange" label="æŠ•èµ„è€…èŒƒå›´ç»Ÿè®¡æ–¹å¼" prefix="BIR">
+		<enum name="Property" value="1" label="å±žæ€§ç»Ÿè®¡"/>
+		<enum name="All" value="2" label="ç»Ÿè®¡æ‰€æœ‰"/>
 	</EnumChar>
-	<String typename="SRiskRate" length="20" label="·çÏÕ¶È"/>
+	<String typename="SRiskRate" length="20" label="é£Žé™©åº¦"/>
 </UFDataTypes>
