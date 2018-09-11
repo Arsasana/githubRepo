@@ -11,8 +11,8 @@ import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.internal.storage.file.FileRepository;
 public class JGitUtil {
     private static String localPath = "/usr/ksRepo";
-//    private static String url = "https://github.com/liaowuqiangua/githubRepo.git";
-    private static String url = "10.243.140.239:/home/git/project.git";
+    private static String url = "https://github.com/liaowuqiangua/githubRepo.git";
+//    private static String url = "10.243.140.239:/home/git/project.git";
     private static final Logger log= LogManager.getLogger(JGitUtil.class);
     public static String cloneRepository()
     {

@@ -11,7 +11,7 @@
     <bean id="xmlTask" class="com.ks.riskcontrol.app"></bean>
     <!-- 配置执行规则  method为作业方法-->
     <task:scheduled-tasks>
-        <task:scheduled ref="xmlTask" method="taskExcution" cron="0 0/1 * * * ?"/>
+        <task:scheduled ref="xmlTask" method="taskExcution" cron="0 0/2 * * * ?"/>
         <!--"0 0/30 9-18 * * ?" 朝九晚六 每半个小时-->
     </task:scheduled-tasks>
 
