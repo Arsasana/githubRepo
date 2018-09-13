@@ -7,6 +7,7 @@ import java.util.List;
 
 import com.ks.riskcontrol.pojos.*;
 import com.ks.riskcontrol.pojos.Enum;
+import com.sun.org.apache.xerces.internal.impl.Constants;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.dom4j.Attribute;
@@ -42,6 +43,7 @@ public class InsertField {
     public void getRoot(String path) throws Exception {
 
         File xmlFile = new File(path);                                      // 根据指定的路径创建file对象
+        sax.setFeature(Constants.XERCES_FEATURE_PREFIX + Constants.LOAD_EXTERNAL_DTD_FEATURE, false);
         Document document = sax.read(xmlFile);                              // 获取document对象,如果文档无节点，则会抛出Exception提前结束
         Element root = document.getRootElement();                           // 获取根节点
         try{

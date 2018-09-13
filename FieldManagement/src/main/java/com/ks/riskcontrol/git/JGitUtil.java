@@ -9,11 +9,14 @@ import org.eclipse.jgit.api.CloneCommand;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.internal.storage.file.FileRepository;
+import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
+
 public class JGitUtil {
     private static String localPath = "/usr/ksRepo";
-    private static String url = "https://github.com/liaowuqiangua/githubRepo.git";
-//    private static String url = "10.243.140.239:/home/git/project.git";
+//    private static String url = "https://github.com/liaowuqiangua/githubRepo.git";
+    private static String url = "git@10.243.140.239:/home/git/project.git";
     private static final Logger log= LogManager.getLogger(JGitUtil.class);
+    private static final UsernamePasswordCredentialsProvider spcp=new UsernamePasswordCredentialsProvider(null, "123456");
     public static String cloneRepository()
     {
         try{
@@ -21,7 +24,7 @@ public class JGitUtil {
             File file=new File(localPath);
             delDir(file);
             CloneCommand cc = Git.cloneRepository().setURI(url);
-            cc.setDirectory(new File(localPath)).call();
+            cc.setDirectory(new File(localPath)).setCredentialsProvider(spcp).call();
             log.trace("========================下载完成========================");
             return "success";
         }catch(Exception e)
@@ -33,7 +36,7 @@ public class JGitUtil {
     public static void pull() throws IOException, GitAPIException {
         log.trace("========================拉取数据========================");
         Git git = new Git(new FileRepository(localPath+"/.git"));
-        git.pull().setRemoteBranchName("master").call();
+        git.pull().setCredentialsProvider(spcp).setRemoteBranchName("master").call();
     }
     public static void delDir(File f) {
         if(f.isDirectory()) {
